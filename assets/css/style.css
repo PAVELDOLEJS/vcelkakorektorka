@@ -16,6 +16,10 @@ p {
     word-wrap: break-word;
 }
 
+a {
+    color: var(--color-link);
+}
+
 /* Proměnné */
 :root {
     --color-primary: #FFFAFC; /* Bílá */
