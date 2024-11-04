@@ -1,0 +1,304 @@
+/* Srovnání všech stylů */
+@import url(normalize.css); /* Normalizace všech stylů pro všechny prohlížeče */
+
+/* Fonty */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Pomocne styly */
+img {
+    width: 200px;
+    height: auto
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word;
+}
+
+/* Proměnné */
+:root {
+    --color-primary: #FFFAFC; /* Bílá */
+    --color-secondary: #222424; /* Černá */
+    --color-link: #35C759; /* Zelená */
+}
+
+/* Typografie */
+h1, h2, h3, p, span, a, .subheader {
+    font-family: 'Lato', sans-serif; /* Font pro nadpisy a text */
+}
+
+h1, h2, h3 {
+    font-weight: 800; /* Tučné písmo pro nadpisy */
+    text-align: center; /* Zarovnání textu na střed */
+}
+
+h1 {
+    font-size: 2.5rem; /* Velikost nadpisu 1 */
+}
+
+h2 {
+    font-size: 2rem; /* Velikost nadpisu 2 */
+}
+
+h3 {
+    font-size: 1.5rem; /* Velikost nadpisu 3 */
+}
+
+p, a, span {
+    font-size: 1rem; /* Velikost textu */
+}
+
+.subheader{
+    font-weight: 300; /* Normální písmo pro nadpisy */
+    text-transform: uppercase; /* Převede text na velká písmena */
+}
+
+/* Kontejnery */
+.container {
+    padding: 0 20px; /* zhora/spoda 0, zleva/zprava 20px */
+    display: flex; /* Využíme pro pozicování Flexbox */
+    justify-content: center; /* Zarovná obsah do středu */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe */
+}
+
+.container.light {
+    background-color: var(--color-primary); /* Barva pozadí */
+    color: var(--color-secondary); /* Barva textu */
+}
+
+.container.dark {
+    background-color: var(--color-secondary); /* Barva pozadí */
+    color: var(--color-primary); /* Barva textu */
+}
+
+/* sekce */
+section {
+    margin: 30px auto; /* zhora/spoda 30px, zleva/zprava auto */
+}
+
+section, header, footer {
+    max-width: 1240px; /* Maximální šířka obsahu */
+    width: 100%; /* Šířka obsahu 100% pokud je obsah užší než 1240px */
+}
+
+/* Hlavička */
+header {
+    margin: auto; /* Zarovná obsah na střed */
+    display: flex; /* Využíme pro pozicování Flexbox */
+    justify-content: space-between; /* Zarovná obsah do středu a mezi sebou */
+    align-items: center; /* Zarovná obsah do středu */
+    height: 114px; /* Výška hlavičky */
+}
+
+.header--sticky {
+    position: sticky; /* Přilepí hlavičku k hornímu okraji prohlížeče */
+    top: 0; /* Vzdálenost od horního okraje prohlížeče */
+    z-index: 10; /* Vrstva hlavičky nad obsahem */
+}
+
+nav ul{
+    display: flex; /* Využíme pro pozicování Flexbox */
+    list-style: none; /* Odstraní odrážky u seznamu */
+    gap: 10px; /* Mezera mezi odkazy */   
+}
+
+nav a {
+    color: var(--color-secondary); /* Barva textu odkazu */
+    text-decoration: none; /* Odstraní podtržení textu */
+}
+
+.logo__img{
+    height: 50px; /* Výška loga */
+    width: auto; /* Automatická šířka loga */
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        gap: 30px; /* Mezera mezi odkazy na počítači */
+    }
+
+    .logo__img {
+        height: 90px; /* Výška loga na počítači */
+    }
+}
+
+/* Patička */
+footer {
+    margin: auto; /* Zarovná obsah na střed */
+    height: 114px; /* Výška patičky */
+    display: flex; /*   Využíme pro pozicování Flexbox */
+    justify-content: center; /* Zarovná obsah do středu */
+    align-items: center; /* Zarovná obsah do středu */
+    gap: 20px; /* Mezera mezi odkazy */
+}
+
+footer img {
+    height: 40px; /* Výška log sociálních sítí */
+    width: auto;    /* Automatická šířka log sociálních sítí */
+}
+
+/* Co jsem se naučili */
+#cojsemsenaucil {
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /*  Srovná nám všechny prvky pod sebe */
+    gap: 10px;/* Mezera mezi prvky */
+    align-items: center; /* Zarovná všechny prvky do středu */
+}
+
+#cojsemsenaucil ul {
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe */
+    gap: 10px; /* Mezera mezi prvky */
+    list-style: none; /* Odstraní odrážky u seznamu */
+}
+
+#cojsemsenaucil li {
+    display: flex; /*   Využíme pro pozicování Flexbox */
+    gap: 10px; /* Mezera mezi prvky */
+    align-items: center; /* Zarovná všechny prvky do středu */
+}
+
+#cojsemsenaucil img {
+    height: 40px; /* Výška symbolu */
+    width: auto; /* Automatická šířka symbolu */
+}
+
+@media (min-width: 1024px) {
+    #cojsemsenaucil {
+        flex-direction: row; /* Srovná nám všechny prvky vedle sebe */
+    }
+
+    #cojsemsenaucil ul {
+        flex-direction: row; /* Srovná nám všechny prvky vedle sebe */
+    }
+
+    #cojsemsenaucil li {
+        gap: 20px; /* Mezera mezi prvky na počítači */
+    }
+}
+
+/* Úvod */
+#uvod {
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe */
+    gap: 20px; /* Mezera mezi prvky */
+    align-items: center; /* Zarovná všechny prvky do středu */
+}
+
+#uvod__obrazek {
+    display: none; /* Skryje obrázek */
+    position: relative; /* Relativní pozicování */
+    width: 100%; /* Šířka obrázku 100% */
+}
+
+#uvod__obrazek img{
+    width: 100%; /* Šířka obrázku 100% */
+    height: 100%; /* Výška obrázku 100% */
+    object-fit: cover; /* Obrázek se přizpůsobí velikosti */
+}
+
+@media (min-width: 1024px) {
+    #uvod{
+        flex-direction: row; /* Srovná nám všechny prvky vedle sebe */
+        gap: 56px; /* Mezera mezi prvky na počítači */
+    }
+
+    #uvod h1 {
+        text-align: left; /* Zarovná nadpis doleva */
+        margin-bottom: 32px; /* Odsazení od dalšího prvku */
+    }
+
+    #uvod__obrazek {
+        display: block; /* Zobrazí obrázek */
+    }
+    .uvod__text{
+        width: 100%; /* Šířka textu 100% */
+    }
+
+}
+
+/* Dovednosti */
+.comumime {
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe */
+    gap: 10px; /* Mezera mezi prvky */
+}
+
+.dovednosti {
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe v boxu se třídou .dovednosti = bíle boxy budou pod sebou */
+    gap: 32px; /* Mezera mezi bílými boxy */
+}
+
+.dovednost{
+    background-color: var(--color-primary); /* Barva pozadí bílého boxu */
+    color: var(--color-secondary); /* Barva textu v bílém boxu */
+    padding: 32px; /* Vnitřní odsazení bílého boxu */
+    display: flex; /* Využíme pro pozicování Flexbox */
+    flex-direction: column; /* Srovná nám všechny prvky pod sebe v boxu se třídou .dovednost = bíle boxy budou pod sebou */
+    align-items: center; /* Zarovn  á všechny prvky do středu */
+
+    & > * {
+        /* Typografie */
+        text-align: center !important; /* Zarovná text do středu */
+    }
+}
+
+.dovednost img {
+    height: 40px; /* Výška smybolu v bílém boxu */
+    width: auto; /* Automatická šířka symbolu v bílém boxu */
+}
+
+@media (min-width: 1024px) {
+    .dovednosti {
+        flex-direction: row; /* Na počítači nám srovná všechny boxy vedele sebe */
+    }
+    .dovednost {
+        max-width: 30dvw !important;
+    }
+    
+    .dovednost img{
+        height: 60px; /* Výška smybolu v bílém boxu na počítači */
+    }
+}
+
+/* Talčítka */
+.button {
+    width: 240px; /* šířka tlačítka */
+    height: 60px; /* výška tlačítka */
+    display: flex; /* Pro jednoduché vycentrování textu používáme Flexvox */
+    align-items: center; /* Vycentruje text ve tlačítku */
+    justify-content: center; /* Vycentruje text ve tlačítku */
+    margin: auto; /* Zarovná tlačítko na střed */
+    border-radius: 10px; /* Zaoblené rohy tlačítka */
+    text-decoration: unset; /* Odstraní podtržení textu */
+    text-transform: uppercase; /* Převede text na velká písmena */
+}
+
+.dovednost img {
+    padding-top: 2svh;;
+    width: 10dvw; /* Nastavte požadovanou šířku */
+    height: auto; /* Zachová poměr stran */
+}
+
+@media (min-width: 1024px) {
+    .button {
+        width: 350px; /* šířka tlačítka na počítači */
+    }
+
+    #uvod .button {
+        margin: unset; /* Odstraní odsazení tlačítka na počítači pouze por úvodní sekci */
+    }
+}
+
+.container.dark .button {
+    background-color: var(--color-primary); /* Barva pozadí tlačítka pokud je tlačítko v container se třídou dark */
+    color: var(--color-secondary); /* Barva textu tlačítka pokud je tlačítko v container se třídou dark */
+}
+
+.container.light .button {
+    background-color: var(--color-secondary); /* Barva pozadí tlačítka pokud je tlačítko v container se třídou light */
+    color: var(--color-primary);    /* Barva textu tlačítka pokud je tlačítko v container se třídou light */
+}
+
