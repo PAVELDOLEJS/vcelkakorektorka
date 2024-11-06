@@ -245,7 +245,7 @@ footer img {
     flex-direction: column; /* Srovná nám všechny prvky pod sebe v boxu se třídou .dovednost = bíle boxy budou pod sebou */
     align-items: center; /* Zarovná všechny prvky do středu */
 
-    & > * {
+    & > *:not(h3) {
         /* Typografie */
         text-align: left !important; /* Zarovná text do leva */
     }
