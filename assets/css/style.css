@@ -235,17 +235,23 @@ footer img {
     gap: 32px; /* Mezera mezi bílými boxy */
 }
 
+
+
 .dovednost{
     background-color: var(--color-primary); /* Barva pozadí bílého boxu */
     color: var(--color-secondary); /* Barva textu v bílém boxu */
     padding: 32px; /* Vnitřní odsazení bílého boxu */
     display: flex; /* Využíme pro pozicování Flexbox */
     flex-direction: column; /* Srovná nám všechny prvky pod sebe v boxu se třídou .dovednost = bíle boxy budou pod sebou */
-    align-items: center; /* Zarovn  á všechny prvky do středu */
+    align-items: center; /* Zarovná všechny prvky do středu */
 
     & > * {
         /* Typografie */
-        text-align: center !important; /* Zarovná text do středu */
+        text-align: left !important; /* Zarovná text do leva */
+    }
+
+    & > h3 {
+        text-align: center !important;
     }
 }
 
