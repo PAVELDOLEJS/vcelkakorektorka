@@ -72,8 +72,33 @@ p, a, span {
 }
 
 .container.dark {
-    background-color: var(--color-secondary); /* Barva pozadí */
-    color: var(--color-primary); /* Barva textu */
+    display: flex;
+    align-items: flex-start;
+    background-color: #333; /* Tmavé pozadí */
+    color: #fff; /* Světlý text */
+    padding: 20px; /* Vnitřní odsazení */
+    border-radius: 8px; /* Zaoblené rohy */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
+    font-family: 'Arial', sans-serif; /* Font písma */
+    text-align: left; /* Zarovnání textu doleva */
+}
+
+.container.dark .foto {
+    margin-right: 20px; /* Odsazení mezi fotkou a textem */
+}
+
+.container.dark .foto img {
+    max-width: 150px; /* Maximální šířka fotky */
+    border-radius: 50%; /* Zaoblené rohy fotky */
+}
+
+.container.dark .kontakt__text {
+    flex: 1; /* Zajistí, že text zabere zbytek prostoru */
+    margin-right: 20px; /* Odsazení mezi textem a mapou */
+}
+
+.container.dark .mapa {
+    max-width: 400px; /* Maximální šířka mapy */
 }
 
 /* sekce */
