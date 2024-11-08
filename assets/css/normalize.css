@@ -55,6 +55,10 @@
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }
+
+  .center {
+    text-align: center;
+  }
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
