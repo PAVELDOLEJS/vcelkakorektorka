@@ -6,7 +6,7 @@
 
 * {
     overflow-x: hidden;
-    text-wrap: pretty;
+    /* text-wrap: pretty; */
 }
 
 /* Pomocne styly */
@@ -20,10 +20,13 @@ p {
     text-justify: inter-word;
     word-wrap: break-word;
     font-size: 115%;
+    color: var(--color-gray);
 }
 
 li {
     font-size: 115%;
+    /* text-align: justify; */
+    color: var(--color-gray);
 }
 
 a {
@@ -34,12 +37,25 @@ a {
 :root {
     --color-primary: #FFFAFC; /* Bílá */
     --color-secondary: #222424; /* Černá */
-    --color-link: #EFA723; /* Oranžová */
+    --color-link: #F1B616; /* Oranžová */
+    --color-gray: #666666 /* Šedá */
 }
 
 /* Typografie */
-h1, h2, h3, p, span, a, .subheader {
-    font-family: 'Lato', sans-serif; /* Font pro nadpisy a text */
+p, span, a, .subheader, li {
+    font-family: 'Roboto', sans-serif; /* Font pro text */
+}
+h1, h2, h3 {
+    font-family: "Lato", sans-serif; /* Font pro nadpisy */
+}
+
+
+h1 > span {
+    color: var(--color-link);
+    display: block;
+    font-size: larger;
+    overflow-y: hidden;
+    font-family: inherit;
 }
 
 h1, h2, h3 {
@@ -153,46 +169,6 @@ footer img {
     width: auto;    /* Automatická šířka log sociálních sítí */
 }
 
-/* Co jsem se naučili */
-#cojsemsenaucil {
-    display: flex; /* Využíme pro pozicování Flexbox */
-    flex-direction: column; /*  Srovná nám všechny prvky pod sebe */
-    gap: 10px;/* Mezera mezi prvky */
-    align-items: center; /* Zarovná všechny prvky do středu */
-}
-
-#cojsemsenaucil ul {
-    display: flex; /* Využíme pro pozicování Flexbox */
-    flex-direction: column; /* Srovná nám všechny prvky pod sebe */
-    gap: 10px; /* Mezera mezi prvky */
-    list-style: none; /* Odstraní odrážky u seznamu */
-}
-
-#cojsemsenaucil li {
-    display: flex; /*   Využíme pro pozicování Flexbox */
-    gap: 10px; /* Mezera mezi prvky */
-    align-items: center; /* Zarovná všechny prvky do středu */
-}
-
-#cojsemsenaucil img {
-    height: 40px; /* Výška symbolu */
-    width: auto; /* Automatická šířka symbolu */
-}
-
-@media (min-width: 1024px) {
-    #cojsemsenaucil {
-        flex-direction: row; /* Srovná nám všechny prvky vedle sebe */
-    }
-
-    #cojsemsenaucil ul {
-        flex-direction: row; /* Srovná nám všechny prvky vedle sebe */
-    }
-
-    #cojsemsenaucil li {
-        gap: 20px; /* Mezera mezi prvky na počítači */
-    }
-}
-
 /* Úvod */
 #uvod {
     display: flex; /* Využíme pro pozicování Flexbox */
@@ -211,6 +187,10 @@ footer img {
     width: 100%; /* Šířka obrázku 100% */
     height: 100%; /* Výška obrázku 100% */
     object-fit: cover; /* Obrázek se přizpůsobí velikosti */
+}
+
+.uvod__text > p{
+    font-size: 18.4px;
 }
 
 @media (min-width: 1024px) {
@@ -328,6 +308,11 @@ footer img {
         display: grid !important;
         gap: 5rem !important;
         justify-items: center !important;
+        justify-content: center !important;
+
+        & > * {
+            justify-content: center !important;
+        }
     }
     .kontakt__text > p {
         text-align: center !important;
@@ -337,7 +322,7 @@ footer img {
 #kontakt {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly !important;
 
     padding-bottom: 50px;
 }
@@ -347,23 +332,28 @@ footer img {
     flex-direction: column;
     flex: 1;
 
+    color: var(--color-primary);
+
     & > p:has(a) {
         display: inline-flex;
         gap: 0.5rem;
     }
 }
 
+#cko > *, .kontakt__text > *  {
+    color: var(--color-primary) !important;
+}
+
 #kontakt > img {
-    width: max-content;
-    height: max-content;
-    
-    max-height: 25svh;
+    /* width: fit-content; */
+    height: 200px;    
+    width: auto;
     margin-top: -5svh;
 
     align-self: flex-start;
 
-    clip-path: ellipse(60px 60px);
-    background: #303030;
+    clip-path: ellipse(75px 75px);
+    /* background: #303030; */
 }
 
 #formular {
