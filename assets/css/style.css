@@ -184,6 +184,10 @@ nav ul {
     /* Mezera mezi odkazy */
 }
 
+ul > li{
+    padding-bottom: 1.2em;
+}
+
 nav a {
     color: var(--color-secondary);
     /* Barva textu odkazu */
