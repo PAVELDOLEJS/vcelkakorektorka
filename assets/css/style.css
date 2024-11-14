@@ -436,6 +436,10 @@ footer img {
     .kontakt__text>p {
         text-align: center !important;
     }
+
+    p {
+        text-align: unset !important;
+    }
 }
 
 #kontakt {
