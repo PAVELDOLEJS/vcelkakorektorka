@@ -35,7 +35,7 @@ a {
 
 /* Proměnné */
 :root {
-    --color-primary: #FFFAFC; /* Bílá */
+    --color-primary: #faf7cc; /* Bílá */
     --color-secondary: #222424; /* Černá */
     --color-link: #F1B616; /* Oranžová */
     --color-gray: #666666 /* Šedá */
@@ -359,4 +359,24 @@ footer img {
 #formular {
     display: flex;
     justify-content: center;
+}
+
+.blogpost > img {
+    display: flex;
+    justify-self: center;
+    height: 25svh;
+    max-height: 25svh;
+    width: auto !important;
+    max-width: 25svw;
+}
+
+#isvg1 {
+    height: 20svh !important;
+    width: 20svw !important;
+}
+
+#isvg2 {
+    height: 30svh !important;
+    width: 30svw !important;
+    max-height: 30svh !important;
 }
