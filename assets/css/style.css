@@ -368,6 +368,9 @@ footer img {
     max-height: 25svh;
     width: auto !important;
     max-width: 25svw;
+
+    min-width: 200px;
+    min-height: 200px;
 }
 
 #isvg1 {
