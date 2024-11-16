@@ -475,11 +475,10 @@ footer img {
     /* width: fit-content; */
     height: 200px;
     width: auto;
-    margin-top: -5svh;
+    margin-top: -4svh;
 
     align-self: flex-start;
-
-    clip-path: ellipse(75px 75px);
+    
     /* background: #303030; */
 }
 
