@@ -490,6 +490,10 @@ footer img {
     align-items: center;
 }
 
+.blogpost > p {
+    padding-bottom: 5px; /* This should hopefully fix the scrollbars on contacts page on mobile devices */
+}
+
 .blogpost>img {
     display: flex;
     justify-self: center;
