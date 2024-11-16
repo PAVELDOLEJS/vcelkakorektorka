@@ -475,8 +475,8 @@ footer img {
     /* width: fit-content; */
     max-width: 280px;
     max-height: 280px;
-    height: fit-content;
-    width: fit-content;
+    height: 280px;
+    width: 200px;
     margin-top: -4svh;
 
     align-self: flex-start;
