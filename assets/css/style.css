@@ -473,12 +473,14 @@ footer img {
 
 #kontakt>img {
     /* width: fit-content; */
-    height: 200px;
-    width: auto;
+    max-width: 280px;
+    max-height: 280px;
+    height: fit-content;
+    width: fit-content;
     margin-top: -4svh;
 
     align-self: flex-start;
-    
+
     /* background: #303030; */
 }
 
