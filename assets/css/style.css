@@ -22,10 +22,7 @@ p {
     word-wrap: break-word;
     font-size: 115%;
     color: var(--color-gray);
-    hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-}
+   }
 
 li {
     font-size: 115%;
