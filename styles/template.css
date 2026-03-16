@@ -1,0 +1,332 @@
+
+/* =========================
+   EB Garamond – EPUB setup
+   ========================= */
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../Fonts/EBGaramond-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../Fonts/EBGaramond-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../Fonts/EBGaramond-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ===== ZÁKLAD TEXTU ===== */
+
+body {
+  font-family: "EB Garamond", Georgia, serif;
+  line-height: 1.55;
+  margin: 1em;
+}
+
+p {
+  text-indent: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  text-indent: 0;
+}
+
+p.no-indent {
+  text-indent: 0;
+}
+
+body.page--aux h1 {
+  display: none;
+}
+
+.bible-block{ margin-top: 3em; }
+
+.bible-block h1,
+.bible-block h2{
+  text-align: center;
+  margin: 2em 0 1em;
+}
+
+.bib{
+  margin: 1.4em 0 1.8em;
+  font-size: 0.95em;
+}
+
+.bib p{
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.45em;
+}
+
+.bib__back{
+  margin-top: 0.25em;
+  text-align: right;
+  font-size: 0.85em;
+}
+
+.bib__back a{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.bib__ref {
+  font-style: italic;
+  margin: 0 0 0.35em;
+  opacity: 0.8;
+}
+
+
+.editor-note {
+  font-size: 0.85em;
+  line-height: 1.35;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+
+/* ===== NADPISY ===== */
+
+h1, h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  letter-spacing: 0.03em;
+}
+
+/* ===== POZNÁMKY POD ČAROU ===== */
+
+.footnote-ref {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.footnotes {
+  border-top: 1px solid #999;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+.footnotes p {
+  text-indent: 0;
+}
+
+/* ===== BIBLICKÉ CITACE ===== */
+
+.scripture {
+  font-style: italic;
+}
+
+/* ===== DOSLOV ===== */
+
+.afterword {
+  font-size: 0.95em;
+  margin-top: 2em;
+}
+
+.afterword em {
+  font-style: italic;
+}
+
+
+/* ===== COVER ===== */
+
+.cover {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+}
+
+
+/* ===== TITLEPAGE ===== */
+
+
+.titlepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+}
+
+/* Hlavní titul */
+.titlepage h1 {
+  font-size: 1.8em;
+  line-height: 1.3;
+  margin: 0 0 0.6em 0;
+  font-weight: normal;
+}
+
+/* Podtitul */
+.titlepage .subtitle {
+  font-size: 1.1em;
+  margin: 0 0 3em 0;   
+  font-style: italic;
+}
+
+
+/* Autor */
+.titlepage .author {
+  font-size: 1.2em;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+@page titlepage {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+
+
+/* =========================
+   TIRÁŽ
+   ========================= */
+
+body.page--tiraz {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+body.page--tiraz > .tiraz {
+  flex: 1;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+  box-sizing: border-box;
+
+  padding: 3rem 2rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+body.page--tiraz .tiraz p {
+  text-indent: 0;
+}
+
+body.page--tiraz .tiraz__top p,
+body.page--tiraz .tiraz__bottom p {
+  margin: 0.3rem 0;
+}
+
+body.page--tiraz .tiraz__bottom {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  body.page--tiraz > .tiraz {
+    padding: 2.2rem 1.2rem;
+    font-size: 0.92rem;
+  }
+
+  body.page--tiraz {
+    height: 100%;
+  }
+
+  /* OBRÁZEK – na malém displeji menší */
+  .hero-illustration img {
+    max-width: 180px;
+  }
+}
+
+/* =========================
+   definice stránky - @page  
+ ========================= */
+
+@page {
+  margin: 12%;
+}
+
+
+/* =========================
+   EDIČNÍ POZNÁMKA
+   ========================= */
+
+.edition-note p {
+  text-indent: 1.5em;
+}
+
+.edition-note {
+  font-size: 0.95em;
+  margin-top: 2em;
+}
+
+.edition-note p.no-indent {
+  text-indent: 0;
+}
+
+
+
+/* =========================
+   ÚVOD
+   ========================= */
+
+
+.introduction {
+  margin-top: 2em;
+}
+
+.introduction p {
+  margin-bottom: 0.9em;
+}
+
+
+
+/* =========================
+   OBSAH
+   ========================= */
+
+
+
+.toc {
+  background:#f5f5f5;
+  padding:1em;
+  margin:1.5em 0;
+  border-left:4px solid #ccc;
+}
+
+.toc ul {
+  margin:0;
+  padding-left:1.2em;
+}
+
+
+
+
+
+
+
