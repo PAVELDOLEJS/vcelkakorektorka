@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- hlavní stránky -->
+  <url>
+    <loc>https://vcelkakorektorka.cz/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/blog.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/info.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/knihy.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/kontakt.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/ochrana-soukromi.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- edice -->
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/uvod.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/traktat.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/doslov.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/edicni-poznamka.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/edice/traktat-o-nejvyssim-biskupu/tiraz.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
