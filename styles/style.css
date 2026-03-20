@@ -762,3 +762,33 @@ text-decoration: underline;
 .tiraz-cc {
 margin-top: 0.5rem;
 }
+
+/* zobrazování menu ve vcelce */
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .top-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, white);
+}
