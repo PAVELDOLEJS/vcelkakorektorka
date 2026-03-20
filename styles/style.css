@@ -796,3 +796,17 @@ margin-top: 0.5rem;
 .site-header {
   overflow: visible;
 }
+
+.top-nav {
+  display: flex;
+  gap: 0.75rem;
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  max-width: 100%;
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+}
