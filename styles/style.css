@@ -179,6 +179,10 @@ nav ul {
   max-width: 100%;
 }
 
+nav ul li:last-child {
+  margin-right: 10px;
+}
+
 nav ul::-webkit-scrollbar {
   display: none;
 }
