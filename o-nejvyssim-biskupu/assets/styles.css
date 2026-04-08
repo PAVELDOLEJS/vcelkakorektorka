@@ -216,13 +216,13 @@ img{max-width:100%;display:block}
   }
 }
 
-@media (max-width: 1024px)
-
-/* grid layout */
-.article-grid {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 3rem;
+@media (max-width: 1024px) {
+  /* grid layout */
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+  }
 }
 
 .prose {
