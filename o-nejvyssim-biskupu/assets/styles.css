@@ -106,6 +106,12 @@ img{max-width:100%;display:block}
 .toc a{display:block; padding:.75rem 0; color:var(--ink)}
 .toc small{display:block; color:var(--muted); margin-top:.25rem}
 .article-shell{padding:2rem clamp(1.1rem, 4vw, 3rem)}
+/* nový grid */
+.article-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2.5rem;
+}
 .article-header{margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--line)}
 .article-header h1{font-size:clamp(2rem, 5vw, 3.3rem); line-height:1; margin:.45rem 0}
 .article-header .sub{color:var(--muted); font-size:1rem}
@@ -151,3 +157,91 @@ img{max-width:100%;display:block}
 .toc-nav {
   margin-bottom: 2rem;
 }
+
+/* pravý sloupec */
+
+.sidenotes {
+  position: relative;
+  min-height: 100%;
+  padding-left: 0.5rem;
+}
+
+/* jednotlivé poznámky */
+.sidenote {
+  position: absolute;
+  width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: #5a5045;
+
+  opacity: 0.9;
+
+  padding: 0.6rem 0.8rem;
+  border-left: 2px solid #d8d0c4;
+
+  background: transparent;
+}
+
+
+
+/* skryj původní blok dole (desktop) */
+@media (min-width: 900px) {
+  .bib {
+    display: none;
+  }
+}
+
+/* mobil = klasické poznámky dole */
+@media (max-width: 900px) {
+  .sidenotes {
+    display: none;
+  }
+
+  .bible-block,
+  .bib {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .bible-block {
+    display: none;
+  }
+}
+
+
+/* grid layout */
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+}
+
+.prose {
+  grid-column: 1;
+}
+
+.sidenotes {
+  grid-column: 2;
+  position: relative;
+  background: #f9f9f9; /* debug */
+}
+
+.sidenote {
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.sidenote.active {
+  background: #f3efe7;
+  border-left-color: #5d4426;
+  opacity: 1;
+}
+
+.sidenote.dimmed {
+  opacity: 0.45;
+}
+
+
+
+
