@@ -225,6 +225,19 @@ img{max-width:100%;display:block}
   }
 }
 
+@media (max-width: 600px) {
+  .prose h2 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 900px) {
+  .prose {
+    max-width: none;
+  }
+}
+
 .prose {
   grid-column: 1;
 }
@@ -249,6 +262,27 @@ img{max-width:100%;display:block}
   opacity: 0.45;
 }
 
+@media (max-width: 900px) {
 
+  /* 1 sloupec */
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* text přes celou šířku */
+  .prose {
+    max-width: none;
+  }
+
+  /* sidenotes pryč */
+  .sidenotes {
+    display: none;
+  }
+
+  /* klasické poznámky */
+  .bib {
+    display: block;
+  }
+}
 
 
