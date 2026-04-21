@@ -1,0 +1,288 @@
+
+@font-face{
+  font-family:"EB Garamond";
+  src:url("fonts/EBGaramond-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+}
+@font-face{
+  font-family:"EB Garamond";
+  src:url("fonts/EBGaramond-Italic.ttf") format("truetype");
+  font-weight:400;
+  font-style:italic;
+}
+@font-face{
+  font-family:"EB Garamond";
+  src:url("fonts/EBGaramond-SemiBold.ttf") format("truetype");
+  font-weight:600;
+  font-style:normal;
+}
+:root{
+  --bg:#f7f4ee;
+  --paper:#fffdf8;
+  --ink:#26221d;
+  --muted:#6f6558;
+  --line:#d8d0c4;
+  --accent:#5d4426;
+  --accent-soft:#ece1d0;
+  --shadow:0 14px 40px rgba(44,31,12,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"EB Garamond", Georgia, serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.site-header{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter: blur(12px);
+  background:rgba(247,244,238,.88);
+  border-bottom:1px solid var(--line);
+}
+.site-header .inner, .hero, .content-wrap, .site-footer .inner, .chapter-grid, .meta-grid{
+  width:min(1120px, calc(100% - 2rem)); margin:0 auto;
+}
+.site-header .inner{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0;
+}
+.brand{letter-spacing:.18em; text-transform:uppercase; font-size:.76rem; color:var(--muted)}
+.brand strong{display:block; letter-spacing:.04em; text-transform:none; font-size:1rem; color:var(--ink); margin-top:.15rem}
+.top-nav{display:flex; gap:1rem; flex-wrap:wrap; font-size:1rem}
+.hero{
+  display:grid; grid-template-columns:1.15fr .85fr; gap:2rem; align-items:center;
+  padding:4rem 0 3rem;
+}
+.card{
+  background:var(--paper); border:1px solid var(--line); border-radius:2rem; box-shadow:var(--shadow);
+}
+.hero-copy{padding:3rem}
+.kicker,.eyebrow{letter-spacing:.22em; text-transform:uppercase; font-size:.78rem; color:var(--muted)}
+.hero h1{
+  margin:.75rem 0 1rem; font-size:clamp(2.5rem, 6vw, 4.75rem); line-height:.95; font-weight:600;
+}
+.lead{font-size:1.35rem; line-height:1.6; max-width:34rem}
+.button-row{display:flex; gap:.9rem; flex-wrap:wrap; margin-top:1.75rem}
+.button{
+  border-radius:999px; padding:.85rem 1.3rem; border:1px solid var(--line); display:inline-block;
+  font-size:1rem; transition:transform .18s ease, background .18s ease;
+}
+.button.primary{background:var(--ink); color:#fff; border-color:var(--ink)}
+.button.secondary{background:var(--paper)}
+.button:hover{text-decoration:none; transform:translateY(-1px)}
+.hero-figure{padding:1.25rem; overflow:hidden}
+.hero-figure img{border-radius:1.35rem; min-height:100%; object-fit:cover}
+.section{padding:1.25rem 0 2.5rem}
+.section h2{
+  font-size:clamp(2rem, 4.5vw, 3.2rem); margin:.3rem 0 1rem; line-height:1.05;
+}
+.meta-grid{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:1rem; margin-top:1.25rem;
+}
+.meta-box{padding:1.25rem 1.3rem}
+.meta-box .label{font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
+.meta-box .value{margin-top:.5rem; font-size:1.1rem}
+.chapter-grid{
+  display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem;
+}
+.chapter-card{padding:1.4rem 1.4rem 1.2rem}
+.chapter-card h3{font-size:1.6rem; margin:.3rem 0 .6rem}
+.chapter-card p{font-size:1.08rem; line-height:1.65; color:var(--muted)}
+.chapter-card .chapter-link{margin-top:.75rem; display:inline-block; font-size:1rem}
+.content-wrap{
+  display:grid; grid-template-columns:250px minmax(0, 1fr); gap:2rem; align-items:start; padding:2rem 0 4rem;
+}
+.sidebar{
+  position:sticky; top:5rem; padding:1.25rem 1.1rem;
+}
+.sidebar h3{margin:.2rem 0 .8rem; font-size:1.2rem}
+.toc{list-style:none; padding:0; margin:0}
+.toc li{border-top:1px solid var(--line)}
+.toc li:first-child{border-top:0}
+.toc a{display:block; padding:.75rem 0; color:var(--ink)}
+.toc small{display:block; color:var(--muted); margin-top:.25rem}
+.article-shell{padding:2rem clamp(1.1rem, 4vw, 3rem)}
+/* nový grid */
+.article-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2.5rem;
+}
+.article-header{margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--line)}
+.article-header h1{font-size:clamp(2rem, 5vw, 3.3rem); line-height:1; margin:.45rem 0}
+.article-header .sub{color:var(--muted); font-size:1rem}
+.prose{max-width:43rem}
+.prose h1,.prose h2,.prose h3,.prose h4{
+  font-weight:600; line-height:1.15; margin:2rem 0 1rem; color:var(--ink);
+}
+.prose h1{font-size:2.5rem}
+.prose h2{font-size:2rem}
+.prose h3,.prose h4{font-size:1.5rem}
+.prose p, .prose li{
+  font-size:1.33rem; line-height:1.85; margin:1rem 0;
+}
+.prose p.no-indent:first-of-type::first-letter,
+.prose .dropcap:first-of-type::first-letter{
+  float:left; font-size:4.6rem; line-height:.84; padding-right:.08em; padding-top:.07em;
+}
+.prose blockquote{
+  margin:1.5rem 0; padding:1rem 1.2rem; border-left:3px solid var(--accent); background:var(--accent-soft);
+}
+.prose sup{font-size:.8rem}
+.prose section.bib, .prose section.bible-block{
+  margin-top:2.25rem; padding-top:1.25rem; border-top:1px solid var(--line);
+}
+.prose section.bib p, .prose section.bible-block p{font-size:1.08rem; line-height:1.7; color:#433a31}
+.prose .titlepage, .prose .tiraz, .prose .edition-note, .prose .introduction{max-width:43rem}
+.chapter-nav{
+  display:flex; justify-content:space-between; gap:1rem; margin-top:2.2rem; padding-top:1.2rem; border-top:1px solid var(--line); font-size:1.04rem;
+}
+.chapter-nav .muted{display:block; color:var(--muted); font-size:.95rem}
+.quote-box{padding:1.5rem}
+.quote-box p{font-size:1.25rem; line-height:1.7}
+.site-footer{border-top:1px solid var(--line); padding:1.5rem 0 2.4rem; color:var(--muted); font-size:1rem}
+.note{color:var(--muted); font-size:1rem}
+@media (max-width: 900px){
+  .hero, .content-wrap{grid-template-columns:1fr}
+  .meta-grid, .chapter-grid{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .hero-copy{padding:2rem}
+  .article-shell{padding:1.3rem}
+}
+
+.toc-nav {
+  margin-bottom: 2rem;
+}
+
+/* pravý sloupec */
+
+.sidenotes {
+  position: relative;
+  min-height: 100%;
+  padding-left: 0.5rem;
+}
+
+/* jednotlivé poznámky */
+.sidenote {
+  position: absolute;
+  width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: #5a5045;
+
+  opacity: 0.9;
+
+  padding: 0.6rem 0.8rem;
+  border-left: 2px solid #d8d0c4;
+
+  background: transparent;
+}
+
+
+
+/* skryj původní blok dole (desktop) */
+@media (min-width: 900px) {
+  .bib {
+    display: none;
+  }
+}
+
+/* mobil = klasické poznámky dole */
+@media (max-width: 900px) {
+  .sidenotes {
+    display: none;
+  }
+
+  .bible-block,
+  .bib {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .bible-block {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* grid layout */
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .prose h2 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 900px) {
+  .prose {
+    max-width: none;
+  }
+}
+
+.prose {
+  grid-column: 1;
+}
+
+.sidenotes {
+  grid-column: 2;
+  position: relative;
+  background: #f9f9f9; /* debug */
+}
+
+.sidenote {
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.sidenote.active {
+  background: #f3efe7;
+  border-left-color: #5d4426;
+  opacity: 1;
+}
+
+.sidenote.dimmed {
+  opacity: 0.45;
+}
+
+@media (max-width: 900px) {
+
+  /* 1 sloupec */
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* text přes celou šířku */
+  .prose {
+    max-width: none;
+  }
+
+  /* sidenotes pryč */
+  .sidenotes {
+    display: none;
+  }
+
+  /* klasické poznámky */
+  .bib {
+    display: block;
+  }
+}
+
+
