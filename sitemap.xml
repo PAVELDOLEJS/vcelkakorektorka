@@ -75,4 +75,41 @@
     <priority>0.60</priority>
   </url>
 
+  <!-- edice -->
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/uvod.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/traktat.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/doslov.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/edicni-poznamka.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-milovani-boha/tiraz.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
