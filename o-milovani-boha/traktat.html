@@ -97,10 +97,10 @@ href="https://vcelkakorektorka.cz/o-milovani-boha/traktat.html">
       <div class="sub">Hlavní text traktátu s biblickými odkazy a vysvětlivkami.</div>
     </header>
 
-     <div class="article-grid">
-    <div class="prose">
-    
-<h2>Řeč&#160;o&#160;milování Boha</h2>
+<div class="article-grid">
+     <div class="prose">
+     
+<h2>Řeč o milování Boha</h2>
 <p class="dropcap">
 
 <p>Zde začíná řeč o&#160;milování Boha.</p>
@@ -480,7 +480,6 @@ pod ranami, v&#160;žalářích, nepokojích, vyčerpanosti, v&#160;bezesných n
 </section>
 
 </div>
-<div class="sidenotes"></div>
 </div>
     <nav class="chapter-nav"><a href="./uvod.html"><span class="muted">← Předchozí</span>Úvod</a><a href="./edicni-poznamka.html"><span class="muted">Další →</span>Ediční poznámka</a></nav>
   </article>
@@ -493,88 +492,6 @@ pod ranami, v&#160;žalářích, nepokojích, vyčerpanosti, v&#160;bezesných n
   Digitální edice: vcelkakorektorka.cz.<br>
   <a href="./tiraz.html">Tiráž a ediční údaje</a>
 </div>
-<script>
-function renderNotes() {
 
-  if (window.innerWidth < 900) return;
-
-  const sidenotesContainer = document.querySelector(".sidenotes");
-  sidenotesContainer.innerHTML = "";
-
-  const refs = document.querySelectorAll('[id^="_ftnref"]');
-
-  let lastBottom = 0;
-
-refs.forEach(ref => {
-  const targetId = ref.getAttribute("href").replace("#", "");
-  const note = document.getElementById(targetId);
-
-  if (!note) return;
-
-  const clone = note.cloneNode(true);
-
-  clone.id = "";
-  clone.classList.remove("bib");
-  clone.classList.add("sidenote");
-
-  sidenotesContainer.appendChild(clone);
-
-  // PROPOJENÍ
-  ref.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    if (clone.classList.contains("active")) {
-      document.querySelectorAll(".sidenote").forEach(n => {
-        n.classList.remove("active", "dimmed");
-      });
-      return;
-    }
-
-    document.querySelectorAll(".sidenote").forEach(n => {
-      n.classList.remove("active");
-      n.classList.add("dimmed");
-    });
-
-    clone.classList.add("active");
-    clone.classList.remove("dimmed");
-
-    clone.scrollIntoView({ behavior: "smooth", block: "center" });
-  });
-
-
-
-  const rect = ref.getBoundingClientRect();
-  const containerTop = sidenotesContainer.getBoundingClientRect().top + window.scrollY;
-
-  const lineHeight = parseFloat(getComputedStyle(ref).lineHeight);
-
-  let top = rect.top + window.scrollY - containerTop + lineHeight * 0.25;
-
-  const spacing = 14;
-
-  if (top < lastBottom + spacing) {
-    top = lastBottom + spacing;
-  }
-
-  top = Math.round(top / 4) * 4;
-
-  clone.style.top = top + "px";
-
-  lastBottom = top + clone.offsetHeight;
-});
-
-}
-
-// load
-window.addEventListener("load", renderNotes);
-
-// resize
-window.addEventListener("resize", () => {
-  const container = document.querySelector(".sidenotes");
-  if (container) container.innerHTML = "";
-  renderNotes();
-});
-
-</script>
 </body>
 </html>
