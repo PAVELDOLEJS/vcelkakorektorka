@@ -123,12 +123,26 @@ img{max-width:100%;display:block}
 .prose h2{font-size:2rem}
 .prose h3,.prose h4{font-size:1.5rem}
 .prose p, .prose li{
-  font-size:1.33rem; line-height:1.85; margin:1rem 0;
+  font-size:1.33rem; line-height:1.78; margin:1rem 0;
 }
+
+.prose p.dropcap,
+.prose p.no-indent:first-of-type{
+  line-height:1.68;
+}
+
+
 .prose p.no-indent:first-of-type::first-letter,
-.prose .dropcap:first-of-type::first-letter{
-  float:left; font-size:4.6rem; line-height:.84; padding-right:.08em; padding-top:.07em;
+.prose p.dropcap::first-letter{
+  float:left;
+  font-size:4.25rem;
+  line-height:.75;
+  padding-right:.09em;
+  padding-top:.17em;   /* ↓ POSUNE PÍSMENO NÍŽ */
+  margin-bottom:-.1em; /* ↓ PŘITÁHNE DALŠÍ ŘÁDEK */
 }
+
+
 .prose blockquote{
   margin:1.5rem 0; padding:1rem 1.2rem; border-left:3px solid var(--accent); background:var(--accent-soft);
 }
