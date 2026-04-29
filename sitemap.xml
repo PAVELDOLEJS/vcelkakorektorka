@@ -4,111 +4,148 @@
   <!-- hlavní stránky -->
   <url>
     <loc>https://vcelkakorektorka.cz/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/blog.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/info.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/traktaty.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/kontakt.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/ochrana-soukromi.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.50</priority>
   </url>
 
-  <!-- edice -->
+  <!-- edice: o nejvyšším biskupu -->
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/uvod.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/traktat.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/doslov.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/edicni-poznamka.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/tiraz.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.60</priority>
   </url>
 
-  <!-- edice -->
+  <!-- edice: o milování Boha -->
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/uvod.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/traktat.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/doslov.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/edicni-poznamka.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://vcelkakorektorka.cz/o-milovani-boha/tiraz.html</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- edice: o bláznech pro Krista -->
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/uvod.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/traktat.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/doslov.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/edicni-poznamka.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/tiraz.html</loc>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.60</priority>
   </url>
 
