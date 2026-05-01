@@ -193,4 +193,18 @@ img{max-width:100%;display:block}
   }
 }
 
+@media (max-width: 800px) {
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-shell {
+    order: 1;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+}
 
