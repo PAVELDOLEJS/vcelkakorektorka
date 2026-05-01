@@ -1042,3 +1042,40 @@ margin-top: 0.5rem;
     content: none !important;
     display: none !important;
 }
+/* ===== Citáty – desktop pojistka ===== */
+
+@media (min-width: 901px) {
+    .citace-stranka .citace-blok blockquote {
+        margin: 2.2rem auto !important;
+        padding: 1.2rem 1.6rem !important;
+        background: #faf7ef !important;
+        border-left: 4px solid #c08a2c !important;
+
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: 1.22rem !important;
+        line-height: 1.85 !important;
+        font-style: italic !important;
+        color: #2b2b2b !important;
+    }
+
+    .citace-stranka .citace-blok blockquote p {
+        margin: 0 0 1rem !important;
+        color: #2b2b2b !important;
+    }
+
+    .citace-stranka .citace-blok blockquote p:first-child::before {
+        content: "„" !important;
+        display: inline !important;
+        color: inherit !important;
+    }
+
+    .citace-stranka .citace-blok blockquote p:last-child::after {
+        content: "“" !important;
+        display: inline !important;
+        color: inherit !important;
+    }
+
+    .citace-stranka .citace-blok blockquote p:last-child {
+        margin-bottom: 0 !important;
+    }
+}
