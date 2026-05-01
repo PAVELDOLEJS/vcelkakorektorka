@@ -1032,3 +1032,13 @@ margin-top: 0.5rem;
         line-height: 1.75;
     }
 }
+
+/* ===== Citáty – odstranění starých dekorativních uvozovek ===== */
+
+.citace-blok blockquote::before,
+.citace-blok blockquote::after,
+.citace-stranka blockquote::before,
+.citace-stranka blockquote::after {
+    content: none !important;
+    display: none !important;
+}
