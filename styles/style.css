@@ -606,16 +606,16 @@ footer img { height: 40px; width: auto; }
 
 /* ===== Digitální edice ===== */
 
-.knihy {
+.traktaty {
     max-width: 900px;
     margin: auto;
 }
 
-.knihy h1 {
+.traktaty h1 {
     margin-bottom: 1rem;
 }
 
-.knihy p {
+.traktaty p {
     max-width: 700px;
 }
 
