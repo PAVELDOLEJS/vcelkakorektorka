@@ -1,14 +1,7 @@
-/* =========================================================
-   RESET / FONTS
-   ========================================================= */
 @import url(normalize.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-/* =========================================================
-   VARIABLES
-   ========================================================= */
 :root {
   --color-primary: #ffffff;
   --color-secondary: #222424;
@@ -25,18 +18,13 @@
   --radius: 10px;
 }
 
-
-/* =========================================================
-   GLOBAL BASE
-   ========================================================= */
 * { box-sizing: border-box; }
 
- body { overflow-x: hidden; }
+body { overflow-x: hidden; }
 
 img { display: block; max-width: 100%; height: auto; }
 
-/* Typografie */
-p, span, a, .subheader, li {
+p, span, a, li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -44,10 +32,9 @@ h1, h2, h3 {
   font-family: "Lato", sans-serif;
   font-weight: 800;
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-/* Nadpisy */
 h1, h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
@@ -58,15 +45,13 @@ h1 > span {
   font-family: inherit;
 }
 
-/* Základ textů */
 p {
   text-align: justify;
   text-justify: inter-word;
-  overflow-wrap: anywhere; 
+  overflow-wrap: anywhere;
   color: var(--color-gray);
 }
 
-/* Odstavce, které obsahují tlačítko – vycentrovat */
 p:has(> .button) {
   text-align: center;
   margin-top: 2rem;
@@ -79,18 +64,10 @@ li {
   color: var(--color-gray);
 }
 
-/* Odkazy: default */
 a { color: var(--color-link); }
 
-/* Pomocné */
-.subheader {
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-/* Skrytý nadpis pro přístupnost */
 .visually-hidden {
-  position: absolute !important; 
+  position: absolute !important;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -101,10 +78,6 @@ a { color: var(--color-link); }
   border: 0;
 }
 
-
-/* =========================================================
-   LAYOUT / CONTAINERS
-   ========================================================= */
 section, header, footer {
   max-width: var(--content-max);
   width: 100%;
@@ -119,7 +92,6 @@ section { margin: 30px auto; }
   justify-content: center;
 }
 
-/* Barevné režimy */
 .container.light {
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -129,12 +101,8 @@ section { margin: 30px auto; }
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
- 
-.container.dark a { color: inherit; }
 
-/* =========================================================
-   HEADER / NAV
-   ========================================================= */
+.container.dark a { color: inherit; }
 
 header #logo .logo__img {
   height: 2.2cm;
@@ -142,17 +110,15 @@ header #logo .logo__img {
   max-width: none;
   flex-shrink: 0;
 }
-   header {
+
+header {
   margin: auto;
   height: var(--header-h);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* HTML je header--sticky na .container,
-   takže sticky musí být na tom kontejneru */
 .header--sticky {
   position: sticky;
   top: 0;
@@ -162,8 +128,8 @@ header #logo .logo__img {
 nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
-
 
 nav ul {
   display: flex;
@@ -171,12 +137,11 @@ nav ul {
   gap: 10px;
   padding-right: 0px;
   margin: 0;
-
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-
   white-space: nowrap;
   max-width: 100%;
+  scrollbar-width: none;
 }
 
 nav ul li:last-child {
@@ -187,13 +152,8 @@ nav ul::-webkit-scrollbar {
   display: none;
 }
 
-nav ul {
-  scrollbar-width: none;
-}
-
-nav li { padding-bottom: 1.2em; }
-
 nav li {
+  padding-bottom: 1.2em;
   flex: 0 0 auto;
 }
 
@@ -202,18 +162,9 @@ nav a {
   text-decoration: none;
 }
 
-nav {
-  position: relative;
-}
-
-nav::after {
-  display: none;
-}
-
-/* Logo  */
 .logo__img {
-  height: 2.2cm;  
-  width: auto;    
+  height: 2.2cm;
+  width: auto;
   max-width: none;
   flex-shrink: 0;
 }
@@ -222,16 +173,9 @@ nav::after {
   .logo__img { height: 2.5cm; max-width: 3cm; }
 }
 
-
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
 footer {
   margin: auto;
   height: var(--header-h);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,26 +184,18 @@ footer {
 
 footer img { height: 40px; width: auto; }
 
-
-/* =========================================================
-   BUTTON
-   ========================================================= */
 .button {
   width: var(--btn-w);
   height: var(--btn-h);
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   margin: 0 auto;
   border-radius: var(--radius);
-
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* barevné varianty tlačítka podle kontejneru */
 .container.light .button {
   background-color: var(--color-secondary);
   color: var(--color-primary);
@@ -275,10 +211,6 @@ footer img { height: 40px; width: auto; }
   #uvod .button { margin: 0; }
 }
 
-
-/* =========================================================
-   ÚVOD (index)
-   ========================================================= */
 #uvod {
   display: flex;
   flex-direction: column;
@@ -315,32 +247,27 @@ footer img { height: 40px; width: auto; }
   .uvod__text { width: 100%; }
 }
 
-
-/* =========================================================
-   DOVEDNOSTI (index)
-   ========================================================= */
 .comumime {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: center;
 }
 
 .dovednosti {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  justify-content: center;
 }
 
 .dovednost {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   padding: 32px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
   text-align: left;
 }
 
@@ -352,42 +279,45 @@ footer img { height: 40px; width: auto; }
   height: auto;
 }
 
-/* specifické obrázky */
 .dovednost img#dovimg1,
 .dovednost img#dovimg2 {
   width: 15dvw;
 }
 
+.dovednost .button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.dovednost ul {
+  margin-bottom: 10px;
+}
+
+.dovednost.pripravuje {
+  opacity: 0.8;
+}
+
+.dovednost.pripravuje h3 {
+  font-style: italic;
+}
+
+.dovednost:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
 @media (min-width: 1024px) {
   .dovednosti { flex-direction: row; }
-
-  
   .dovednost { max-width: 30dvw; }
-
   .dovednost img { height: 60px; }
 }
 
-
-/* =========================================================
-   BLOG / INFO
-   ========================================================= */
 .blogposts {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.blogpost > p {
-  padding-bottom: 5px; 
-}
-
-.blogpost > img,
-.blogpost img#isvg1,
-.blogpost img#isvg2 {
-  margin: 0 auto;
-}
-
-/* obrázky v info */
 #isvg1 {
   height: 20svh;
   width: 20svw;
@@ -399,33 +329,17 @@ footer img { height: 40px; width: auto; }
   max-height: 30svh;
 }
 
-
-.blogpost > img {
-  height: 25svh;
-  max-height: 25svh;
-  width: auto;
-  max-width: 25svw;
-  min-width: 200px;
-  min-height: 200px;
-}
-
-
-/* =========================================================
-   KONTAKT (kontakt.html)
-   ========================================================= */
 #formular {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 #kontakt {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-
   padding-bottom: 50px;
   gap: 2rem;
 }
@@ -436,14 +350,12 @@ footer img { height: 40px; width: auto; }
   flex: 1;
 }
 
-
 .kontakt__text > p:has(a) {
   display: inline-flex;
   gap: 0.5rem;
   align-items: baseline;
 }
 
-/* obrázek na kontaktu */
 #kontakt > img,
 #kontakt > img#ksvg2 {
   width: 200px;
@@ -453,7 +365,6 @@ footer img { height: 40px; width: auto; }
   margin-top: -4svh;
   align-self: flex-start;
 }
-
 
 @media (max-width: 575px) {
   #kontakt {
@@ -467,355 +378,153 @@ footer img { height: 40px; width: auto; }
 
   .kontakt__text > p { text-align: center; }
 
-  
   body p { text-align: unset; }
 }
 
-.actions-row{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.button--ghost{
-  background: transparent;
-  border: 2px solid currentColor;
-}
-
-.hint{
-  opacity: .85;
-  text-align: center;
-}
-
-.book-card{
-  background: rgba(255,255,255,.06);
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 16px;
-}
-
-.book-card h3{ margin-top: 0; }
-
-.download-row{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-
-.download-btn[aria-disabled="true"]{
-  opacity: .5;
-  pointer-events: none;
-}
-
-.auth-modal::backdrop{
-  background: rgba(0,0,0,.55);
-}
-
-.auth-modal__content{
-  max-width: 520px;
-  width: calc(100% - 24px);
-  border: 0;
-  border-radius: 16px;
-  padding: 20px;
-}
-
-.field{
-  display:flex;
-  flex-direction: column;
-  gap: 6px;
-  margin: 12px 0;
-}
-
-.field input{
-  height: 44px;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,.2);
-  padding: 0 12px;
-}
-
-.error{
-  color: #ffb4b4;
-}
-
-.share-icons {
-  display: flex;
-  gap: 0.5rem;
-  margin: 0.5rem 0 1rem;
-}
-
-.share-icon {
-  font-size: 0.9rem;
-  text-decoration: none;
-  opacity: 0.7;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.share-icon:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.hero-illustration {
-  margin: 1.5rem 0 1.5rem;
-  text-align: center;
-}
-
-.hero-illustration img {
-  max-width: 260px;
-  width: 100%;
-  height: auto;
-  opacity: 0.9;
-}
-
-.hero-illustration img {
-  filter: sepia(10%);
-}
-
-.hero-illustration {
-  display: flex;
-  justify-content: center;
-  margin: 1.25rem 0 1.5rem;
-}
-
-.hero-illustration img {
-  max-width: 260px;
-  width: 100%;
-  height: auto;
-  opacity: 0.9;
-}
-
-@media (max-width: 480px) {
-  .hero-illustration img {
-    max-width: 180px;
-  }
-}
-
 @media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-
-  nav {
-    width: 100%;
-  }
+  header { flex-wrap: wrap; }
+  nav { width: 100%; }
 }
-
-/* ===== Digitální edice ===== */
 
 .traktaty {
-    max-width: 900px;
-    margin: auto;
+  max-width: 900px;
+  margin: auto;
 }
 
 .traktaty h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .traktaty p {
-    max-width: 700px;
+  max-width: 700px;
 }
-
-.dovednost .button {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.dovednost ul {
-    margin-bottom: 10px;
-}
-
-/* připravované edice */
-
-.dovednost.pripravuje {
-    opacity: 0.8;
-}
-
-.dovednost.pripravuje h3 {
-    font-style: italic;
-}
-
-.dovednost:hover {
-    transform: translateY(-2px);
-    transition: 0.2s ease;
-}
-
-/* ===== Digitální edice ===== */
-
-.comumime {
-    text-align: center;
-}
-
-.dovednosti {
-    justify-content: center;
-}
-
-/* karta edice */
 
 .edice-karta {
-    border: 2px solid #f2a03d;
-    border-radius: 10px;
-    padding: 20px;
-    background: #fffaf3;
+  border: 2px solid #f2a03d;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fffaf3;
 }
 
-/* zvýrazněné tlačítko */
-
 .button-edice {
-    background: #f2a03d;
-    color: white;
-    font-weight: 600;
-    padding: 12px 24px;
-    border-radius: 6px;
-    transition: 0.2s;
+  background: #ffffff;
+  color: #f28c28;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 2px solid #f28c28;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
 }
 
 .button-edice:hover {
-    background: #e08f2c;
-    transform: translateY(-2px);
-}
-
-/* centrování tlačítka */
-
-.edice-tlacitko {
-    margin-top: 15px;
-    text-align: center;
-}
-
-/* tlačítko otevřít edici */
-
-.button-edice {
-    background: #ffffff;
-    color: #f28c28;          /* oranžový text */
-    font-weight: 700;        /* tučný nápis */
-    font-size: 1.05rem;
-    padding: 12px 28px;
-    border-radius: 6px;
-    border: 2px solid #f28c28;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    transition: all 0.2s ease;
-}
-
-/* efekt při přejetí myší */
-
-.button-edice:hover {
-    background: #f28c28;
-    color: #ffffff;
-    transform: translateY(-2px);
+  background: #f28c28;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .edice-tlacitko {
-    text-align: center;
-    margin-top: 18px;
+  text-align: center;
+  margin-top: 18px;
 }
-
-/* zvýraznění odkazu na traktát v menu */
 
 .menu-edice a {
-    color: #f28c28;
-    font-weight: 600;
+  color: #f28c28;
+  font-weight: 600;
 }
 
 .menu-edice a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-/* tlačítka pro stahování traktátu */
-
 .button-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .button-row .primary {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-
-/* drobečková navigace edice */
-
 .edition-breadcrumbs {
-    max-width: 1100px;
-    margin: 1.2rem auto 0 auto;
-    padding: 0 1rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #666;
+  max-width: 1100px;
+  margin: 1.2rem auto 0 auto;
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
 }
 
 .edition-breadcrumbs a {
-    color: #f28c28;
-    text-decoration: none;
-    font-weight: 600;
+  color: #f28c28;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .edition-breadcrumbs a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .edition-breadcrumbs .crumb-sep {
-    margin: 0 0.45rem;
-    color: #999;
+  margin: 0 0.45rem;
+  color: #999;
 }
 
 .edition-breadcrumbs .current-crumb {
-    color: #333;
-    font-weight: 600;
+  color: #333;
+  font-weight: 600;
 }
 
-/* tiráž digitální edice */
-
 .tiraz {
-max-width: 520px;
-margin: 2rem auto;
-text-align: center;
-line-height: 1.8;
-font-size: 0.95rem;
-color: #444;
+  max-width: 520px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: #444;
 }
 
 .tiraz-title {
-font-size: 1.1rem;
-margin-bottom: 1.4rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
 }
 
 .tiraz-license {
-margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 .tiraz a {
-color: #f28c28;
-text-decoration: none;
+  color: #f28c28;
+  text-decoration: none;
 }
 
 .tiraz a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .tiraz-cc {
-margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
-
-/* zobrazování menu ve vcelce v mobilu */
 
 .top-nav {
   display: flex;
   gap: 0.75rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  scrollbar-width: none;
 }
 
 .top-nav::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 .top-nav a {
@@ -823,134 +532,101 @@ margin-top: 0.5rem;
   white-space: nowrap;
 }
 
-.top-nav {
-  display: flex;
-  gap: 0.75rem;
-
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-
-  max-width: 100%;
-  width: 100%;
-}
-
 .site-header {
   overflow: visible;
 }
 
-.top-nav {
-  display: flex;
-  gap: 0.75rem;
-
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-
-  max-width: 100%;
-  width: 100%;
-
-  position: relative;
-  z-index: 1;
-}
-
- 
-/* ===== Citáty – knižní sazba ===== */
-
 .citace-stranka {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 2rem 0 3rem;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
 }
 
 .citace-blok {
-    margin: 5rem 0;
-    padding: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
+  margin: 5rem 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .citace-blok h3 {
-    margin: 0 0 2rem;
-    padding-bottom: 0.8rem;
-    text-align: center;
-    font-size: 1.55rem;
-    letter-spacing: 0.03em;
-    border-bottom: 1px solid #e6d8bd;
+  margin: 0 0 2rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 1.55rem;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #e6d8bd;
 }
 
 .citace-blok blockquote {
-    margin: 2.2rem auto;
-    padding: 1.2rem 1.6rem;
-    background: #faf7ef;
-    border-left: 4px solid #c08a2c;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.22rem;
-    line-height: 1.85;
-    font-style: italic;
-    color: #2b2b2b;
+  margin: 2.2rem auto;
+  padding: 1.2rem 1.6rem;
+  background: #faf7ef;
+  border-left: 4px solid #c08a2c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  line-height: 1.85;
+  font-style: italic;
+  color: #2b2b2b;
 }
 
 .citace-blok blockquote p {
-    margin: 0 0 1rem;
-    color: #2b2b2b;
-    text-align: left;
+  margin: 0 0 1rem;
+  color: #2b2b2b;
+  text-align: left;
 }
 
 .citace-blok blockquote p:first-child::before {
-    content: "„";
+  content: "\201E";
 }
 
 .citace-blok blockquote p:last-child::after {
-    content: "“";
+  content: "\201D";
 }
 
 .citace-blok blockquote p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .citace-zdroj {
-    margin-top: 1.4rem;
-    text-align: right;
-    font-size: 0.95rem;
-    color: #666;
+  margin-top: 1.4rem;
+  text-align: right;
+  font-size: 0.95rem;
+  color: #666;
 }
 
 .citace-zdroj a {
-    font-weight: 600;
-    text-decoration: none;
-    color: #8a5f17;
+  font-weight: 600;
+  text-decoration: none;
+  color: #8a5f17;
 }
 
 .citace-zdroj a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .citace-blok + .citace-blok {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 600px) {
-    .citace-stranka {
-        padding: 1.5rem 1rem 2.5rem;
-    }
+  .citace-stranka {
+    padding: 1.5rem 1rem 2.5rem;
+  }
 
-    .citace-blok {
-        margin: 3.5rem 0;
-    }
+  .citace-blok {
+    margin: 3.5rem 0;
+  }
 
-    .citace-blok h3 {
-        font-size: 1.35rem;
-    }
+  .citace-blok h3 {
+    font-size: 1.35rem;
+  }
 
-    .citace-blok blockquote {
-        margin: 1.8rem auto;
-        padding: 1rem 1.2rem;
-        font-size: 1.12rem;
-        line-height: 1.75;
-    }
+  .citace-blok blockquote {
+    margin: 1.8rem auto;
+    padding: 1rem 1.2rem;
+    font-size: 1.12rem;
+    line-height: 1.75;
+  }
 }
-
-
-
-
