@@ -161,16 +161,7 @@ img{max-width:100%;display:block}
     gap: 0.4rem;
   }
   .brand {
-    font-size: 0;
-    line-height: 0;
-    display: inline-block;
-    width: 2.2rem;
-    height: 2.2rem;
-    background: url('images/logo_vcely.png') no-repeat center / contain;
-    flex-shrink: 0;
-  }
-  .brand strong {
-    font-size: 0;
+    display: none;
   }
   .top-nav {
     flex-wrap: nowrap;
