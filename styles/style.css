@@ -382,8 +382,16 @@ footer img { height: 40px; width: auto; }
 }
 
 @media (max-width: 600px) {
-  header { flex-wrap: wrap; }
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem 0;
+    gap: 0.25rem;
+  }
   nav { width: 100%; }
+  nav li {
+    padding-bottom: 0.4em;
+  }
 }
 
 .traktaty {
