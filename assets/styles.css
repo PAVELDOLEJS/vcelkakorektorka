@@ -454,3 +454,26 @@ img{max-width:100%;display:block}
     width: 100%;
   }
 }
+
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta h3 {
+  color: #5d4426;
+}
+
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta,
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta li {
+  color: #26221d;
+}
+
+/* Oprava barev textu v kartách edic */
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta {
+  background-color: #fffdf8;
+  color: #26221d;
+}
+
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta h3 {
+  color: #5d4426;
+}
+
+.page-traktaty .container.dark .edice-prehled .edice-grid .edice-karta li {
+  color: #26221d;
+}
