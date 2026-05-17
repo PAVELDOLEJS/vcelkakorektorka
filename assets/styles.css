@@ -209,3 +209,188 @@ img{max-width:100%;display:block}
     order: 2;
   }
 }
+
+/* =========================================================
+   PŘEHLED DIGITÁLNÍCH EDIC / TRAKTÁTY
+   Používá stránka traktaty.html
+   ========================================================= */
+
+/* Základní obal sekce */
+.edice-prehled {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.edice-prehled h2 {
+  max-width: 900px;
+  margin: 0 auto 8px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+/* Grid karet – připravený na přibývání dalších traktátů */
+.edice-prehled .edice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+/* Jednotlivá karta edice */
+.edice-prehled .edice-karta {
+  background-color: #ffffff;
+  color: #222424;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 30px 28px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+
+  text-align: left;
+  min-height: 360px;
+  box-sizing: border-box;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.edice-prehled .edice-karta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+}
+
+/* Nadpis traktátu v kartě */
+.edice-prehled .edice-karta h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.22;
+  text-align: left;
+  color: #222424;
+}
+
+/* Seznam vlastností edice */
+.edice-prehled .edice-karta ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.edice-prehled .edice-karta li {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+
+/* Tlačítko drží u spodního okraje karty */
+.edice-prehled .edice-tlacitko {
+  margin: auto 0 0;
+}
+
+/* Tlačítko v kartě */
+.edice-prehled .button-edice {
+  display: inline-block;
+  min-width: 140px;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #F1B616;
+  color: #222424;
+  border: 2px solid #F1B616;
+  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+}
+
+.edice-prehled .button-edice:hover {
+  transform: translateY(-1px);
+  background-color: #222424;
+  color: #ffffff;
+  border-color: #222424;
+  text-decoration: none;
+}
+
+/* Karta „Další edice se připravují“ */
+.edice-prehled .edice-karta--pripravuje-se {
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 2px dashed rgba(0, 0, 0, 0.18);
+  box-shadow: none;
+}
+
+.edice-prehled .edice-karta--pripravuje-se:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Pokud ve starším CSS zůstává .dovednosti jako flex, tady ji přepíšeme jen pro edice */
+.edice-prehled .dovednosti {
+  display: grid;
+  flex-wrap: initial;
+  flex-direction: initial;
+  justify-content: initial;
+}
+
+/* Pokud ve starším CSS zůstává .dovednost s flex: 1 1 280px, tady se pro edice zruší */
+.edice-prehled .dovednost {
+  flex: initial;
+  max-width: none;
+}
+
+/* =========================================================
+   RESPONZIVITA
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .edice-prehled {
+    padding: 0 20px;
+  }
+
+  .edice-prehled .edice-grid {
+    gap: 22px;
+  }
+
+  .edice-prehled .edice-karta {
+    min-height: auto;
+    padding: 26px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .edice-prehled {
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .edice-prehled h2 {
+    font-size: clamp(1.75rem, 8vw, 2.4rem);
+  }
+
+  .edice-prehled .edice-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .edice-prehled .edice-karta {
+    border-radius: 20px;
+    padding: 24px 20px;
+  }
+
+  .edice-prehled .edice-karta h3 {
+    font-size: 1.35rem;
+  }
+
+  .edice-prehled .button-edice {
+    width: 100%;
+  }
+}
