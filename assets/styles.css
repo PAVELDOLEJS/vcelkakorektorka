@@ -215,41 +215,61 @@ img{max-width:100%;display:block}
    Používá stránka traktaty.html
    ========================================================= */
 
-/* Základní obal sekce */
 .edice-prehled {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  text-align: center;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .edice-prehled h2 {
   max-width: 900px;
-  margin: 0 auto 8px;
+  margin: 0 auto 32px;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.15;
 }
 
-/* Grid karet – připravený na přibývání dalších traktátů */
-.edice-prehled .edice-grid {
+/* Grid karet – cíleně jen pro stránku digitálních edic */
+.edice-prehled .dovednosti.edice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 28px;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  gap: 28px;
   align-items: stretch;
 }
 
+/* Velký monitor: maximálně 3 karty v řadě */
+@media (min-width: 1200px) {
+  .edice-prehled .dovednosti.edice-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Notebook a tablet na šířku: 2 karty v řadě */
+@media (min-width: 760px) and (max-width: 1199px) {
+  .edice-prehled .dovednosti.edice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobil a užší tablet: 1 karta v řadě */
+@media (max-width: 759px) {
+  .edice-prehled .dovednosti.edice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Jednotlivá karta edice */
-.edice-prehled .edice-karta {
+.edice-prehled .dovednost.edice-karta {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+
   background-color: #ffffff;
   color: #222424;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -268,7 +288,7 @@ img{max-width:100%;display:block}
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.edice-prehled .edice-karta:hover {
+.edice-prehled .dovednost.edice-karta:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
 }
@@ -333,22 +353,8 @@ img{max-width:100%;display:block}
   box-shadow: none;
 }
 
-/* Pokud ve starším CSS zůstává .dovednosti jako flex, tady ji přepíšeme jen pro edice */
-.edice-prehled .dovednosti {
-  display: grid;
-  flex-wrap: initial;
-  flex-direction: initial;
-  justify-content: initial;
-}
-
-/* Pokud ve starším CSS zůstává .dovednost s flex: 1 1 280px, tady se pro edice zruší */
-.edice-prehled .dovednost {
-  flex: initial;
-  max-width: none;
-}
-
 /* =========================================================
-   RESPONZIVITA
+   RESPONZIVITA EDIC
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -356,11 +362,11 @@ img{max-width:100%;display:block}
     padding: 0 20px;
   }
 
-  .edice-prehled .edice-grid {
+  .edice-prehled .dovednosti.edice-grid {
     gap: 22px;
   }
 
-  .edice-prehled .edice-karta {
+  .edice-prehled .dovednost.edice-karta {
     min-height: auto;
     padding: 26px 24px;
   }
@@ -369,19 +375,18 @@ img{max-width:100%;display:block}
 @media (max-width: 600px) {
   .edice-prehled {
     padding: 0 16px;
-    gap: 24px;
   }
 
   .edice-prehled h2 {
     font-size: clamp(1.75rem, 8vw, 2.4rem);
+    margin-bottom: 24px;
   }
 
-  .edice-prehled .edice-grid {
-    grid-template-columns: 1fr;
+  .edice-prehled .dovednosti.edice-grid {
     gap: 18px;
   }
 
-  .edice-prehled .edice-karta {
+  .edice-prehled .dovednost.edice-karta {
     border-radius: 20px;
     padding: 24px 20px;
   }
