@@ -211,118 +211,142 @@ img{max-width:100%;display:block}
 }
 
 /* =========================================================
-   PŘEHLED DIGITÁLNÍCH EDIC / TRAKTÁTY
-   Používá stránka traktaty.html
+   STRÁNKA TRAKTÁTY / DIGITÁLNÍ EDICE
    ========================================================= */
 
-.edice-prehled {
-  width: 100%;
-  max-width: 1240px;
+/* Horní menu – menší výška */
+.page-traktaty .header--sticky {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-traktaty header {
+  min-height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.page-traktaty header nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-traktaty header nav a {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Úvodní světlý blok – menší výška */
+.page-traktaty main > .container.light:first-child {
+  padding-top: 24px;
+  padding-bottom: 26px;
+}
+
+.page-traktaty #uvod {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.page-traktaty #uvod h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.page-traktaty #uvod p {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Černý / tmavý kontejner edic */
+.page-traktaty .container.dark {
+  background-color: #222424;
+  color: #ffffff;
+  padding-top: 56px;
+  padding-bottom: 64px;
+}
+
+/* Celá sekce edic */
+.page-traktaty .edice-prehled {
+  width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
 }
 
-.edice-prehled h2 {
-  max-width: 900px;
-  margin: 0 auto 32px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+.page-traktaty .edice-prehled > h2 {
+  max-width: 850px;
+  margin: 0 auto 34px;
+  font-size: clamp(1.9rem, 4vw, 3rem);
   line-height: 1.15;
+  color: #ffffff;
 }
 
-/* Grid karet – cíleně jen pro stránku digitálních edic */
-.edice-prehled .dovednosti.edice-grid {
+/* Grid karet */
+.page-traktaty .edice-grid {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   width: 100%;
-  max-width: 1180px;
   margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
-  gap: 28px;
-  align-items: stretch;
 }
 
-/* Velký monitor: maximálně 3 karty v řadě */
-@media (min-width: 1200px) {
-  .edice-prehled .dovednosti.edice-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-/* Notebook a tablet na šířku: 2 karty v řadě */
-@media (min-width: 760px) and (max-width: 1199px) {
-  .edice-prehled .dovednosti.edice-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Mobil a užší tablet: 1 karta v řadě */
-@media (max-width: 759px) {
-  .edice-prehled .dovednosti.edice-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Jednotlivá karta edice */
-.edice-prehled .dovednost.edice-karta {
-  width: 100%;
-  max-width: none;
-  min-width: 0;
-
-  background-color: #ffffff;
-  color: #222424;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 24px;
-  padding: 30px 28px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
-
+/* Karta traktátu */
+.page-traktaty .edice-karta {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 18px;
+  gap: 14px;
 
-  text-align: left;
-  min-height: 360px;
+  width: 100%;
+  min-width: 0;
+  min-height: 280px;
+  padding: 24px 22px;
   box-sizing: border-box;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
 
-.edice-prehled .dovednost.edice-karta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
-}
+  background-color: #fffdf8;
+  color: #26221d;
+  border-radius: 22px;
+  border: 1px solid #d8d0c4;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 
-/* Nadpis traktátu v kartě */
-.edice-prehled .edice-karta h3 {
-  margin: 0;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
-  line-height: 1.22;
   text-align: left;
-  color: #222424;
+  overflow-wrap: break-word;
 }
 
-/* Seznam vlastností edice */
-.edice-prehled .edice-karta ul {
+/* Název traktátu v kartě – tmavě hnědá, ladí s edičním stylem */
+.page-traktaty .edice-karta h3 {
+  margin: 0 0 4px;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1.22;
+  color: #5d4426;
+}
+
+/* Text v kartě */
+.page-traktaty .edice-karta ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.15rem;
+  color: #26221d;
 }
 
-.edice-prehled .edice-karta li {
-  margin-bottom: 0.55rem;
-  line-height: 1.5;
+.page-traktaty .edice-karta li {
+  margin-bottom: 0.42rem;
+  line-height: 1.42;
 }
 
-/* Tlačítko drží u spodního okraje karty */
-.edice-prehled .edice-tlacitko {
+.page-traktaty .edice-tlacitko {
   margin: auto 0 0;
 }
 
-/* Tlačítko v kartě */
-.edice-prehled .button-edice {
+/* Tlačítko */
+.page-traktaty .button-edice {
   display: inline-block;
-  min-width: 140px;
-  padding: 0.85rem 1.4rem;
+  min-width: 130px;
+  padding: 0.72rem 1.2rem;
   border-radius: 999px;
   text-align: center;
   font-weight: 700;
@@ -330,72 +354,103 @@ img{max-width:100%;display:block}
   background-color: #F1B616;
   color: #222424;
   border: 2px solid #F1B616;
-  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease;
 }
 
-.edice-prehled .button-edice:hover {
-  transform: translateY(-1px);
+.page-traktaty .button-edice:hover {
   background-color: #222424;
   color: #ffffff;
   border-color: #222424;
   text-decoration: none;
 }
 
-/* Karta „Další edice se připravují“ */
-.edice-prehled .edice-karta--pripravuje-se {
-  background-color: rgba(255, 255, 255, 0.82);
-  border: 2px dashed rgba(0, 0, 0, 0.18);
+/* Karta připravovaných edic */
+.page-traktaty .edice-karta--pripravuje-se {
+  background-color: #f7f4ee;
+  border: 2px dashed #b8aa96;
   box-shadow: none;
 }
 
-.edice-prehled .edice-karta--pripravuje-se:hover {
-  transform: none;
-  box-shadow: none;
+.page-traktaty .edice-karta--pripravuje-se h3 {
+  color: #6f6558;
 }
 
-/* =========================================================
-   RESPONZIVITA EDIC
-   ========================================================= */
+/* Informační sekce pod kartami */
+.page-traktaty main > .container.light:last-of-type {
+  padding-top: 42px;
+  padding-bottom: 48px;
+}
 
-@media (max-width: 900px) {
-  .edice-prehled {
-    padding: 0 20px;
-  }
-
-  .edice-prehled .dovednosti.edice-grid {
-    gap: 22px;
-  }
-
-  .edice-prehled .dovednost.edice-karta {
-    min-height: auto;
-    padding: 26px 24px;
+/* Tablet / menší notebook – 2 karty v řadě */
+@media (max-width: 1100px) {
+  .page-traktaty .edice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 600px) {
-  .edice-prehled {
-    padding: 0 16px;
+/* Mobil a úzký tablet – 1 karta v řadě */
+@media (max-width: 700px) {
+  .page-traktaty header {
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
-  .edice-prehled h2 {
-    font-size: clamp(1.75rem, 8vw, 2.4rem);
+  .page-traktaty header nav a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .page-traktaty main > .container.light:first-child {
+    padding-top: 10px;
+    padding-bottom: 14px;
+  }
+
+  .page-traktaty #uvod {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .page-traktaty #uvod h1 {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+    margin-bottom: 12px;
+  }
+
+  .page-traktaty #uvod p {
+    font-size: 1rem;
+    line-height: 1.52;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .page-traktaty .container.dark {
+    padding-top: 36px;
+    padding-bottom: 42px;
+  }
+
+  .page-traktaty .edice-prehled {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .page-traktaty .edice-prehled > h2 {
+    font-size: clamp(1.55rem, 7vw, 2.1rem);
     margin-bottom: 24px;
   }
 
-  .edice-prehled .dovednosti.edice-grid {
+  .page-traktaty .edice-grid {
+    grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .edice-prehled .dovednost.edice-karta {
-    border-radius: 20px;
-    padding: 24px 20px;
+  .page-traktaty .edice-karta {
+    min-height: auto;
+    padding: 20px 18px;
+    border-radius: 18px;
   }
 
-  .edice-prehled .edice-karta h3 {
-    font-size: 1.35rem;
+  .page-traktaty .edice-karta h3 {
+    font-size: 1.3rem;
   }
 
-  .edice-prehled .button-edice {
+  .page-traktaty .button-edice {
     width: 100%;
   }
 }
