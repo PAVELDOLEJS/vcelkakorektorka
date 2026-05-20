@@ -925,3 +925,627 @@ footer img { height: 40px; width: auto; }
   }
 }
 
+/* =========================================================
+   ÚVODNÍ STRÁNKA / PAGE HOME
+   doplnění pro vylepšené index.html
+   ========================================================= */
+
+.page-home main > .container.light:first-of-type {
+  padding-top: 34px;
+  padding-bottom: 42px;
+}
+
+.page-home .hero-home {
+  min-height: calc(100svh - var(--header-h) - 80px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-home .hero-home .uvod__text {
+  max-width: 680px;
+}
+
+.page-home .eyebrow-home {
+  margin: 0 0 0.75rem;
+  color: var(--color-link);
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.page-home #uvod h1 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  line-height: 1.12;
+}
+
+.page-home .lead-home {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  line-height: 1.65;
+  color: #444;
+}
+
+/* =========================================================
+   ÚVODNÍ STRÁNKA – TLAČÍTKA V HERO SEKCI
+   ========================================================= */
+
+.page-home .home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-home .home-buttons .button {
+  width: auto;
+  min-width: 170px;
+  height: auto;
+  min-height: 52px;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1.2;
+  border: 2px solid transparent;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.page-home .home-buttons .button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Hlavní tlačítko – tmavé */
+.page-home .container.light .home-buttons .button-main {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.page-home .container.light .home-buttons .button-main:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+}
+
+/* Vedlejší tlačítka – obrysová se žlutým akcentem */
+.page-home .container.light .home-buttons .button-secondary {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+}
+
+.page-home .container.light .home-buttons .button-secondary:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+}
+
+/* Pojistka: tlačítko bez zvláštní třídy zůstane čitelné */
+.page-home .container.light .home-buttons .button:not(.button-main):not(.button-secondary) {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+/* =========================================================
+   ÚVODNÍ STRÁNKA – SEKCE CO NABÍZÍM
+   ========================================================= */
+
+.page-home .home-offer {
+  padding-top: 46px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.page-home .home-offer .section-kicker {
+  margin: 0 0 0.4rem;
+  text-align: center;
+  color: var(--color-link);
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+
+.page-home .home-offer > h2 {
+  color: var(--color-primary);
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.page-home .home-offer .section-intro {
+  max-width: 720px;
+  margin: 0 auto 2.4rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.page-home .home-offer .dovednosti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.page-home .home-offer .dovednost {
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  padding: 30px 26px;
+  border-radius: 22px;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.page-home .home-offer .dovednost:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+}
+
+.page-home .home-offer .dovednost::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--color-link);
+}
+
+.page-home .home-offer .dovednost img {
+  width: 74px;
+  max-width: 74px;
+  height: auto;
+  padding-top: 0;
+  margin-bottom: 1rem;
+}
+
+.page-home .home-offer .dovednost img#dovimg1,
+.page-home .home-offer .dovednost img#dovimg2 {
+  width: 88px;
+  max-width: 88px;
+}
+
+.page-home .home-offer .dovednost h3 {
+  color: var(--color-secondary);
+  margin: 0 0 0.85rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  text-align: center;
+  overflow: visible;
+}
+
+.page-home .home-offer .dovednost p {
+  margin: 0;
+  text-align: center;
+  color: var(--color-gray);
+  line-height: 1.65;
+}
+
+.page-home .home-offer .dovednost ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  text-align: left;
+}
+
+.page-home .home-offer .dovednost li {
+  line-height: 1.55;
+}
+
+/* =========================================================
+   ÚVODNÍ STRÁNKA – EDICE A CTA
+   ========================================================= */
+
+.page-home .home-edice,
+.page-home .home-cta {
+  max-width: 850px;
+  padding-top: 34px;
+  padding-bottom: 42px;
+}
+
+.page-home .home-edice h2,
+.page-home .home-cta h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.page-home .home-edice p,
+.page-home .home-cta p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.page-home .home-cta h2,
+.page-home .home-cta p {
+  color: var(--color-primary);
+}
+
+.page-home .home-cta .button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.page-home .home-cta .button:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1024px) {
+  .page-home #uvod {
+    align-items: center;
+  }
+
+  .page-home #uvod h1 {
+    text-align: left;
+    font-size: clamp(2.4rem, 4.5vw, 4.4rem);
+  }
+
+  .page-home #uvod h1 > span {
+    text-align: left;
+  }
+
+  .page-home .hero-home .uvod__text {
+    flex: 1 1 52%;
+  }
+
+  .page-home #uvod__obrazek {
+    flex: 1 1 42%;
+    max-width: 470px;
+  }
+
+  .page-home .home-buttons {
+    justify-content: flex-start;
+  }
+
+  .page-home .home-offer .dovednosti {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .page-home .home-offer .dovednost {
+    max-width: none;
+    min-height: 380px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1023px) {
+  .page-home .home-offer .dovednosti {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .page-home .home-offer .dovednost {
+    min-height: auto;
+  }
+}
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .page-home main > .container.light:first-of-type {
+    padding-top: 18px;
+    padding-bottom: 26px;
+  }
+
+  .page-home .hero-home {
+    min-height: auto;
+    gap: 14px;
+  }
+
+  .page-home .eyebrow-home {
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .page-home #uvod h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .page-home .lead-home,
+  .page-home .uvod__text > p {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .page-home .home-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 1.35rem;
+  }
+
+  .page-home .home-buttons .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .page-home .home-offer {
+    padding-top: 32px;
+    padding-bottom: 38px;
+  }
+
+  .page-home .home-offer .section-intro {
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .page-home .home-offer .dovednost {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .page-home .home-offer .dovednost img {
+    width: 72px;
+    max-width: 72px;
+    padding-top: 0;
+  }
+
+  .page-home .home-offer .dovednost img#dovimg1,
+  .page-home .home-offer .dovednost img#dovimg2 {
+    width: 90px;
+    max-width: 90px;
+  }
+
+  .page-home .home-edice,
+  .page-home .home-cta {
+    padding-top: 26px;
+    padding-bottom: 32px;
+  }
+}
+
+/* =========================================================
+   ÚVODNÍ STRÁNKA – BLOK DIGITÁLNÍ EDICE
+   ========================================================= */
+
+.page-home .home-edice {
+  position: relative;
+  max-width: 920px;
+  margin: 42px auto;
+  padding: 46px 42px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(241, 182, 22, 0.16), rgba(255, 255, 255, 0.96)),
+    var(--color-primary);
+  color: var(--color-secondary);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-home .home-edice::before {
+  content: "✦";
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  color: rgba(241, 182, 22, 0.75);
+  font-size: 2.1rem;
+  line-height: 1;
+}
+
+.page-home .home-edice .section-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--color-link);
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.page-home .home-edice h2 {
+  max-width: 760px;
+  margin: 0 auto 1rem;
+  color: var(--color-secondary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  text-align: center;
+  overflow: visible;
+}
+
+.page-home .home-edice__lead {
+  max-width: 760px;
+  margin: 0 auto 1.6rem;
+  color: #444;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.page-home .home-edice__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
+  max-width: 780px;
+  margin: 0 auto 1.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.page-home .home-edice__list li {
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(241, 182, 22, 0.16);
+  color: var(--color-secondary);
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 0.98rem;
+}
+
+.page-home .home-edice__button {
+  margin: 0;
+  text-align: center;
+}
+
+.page-home .home-edice .button {
+  width: auto;
+  min-width: 230px;
+  height: auto;
+  min-height: 54px;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  font-weight: 700;
+  text-transform: none;
+}
+
+.page-home .home-edice .button:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .page-home .home-edice {
+    margin: 28px auto;
+    padding: 32px 20px;
+    border-radius: 22px;
+  }
+
+  .page-home .home-edice::before {
+    top: 14px;
+    right: 18px;
+    font-size: 1.6rem;
+  }
+
+  .page-home .home-edice h2 {
+    font-size: clamp(1.7rem, 8vw, 2.35rem);
+  }
+
+  .page-home .home-edice__lead {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .page-home .home-edice__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-home .home-edice .button {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   ÚVODNÍ STRÁNKA – ZÁVĚREČNÁ VÝZVA / CTA
+   ========================================================= */
+
+.page-home .home-cta {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 54px 24px 60px;
+  text-align: center;
+}
+
+.page-home .home-cta h2 {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  overflow: visible;
+}
+
+.page-home .home-cta p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.84);
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.08rem;
+}
+
+.page-home .home-cta p:has(> .button) {
+  margin-top: 2rem;
+}
+
+.page-home .home-cta .button {
+  width: auto;
+  min-width: 190px;
+  height: auto;
+  min-height: 54px;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.page-home .home-cta .button:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+  text-decoration: none;
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .page-home .home-cta {
+    padding: 38px 18px 44px;
+  }
+
+  .page-home .home-cta h2 {
+    font-size: clamp(1.75rem, 8vw, 2.35rem);
+  }
+
+  .page-home .home-cta p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .page-home .home-cta .button {
+    width: 100%;
+    min-width: 0;
+  }
+}
