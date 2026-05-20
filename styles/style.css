@@ -1702,3 +1702,35 @@ footer img { height: 40px; width: auto; }
     border-radius: 14px;
   }
 }
+
+/* =========================================================
+   KONTAKT – pojistka žlutého zvýraznění na všech zařízeních
+   ========================================================= */
+
+.page-kontakt .kontakt__label,
+.page-kontakt .kontakt__list a {
+  color: var(--color-link);
+}
+
+.page-kontakt .kontakt__label {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+
+/* tablet a mobil – zabrání přepsání barvy obecnými pravidly */
+@media (max-width: 900px) {
+  .page-kontakt .kontakt__label,
+  .page-kontakt .kontakt__list a {
+    color: var(--color-link);
+  }
+}
+
+@media (max-width: 600px) {
+  .page-kontakt .kontakt__label,
+  .page-kontakt .kontakt__list a {
+    color: var(--color-link);
+  }
+}
