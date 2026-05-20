@@ -1654,7 +1654,9 @@ footer img { height: 40px; width: auto; }
 
 .page-kontakt #formular iframe {
   display: block;
+  width: 100%;
   max-width: 920px;
+  height: 1200px;
   margin: 0 auto;
   border: 0;
   border-radius: 18px;
@@ -1733,4 +1735,15 @@ footer img { height: 40px; width: auto; }
   .page-kontakt .kontakt__list a {
     color: var(--color-link);
   }
+}
+
+.kontakt-formular__iframe {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  height: 1200px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 18px;
+  background: #ffffff;
 }
