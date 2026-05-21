@@ -1747,3 +1747,347 @@ footer img { height: 40px; width: auto; }
   border-radius: 18px;
   background: #ffffff;
 }
+
+/* =========================================================
+   STRÁNKA INFO / DRUHY KOREKTUR
+   ========================================================= */
+
+.page-info .section-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--color-link);
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+
+/* Úvodní hero */
+.page-info .info-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 44px 0 54px;
+}
+
+.page-info .info-hero__text {
+  flex: 1 1 58%;
+  text-align: left;
+}
+
+.page-info .info-hero h1 {
+  margin: 0 0 1rem;
+  color: var(--color-secondary);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.08;
+}
+
+.page-info .info-hero__lead {
+  max-width: 720px;
+  color: #444;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.page-info .info-hero__button {
+  margin-top: 1.8rem;
+}
+
+.page-info .info-hero .button-main {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+}
+
+.page-info .info-hero .button-main:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+  text-decoration: none;
+}
+
+.page-info .info-hero__image {
+  flex: 1 1 34%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-info .info-hero__image img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
+/* Druhy korektur */
+.page-info .info-types {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 54px 0 64px;
+  text-align: center;
+}
+
+.page-info .info-types h2 {
+  margin: 0 0 2rem;
+  color: var(--color-primary);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.page-info .info-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+}
+
+.page-info .info-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 24px;
+  border-radius: 22px;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  text-align: left;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+.page-info .info-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--color-link);
+}
+
+.page-info .info-card h3 {
+  margin: 0 0 0.9rem;
+  color: var(--color-secondary);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.page-info .info-card p {
+  color: var(--color-gray);
+  line-height: 1.65;
+}
+
+/* Průběh spolupráce */
+.page-info .info-process {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 50px 0 56px;
+  text-align: center;
+}
+
+.page-info .info-process h2 {
+  max-width: 840px;
+  margin: 0 auto 2rem;
+  color: var(--color-secondary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.page-info .process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.page-info .process-step {
+  padding: 30px 24px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.page-info .process-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: var(--color-link);
+  color: var(--color-secondary);
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+}
+
+.page-info .process-step h3 {
+  margin: 0 0 0.8rem;
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+}
+
+.page-info .process-step p {
+  color: #444;
+  line-height: 1.65;
+}
+
+/* Co uvést předem */
+.page-info .info-preferences {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 34px;
+  align-items: start;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 46px 0 56px;
+}
+
+.page-info .info-preferences h2 {
+  margin: 0 0 1rem;
+  color: var(--color-secondary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.page-info .info-preferences p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.page-info .info-preferences__list {
+  margin: 0;
+  padding: 28px 30px 28px 46px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
+.page-info .info-preferences__list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* Citát */
+.page-info .info-quote {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 42px 0;
+  text-align: center;
+}
+
+.page-info .info-quote blockquote {
+  margin: 0;
+}
+
+.page-info .info-quote p {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  line-height: 1.25;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+/* CTA */
+.page-info .info-cta {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 58px;
+  text-align: center;
+}
+
+.page-info .info-cta h2 {
+  color: var(--color-primary);
+}
+
+.page-info .info-cta p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.7;
+}
+
+.page-info .info-cta .button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+}
+
+.page-info .info-cta .button:hover {
+  background-color: var(--color-link);
+  color: var(--color-secondary);
+  border-color: var(--color-link);
+  text-decoration: none;
+}
+
+/* Tablet a mobil */
+@media (max-width: 900px) {
+  .page-info .info-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 34px 0 42px;
+  }
+
+  .page-info .info-hero__text {
+    text-align: center;
+  }
+
+  .page-info .info-hero__lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-info .process-grid,
+  .page-info .info-preferences {
+    grid-template-columns: 1fr;
+  }
+
+  .page-info .info-preferences {
+    text-align: center;
+  }
+
+  .page-info .info-preferences__list {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-info .info-hero {
+    padding: 24px 0 34px;
+    gap: 24px;
+  }
+
+  .page-info .info-hero h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .page-info .info-hero__lead,
+  .page-info .info-card p,
+  .page-info .process-step p,
+  .page-info .info-preferences p,
+  .page-info .info-cta p {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .page-info .info-types,
+  .page-info .info-process,
+  .page-info .info-preferences {
+    padding-top: 34px;
+    padding-bottom: 40px;
+  }
+
+  .page-info .info-card,
+  .page-info .process-step {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .page-info .info-preferences__list {
+    padding: 24px 22px 24px 38px;
+    border-radius: 18px;
+  }
+
+  .page-info .info-hero .button-main,
+  .page-info .info-cta .button {
+    width: 100%;
+  }
+}
