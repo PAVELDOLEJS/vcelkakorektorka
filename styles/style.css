@@ -2092,6 +2092,8 @@ footer img { height: 40px; width: auto; }
   }
 }
 
+
+
 /* =========================================================
    STRÁNKA BLOG
    ========================================================= */
@@ -2643,10 +2645,14 @@ footer img { height: 40px; width: auto; }
   margin-top: 0;
   margin-bottom: 0.45rem;
   font-size: 1.05rem;
+  color: #c49a5a;
 }
 
 .kontakt__topics p {
   margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .kontakt__profile {
@@ -2784,4 +2790,16 @@ footer img { height: 40px; width: auto; }
 
 .kontakt-section--new {
   display: block;
+}
+
+/* Kontakt – barevné sjednocení úvodní části */
+.page-kontakt #kontakt-title,
+.page-kontakt .kontakt__topics h2 {
+  color: #c49a5a;
+}
+
+.page-kontakt .kontakt__topics p {
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 500;
+  line-height: 1.55;
 }
