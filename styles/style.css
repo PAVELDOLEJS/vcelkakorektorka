@@ -2803,3 +2803,21 @@ footer img { height: 40px; width: auto; }
   font-weight: 500;
   line-height: 1.55;
 }
+
+.page-kontakt .kontakt__topics article {
+  background: #fffaf0;
+  color: #2b2118;
+  border-radius: 18px;
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
+.page-kontakt .kontakt__topics h2 {
+  color: #8a5a24;
+}
+
+.page-kontakt .kontakt__topics p {
+  color: #2b2118;
+  font-weight: 500;
+  line-height: 1.55;
+}
