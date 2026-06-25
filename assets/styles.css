@@ -566,3 +566,21 @@ img {
 .reader-response__link:focus {
   text-decoration: underline;
 }
+
+.edition-breadcrumbs .crumb-home {
+  display: inline-block;
+  padding: 0.25em 0.65em;
+  border-radius: 999px;
+  background: #f3c14b;
+  color: #3b2a14;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #d49a24;
+}
+
+.edition-breadcrumbs .crumb-home:hover,
+.edition-breadcrumbs .crumb-home:focus {
+  background: #e5ae32;
+  color: #2b1d0e;
+  text-decoration: none;
+}
