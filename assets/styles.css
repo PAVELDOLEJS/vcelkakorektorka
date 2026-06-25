@@ -569,18 +569,17 @@ img {
 
 .edition-breadcrumbs .crumb-home {
   display: inline-block;
-  padding: 0.25em 0.65em;
+  padding: 0.2em 0.55em;
   border-radius: 999px;
-  background: #f3c14b;
-  color: #3b2a14;
+  background: #fff4cf;
+  color: #7a4a00;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid #d49a24;
+  border: 1px solid #e0b84f;
 }
 
 .edition-breadcrumbs .crumb-home:hover,
 .edition-breadcrumbs .crumb-home:focus {
-  background: #e5ae32;
-  color: #2b1d0e;
-  text-decoration: none;
+  background: #f3c14b;
+  color: #3b2a14;
 }
