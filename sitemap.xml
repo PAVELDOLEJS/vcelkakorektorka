@@ -8,13 +8,13 @@
   </url>
   <url>
     <loc>https://vcelkakorektorka.cz/blog.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://vcelkakorektorka.cz/citaty-petra-chelcickeho.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://vcelkakorektorka.cz/traktaty.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -258,4 +258,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+  <url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/uvod.html</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/traktat.html</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/doslov.html</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/edicni-poznamka.html</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-ocistci-1/tiraz.html</loc>
+<lastmod>2026-07-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
 </urlset>
