@@ -390,6 +390,7 @@ img {
   max-width: 43rem
 }
 
+
 .chapter-nav {
   display: flex;
   justify-content: space-between;
@@ -582,4 +583,16 @@ img {
 .edition-breadcrumbs .crumb-home:focus {
   background: #f3c14b;
   color: #3b2a14;
+}
+
+.prose a[href$="citaty-petra-chelcickeho.html"] {
+  color: #9a5700;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.prose a[href$="citaty-petra-chelcickeho.html"]:hover,
+.prose a[href$="citaty-petra-chelcickeho.html"]:focus-visible {
+  color: #5d3200;
+  text-decoration: none;
 }
