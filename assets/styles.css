@@ -596,3 +596,15 @@ img {
   color: #5d3200;
   text-decoration: none;
 }
+
+.odkaz-video {
+  color: #9b3f24;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.odkaz-video:hover,
+.odkaz-video:focus {
+  color: #702a17;
+  text-decoration: underline;
+}
