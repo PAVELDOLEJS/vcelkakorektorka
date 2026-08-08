@@ -573,6 +573,24 @@ footer img { height: 40px; width: auto; }
   padding: 2rem 0 3rem;
 }
 
+.citace-uvod {
+  max-width: 680px;
+  margin: 0.8rem auto 0.35rem;
+  text-align: center;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: #444;
+}
+
+.citace-poznamka {
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #777;
+}
+
 .citace-blok {
   margin: 5rem 0;
   padding: 0;
@@ -659,6 +677,17 @@ footer img { height: 40px; width: auto; }
     padding: 1rem 1.2rem;
     font-size: 1.12rem;
     line-height: 1.75;
+  }
+
+  /* Úvodní text stránky citátů */
+  .citace-uvod {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .citace-poznamka {
+    font-size: 0.92rem;
+    margin-bottom: 2.4rem;
   }
 }
 
