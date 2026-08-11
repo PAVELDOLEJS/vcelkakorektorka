@@ -1,264 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?>
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vcelkakorektorka.cz/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/blog.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-  <loc>https://vcelkakorektorka.cz/citaty-petra-chelcickeho.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/info.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/traktaty.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/kontakt.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/ochrana-soukromi.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/uvod.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/traktat.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/doslov.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/edicni-poznamka.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/tiraz.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/uvod.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/traktat.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/doslov.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/edicni-poznamka.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-milovani-boha/tiraz.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/uvod.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/traktat.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/doslov.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/edicni-poznamka.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/tiraz.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/uvod.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/traktat.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/doslov.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/edicni-poznamka.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/tiraz.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/uvod.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/traktat.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/doslov.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/edicni-poznamka.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/sit-viry-1/tiraz.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/uvod.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/traktat.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/doslov.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/edicni-poznamka.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/tiraz.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
+<url>
+<loc>https://vcelkakorektorka.cz/</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/blog.html</loc>
+<lastmod>2026-08-11</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/citaty-petra-chelcickeho.html</loc>
+<lastmod>2026-08-11</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/info.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/traktaty.html</loc>
+<lastmod>2026-08-11</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/kontakt.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/ochrana-soukromi.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/uvod.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/traktat.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/doslov.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/edicni-poznamka.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-nejvyssim-biskupu/tiraz.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/uvod.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/traktat.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/doslov.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/edicni-poznamka.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-milovani-boha/tiraz.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/uvod.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/traktat.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/doslov.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/edicni-poznamka.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-blaznech-pro-krista/tiraz.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/uvod.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/traktat.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/doslov.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/edicni-poznamka.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-na-rec-pavla/tiraz.html</loc>
+<lastmod>2026-05-01</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/uvod.html</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/traktat.html</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/doslov.html</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/edicni-poznamka.html</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/sit-viry-1/tiraz.html</loc>
+<lastmod>2026-05-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/uvod.html</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/traktat.html</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/doslov.html</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/edicni-poznamka.html</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-boji-duchovnim-1/tiraz.html</loc>
+<lastmod>2026-06-24</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
 <loc>https://vcelkakorektorka.cz/o-ocistci-1/</loc>
 <lastmod>2026-07-09</lastmod>
 <changefreq>monthly</changefreq>
@@ -294,40 +294,76 @@
 <changefreq>monthly</changefreq>
 <priority>0.60</priority>
 </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/uvod.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/traktat.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/doslov.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/edicni-poznamka.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/tiraz.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/uvod.html</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/traktat.html</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/doslov.html</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/edicni-poznamka.html</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/vyklad-pasiji-1/tiraz.html</loc>
+<lastmod>2026-07-31</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/uvod.html</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/traktat.html</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/doslov.html</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/edicni-poznamka.html</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/tiraz.html</loc>
+<lastmod>2026-08-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.60</priority>
+</url>
 </urlset>
