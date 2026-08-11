@@ -124,6 +124,29 @@
   }
 }
 </script>
+
+    <style>
+        .nahodny-citat {
+            max-width: 900px;
+            margin: 0 auto 2.5rem;
+            padding: 1.6rem 1.8rem;
+            border: 1px solid currentColor;
+            border-radius: 0.6rem;
+        }
+        .nahodny-citat__kicker {
+            margin: 0 0 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .nahodny-citat h2 { margin-top: 0; }
+        .nahodny-citat blockquote { margin: 1rem 0; }
+        .nahodny-citat__zdroj { margin: 0.9rem 0 1.2rem; font-size: 0.95rem; }
+        .nahodny-citat__ovladani { margin: 0; }
+        .nahodny-citat__tlacitko { cursor: pointer; }
+    </style>
+
 </head>
 
 <body>
@@ -163,6 +186,30 @@
 
                 <p class="citace-poznamka">
                     Citáty jsou převzaty z&#160;digitálních edic zveřejněných na tomto webu.
+                </p>
+            </section>
+        </div>
+
+
+        <!-- NÁHODNÝ CITÁT -->
+        <div class="container light">
+            <section class="nahodny-citat" aria-labelledby="nahodny-citat-title">
+                <p class="nahodny-citat__kicker">Z Chelčického traktátů</p>
+                <h2 id="nahodny-citat-title">Náhodný citát</h2>
+
+                <div id="nahodny-citat-obsah" aria-live="polite">
+                    <blockquote>
+                        <p>Citát se zobrazí po načtení stránky.</p>
+                    </blockquote>
+                    <p class="nahodny-citat__zdroj">
+                        Zdroj: <span>Digitální edice Petra Chelčického</span>
+                    </p>
+                </div>
+
+                <p class="nahodny-citat__ovladani">
+                    <button class="button nahodny-citat__tlacitko" id="dalsi-citat" type="button">
+                        Další citát
+                    </button>
                 </p>
             </section>
         </div>
@@ -619,6 +666,92 @@
             </a>
         </p>
     </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.querySelector(".citace-stranka");
+            const output = document.getElementById("nahodny-citat-obsah");
+            const button = document.getElementById("dalsi-citat");
+
+            if (!container || !output || !button) return;
+
+            const blocks = Array.from(container.children)
+                .filter(el => el.classList.contains("citace-blok"));
+
+            for (let i = blocks.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [blocks[i], blocks[j]] = [blocks[j], blocks[i]];
+            }
+
+            blocks.forEach(block => container.appendChild(block));
+
+            const quotes = [];
+
+            blocks.forEach(block => {
+                const sourceLink = block.querySelector(".citace-zdroj a");
+                const sourceText = sourceLink
+                    ? sourceLink.textContent.trim()
+                    : (block.querySelector(".citace-zdroj")?.textContent || "")
+                        .replace(/^Zdroj:\s*/i, "")
+                        .trim();
+
+                const sourceHref = sourceLink ? sourceLink.href : "";
+
+                block.querySelectorAll("blockquote p").forEach(p => {
+                    const text = p.textContent.trim();
+                    if (text) {
+                        quotes.push({
+                            text,
+                            source: sourceText || "Petr Chelčický",
+                            href: sourceHref
+                        });
+                    }
+                });
+            });
+
+            let currentIndex = -1;
+
+            function showRandomQuote() {
+                if (!quotes.length) return;
+
+                let nextIndex = 0;
+                if (quotes.length > 1) {
+                    do {
+                        nextIndex = Math.floor(Math.random() * quotes.length);
+                    } while (nextIndex === currentIndex);
+                }
+
+                currentIndex = nextIndex;
+                const item = quotes[currentIndex];
+
+                const blockquote = document.createElement("blockquote");
+                const p = document.createElement("p");
+                p.textContent = item.text;
+                blockquote.appendChild(p);
+
+                const source = document.createElement("p");
+                source.className = "nahodny-citat__zdroj";
+                source.appendChild(document.createTextNode("Zdroj: "));
+
+                if (item.href) {
+                    const a = document.createElement("a");
+                    a.href = item.href;
+                    a.textContent = item.source;
+                    source.appendChild(a);
+                } else {
+                    const span = document.createElement("span");
+                    span.textContent = item.source;
+                    source.appendChild(span);
+                }
+
+                output.replaceChildren(blockquote, source);
+            }
+
+            button.addEventListener("click", showRandomQuote);
+            showRandomQuote();
+        });
+    </script>
 
 </body>
 
