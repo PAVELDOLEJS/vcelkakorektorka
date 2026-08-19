@@ -617,3 +617,10 @@ img {
   text-decoration: none;
   white-space: nowrap;
 }
+
+.sidebar__title {
+  margin: 0.3rem 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+}

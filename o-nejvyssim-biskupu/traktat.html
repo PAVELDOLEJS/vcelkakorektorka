@@ -73,8 +73,9 @@
   <header class="site-header">
     <div class="inner">
       <a class="brand" href="./../index.html">vcelkakorektorka.cz<strong>Digitální edice</strong></a>
-      <nav class="top-nav"><a href="./uvod.html">Úvod</a><a href="./traktat.html">O nejvyšším biskupu, Pánu Kristu</a><a
-          href="./edicni-poznamka.html">Ediční poznámka</a><a href="./doslov.html">Doslov</a></nav>
+      <nav class="top-nav" aria-label="Navigace digitální edice"><a href="./uvod.html">Úvod</a><a href="./traktat.html"
+          aria-current="page">O nejvyšším biskupu, Pánu Kristu</a><a href="./edicni-poznamka.html">Ediční poznámka</a><a
+          href="./doslov.html">Doslov</a></nav>
     </div>
   </header>
 
@@ -87,26 +88,35 @@
   </nav>
 
   <main class="content-wrap">
-    <aside class="card sidebar">
-      <div class="eyebrow">Traktát</div>
-      <h3>O nejvyšším biskupu, Pánu Kristu</h3>
-      <ul class="toc">
-        <li><a href="./uvod.html">Úvod<small>Úvodní uvedení do Chelčického traktátu a jeho duchovního
-              záměru.</small></a></li>
-        <li><a href="./traktat.html">O nejvyšším biskupu, Pánu Kristu<small>Hlavní text traktátu s biblickými odkazy
-              a vysvětlivkami.</small></a></li>
-        <li><a href="./edicni-poznamka.html">Ediční poznámka<small>Informace o předloze, modernizaci jazyka a edičním
-              postupu.</small></a></li>
-        <li><a href="./doslov.html">Doslov<small>Závěrečné shrnutí významu textu pro dnešního čtenáře.</small></a></li>
-        <li><a href="./tiraz.html">Tiráž<small>Ediční a autorské údaje k této digitální podobě.</small></a></li>
-      </ul>
+    <aside class="card sidebar" aria-labelledby="sidebar-title">
+      <p class="eyebrow">Traktát</p>
+      <p class="sidebar__title" id="sidebar-title">O nejvyšším biskupu, Pánu Kristu</p>
+      <nav aria-label="Části traktátu">
+        <ul class="toc">
+          <li><a href="./uvod.html">Úvod<small>Úvodní uvedení do Chelčického traktátu a jeho
+                duchovního
+                záměru.</small></a></li>
+          <li><a href="./traktat.html" aria-current="page">O nejvyšším biskupu, Pánu Kristu<small>Hlavní text
+                traktátu
+                s biblickými odkazy
+                a vysvětlivkami.</small></a></li>
+          <li><a href="./edicni-poznamka.html">Ediční poznámka<small>Informace o předloze, modernizaci
+                jazyka a edičním
+                postupu.</small></a></li>
+          <li><a href="./doslov.html">Doslov<small>Závěrečné shrnutí významu textu pro dnešního
+                čtenáře.</small></a></li>
+          <li><a href="./tiraz.html">Tiráž<small>Ediční a autorské údaje k této digitální
+                podobě.</small></a></li>
+        </ul>
+      </nav>
       <p class="note"><a href="https://vcelkakorektorka.cz/o-nejvyssim-biskupu/">← Zpět na titulní stranu traktátu</a>
       </p>
 
     </aside>
     <article class="card article-shell">
       <figure class="card" style="overflow:hidden;margin:0 0 1.5rem;"><img src="./assets/images/petr_o_kristu.jpeg"
-          alt="Ilustrační obraz k traktátu"></figure>
+          alt="Petr píše traktát o Kristu - obraz na obálce"></figure>
+
       <header class="article-header">
 
         <div class="sub">Hlavní text traktátu s biblickými odkazy a vysvětlivkami.</div>
@@ -118,13 +128,15 @@
           <h1>O nejvyšším biskupu<a class="title-noteref" href="#bib-biskup1" id="_ftnref1" role="doc-noteref">[1]</a>,
             Pánu Kristu, k němuž
             máme vzhlížet více než ke všem svatým</h1>
+
           <p class="dropcap">Nastal čas chudoby, zármutku, tísně, roztrhání, rozdělení a opuštění. To vše postihlo lid
             Boží, jenž nemá na zemi pastýře ani jiné učitele.<a href="#bib-mk-6-34" id="_ftnref2"
-              role="doc-noteref">[2]</a> Je to osiřelý lid, plný útrap a příkoří.</p>
+              role="doc-noteref">[2]</a>
+            Je to osiřelý lid, plný útrap a příkoří.</p>
           <p>Pastýřů je mnoho, ale pastýř tu není. Pastýři pasou sami sebe, zatímco stádo dali na roztrhání veškeré
             divoké zvěři.<a href="#bib-ez-34-2" id="_ftnref3" role="doc-noteref">[3]</a> Bez ochrany a bez pomoci je
             postavili doprostřed smrtelných osidel. Stádo tak spěchá ze smrti do smrti; nemá strážce ani nikoho, kdo by
-            je učil Boží moudrosti, podle níž by si mohlo zachovat život.</p>
+            ho učil Boží moudrosti, podle níž by si mohlo zachovat život.</p>
           <p>Vždyť sami pastýři nemají poznání Boha, a proto nevědí, koho a jak pást. Milují svět,<a href="#bib-1j-2-15"
               id="_ftnref4" role="doc-noteref">[4]</a> spojili se s ním a pasou ho k jeho zabití, neboť zabití světa
             spočívá v jeho smrtelných bludech. Pastýři zaslepení těmito bludy<a href="#bib-mt-15-14" id="_ftnref5"
@@ -151,8 +163,7 @@
             vyznáváme. Vždyť nemáme
             biskupa, který by nemohl mít slitování s našimi slabostmi, ale biskupa, jenž byl ve všem podobně zkoušen
             jako my, avšak bez hříchu. Přistupme tedy s důvěrou k trůnu jeho milosti, abychom dosáhli milosrdenství
-            a nalezli milost k pomoci v čas
-            potřeby.“<a href="#bib-zd-4-14" id="_ftnref11" role="doc-noteref">[11]</a></p>
+            a nalezli milost k pomoci v pravý čas.“<a href="#bib-zd-4-14" id="_ftnref11" role="doc-noteref">[11]</a></p>
           <p>Dále říká: „Poněvadž zůstává navždy knězem, má tedy věčné kněžství, a proto může navždy zachránit ty, kteří
             se skrze něj přibližují k Bohu, neboť je stále živý, aby se za nás přimlouval. Vždyť je vhodné, abychom měli
             právě takového biskupa: svatého, nevinného, neposkvrněného, odděleného od hříšníků a vyvýšeného nad
@@ -198,7 +209,7 @@
             a tučné břicho, jež si hojně pasou z lidské roboty – a tak z Kristova utrpení.<a href="#bib-jk-5-5"
               id="_ftnref20" role="doc-noteref">[20]</a> Proto rozumní lidé, kteří se varují zlých kněží, mají bedlivě
             uvážit, proč svatý Pavel hlásal Kristovo věčné kněžství a jeho skutečnou moc zachránit ty, kteří přistupují
-            k trůnu jeho milosti,<a href="#bib-zd-4-16" id="_ftnref21" role="doc-noteref">[21]</a> Sami se totiž
+            k trůnu jeho milosti.<a href="#bib-zd-4-16" id="_ftnref21" role="doc-noteref">[21]</a> Sami se totiž
             narodili a vyrostli mezi těmito klamy a nic jiného nepoznali ani neslyšeli.</p>
           <p>Jestliže jim totiž kněží odejmou možnost mít o posvícení mše, zarmoutí se jako nemocné děti, protože se jim
             zruší hry. Proto takový nedůstojný lid nemůže nic znát o tomto veleknězi, Pánu Kristu, jen vyčmuchává
@@ -327,7 +338,6 @@
                 rekonstruovanou podobu „Jahve“, případně užívají podobu „Jehova“.
               </p>
 
-              </p>
               <p class="bib__back"><a href="#_ftnref3" role="doc-backlink" aria-label="Zpět do textu k poznámce 3">↩</a>
               </p>
             </div>
@@ -377,7 +387,8 @@
                   aria-label="Přejít k poznámce 1">poznámku 1</a>
               </p>
               <p class="bib__back"><a href="#_ftnref10" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 10">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 10">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-4-14" role="doc-footnote">
               <p class="bib__ref">[11] Žd 4,14–16</p>
@@ -388,7 +399,8 @@
                 všechna pokušení jako my, ale nedopustil se hříchu. Přistupme tedy směle k trůnu milosti, abychom došli
                 milosrdenství a nalezli milost a pomoc v pravý čas.“</p>
               <p class="bib__back"><a href="#_ftnref11" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 11">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 11">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-7-24" role="doc-footnote">
               <p class="bib__ref">[12] Žd 7,24–26</p>
@@ -397,26 +409,30 @@
                 jsme
                 potřebovali: svatý, nevinný, neposkvrněný, oddělený od hříšníků a vyvýšený nad nebesa.“</p>
               <p class="bib__back"><a href="#_ftnref12" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 12">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 12">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-j-14-17" role="doc-footnote">
               <p class="bib__ref">[13] Srov. J 14,17, kde se o duchu pravdy říká, že jej svět nemůže přijmout.</p>
               <p>„Ducha pravdy, kterého svět nemůže přijmout, poněvadž ho nevidí ani nezná. Vy jej znáte, neboť s vámi
                 zůstává a ve vás bude.“</p>
               <p class="bib__back"><a href="#_ftnref13" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 13">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 13">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-5-9" role="doc-footnote">
               <p class="bib__ref">[14] Srov. Žd 5,9</p>
               <p>„tak dosáhl dokonalosti a všem, kteří ho poslouchají, stal se původcem věčné spásy.“</p>
               <p class="bib__back"><a href="#_ftnref14" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 14">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 14">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-ko-2-9" role="doc-footnote">
               <p class="bib__ref">[15] Ko 2,9</p>
               <p>„V něm je přece vtělena všechna plnost božství.“</p>
               <p class="bib__back"><a href="#_ftnref15" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 15">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 15">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-sk-4-12" role="doc-footnote">
               <p class="bib__ref">[16] Sk 4,12</p>
@@ -424,33 +440,38 @@
                 spaseni.“
               </p>
               <p class="bib__back"><a href="#_ftnref16" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 16">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 16">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-1k-3-9" role="doc-footnote">
               <p class="bib__ref">[17] Srov. 1 K 3,9</p>
               <p>„Jsme spolupracovníci na Božím díle, a vy jste Boží pole, Boží stavba.“</p>
               <p class="bib__back"><a href="#_ftnref17" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 17">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 17">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-tt-1-16" role="doc-footnote">
               <p class="bib__ref">[18] Srov. Tt 1,16</p>
               <p>„Prohlašují, že znají Boha, avšak svým jednáním to popírají. Jsou odporní, neposlušní a neschopni
                 jakéhokoli dobrého skutku.“</p>
               <p class="bib__back"><a href="#_ftnref18" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 18">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 18">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-7-25" role="doc-footnote">
               <p class="bib__ref">[19] Srov. Žd 7,25</p>
               <p>„Proto přináší dokonalé spasení těm, kdo skrze něho přistupují k Bohu; je stále živ a přimlouvá se za
                 ně.“</p>
               <p class="bib__back"><a href="#_ftnref19" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 19">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 19">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-jk-5-5" role="doc-footnote">
               <p class="bib__ref">[20] Srov. Jk 5,5</p>
               <p>„Žili jste rozmařile a hýřili jste na zemi, vykrmili jste se – pro den porážky!“</p>
               <p class="bib__back"><a href="#_ftnref20" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 20">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 20">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-4-16" role="doc-footnote">
               <p class="bib__ref">[21] Srov. Žd 4,16</p>
@@ -458,7 +479,8 @@
                 čas.“
               </p>
               <p class="bib__back"><a href="#_ftnref21" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 21">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 21">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zj-17-1" role="doc-footnote">
               <p class="bib__ref">[22] Srov. Zj 17,1–2</p>
@@ -467,7 +489,8 @@
                 soud nad velikou nevěstkou, usazenou nad vodami, se kterou se spustili králové světa a vínem jejího
                 smilství se opíjeli obyvatelé země.‘“</p>
               <p class="bib__back"><a href="#_ftnref22" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 22">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 22">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-1pt-1-13" role="doc-footnote">
               <p class="bib__ref">[23] Srov. Žd 10,23; dále 1 Pt 1,13, kde jsou věřící vybízeni, aby celou svou naději
@@ -476,30 +499,49 @@
               <p>„Odhodlaně se tedy připravte ve své mysli, buďte střízliví a celou svou naději upněte k milosti, která
                 k vám přichází ve zjevení Ježíše Krista.“</p>
               <p class="bib__back"><a href="#_ftnref23" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 23">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 23">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-j-10-9" role="doc-footnote">
               <p class="bib__ref">[24] Srov. J 10,9–10</p>
               <p>„Já jsem dveře. Kdo vejde skrze mne, bude zachráněn, bude vcházet i vycházet a nalezne pastvu. Zloděj
                 přichází, jen aby kradl, zabíjel a ničil. Já jsem přišel, aby měly život a měly ho v hojnosti.“</p>
               <p class="bib__back"><a href="#_ftnref24" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 24">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 24">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-10-22" role="doc-footnote">
               <p class="bib__ref">[25] Srov. Žd 10,22</p>
               <p>„Přistupujme před Boha s opravdovým srdcem a v plné jistotě víry, se srdcem očištěným od zlého svědomí
                 a s tělem obmytým čistou vodou.“</p>
               <p class="bib__back"><a href="#_ftnref25" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 25">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 25">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-kul" role="doc-footnote">
               <p class="bib__ref">[26]</p>
-              <p> České slovo <i>kříž</i> (lat. <i>crux</i>) je překladem řeckého slova <i>σταυρός</i> (<i>staurós</i>),
-                které původně označovalo vztyčený kůl nebo sloup. Srov. SOUČEK, Josef B. <i>Řecko-český slovník k Novému
-                  zákonu</i>. 6. vyd. Praha, 2003, s. 238. Výraz mohl označovat popravčí nástroj obecně.
+              <p>
+                České slovo <i>kříž</i>, jehož původ v&nbsp;posledku sahá k&nbsp;latinskému
+                <i>crux</i>, je v&nbsp;českých překladech Nového zákona tradičním protějškem
+                řeckého slova <i>σταυρός</i> (<i>staurós</i>). Ve starší řečtině tento výraz
+                označoval především vztyčený kůl nebo sloup; v&nbsp;helénistické a&nbsp;římské
+                době se však užíval také pro dřevěný nástroj popravy ukřižováním. Samotné slovo
+                přitom neurčovalo přesnou konstrukční podobu tohoto popravčího nástroje.
+                Srov. REJZEK, Jiří. <i>Český etymologický slovník</i>. 2., přeprac. vyd.
+                Voznice: Leda, 2015, heslo <i>kříž</i>; SOUČEK, Josef&nbsp;B.
+                <i>Řecko-český slovník k&nbsp;Novému zákonu</i>. 6.&nbsp;vyd. Praha: Kalich,
+                2003, s.&nbsp;238; LIDDELL, Henry George; SCOTT, Robert; JONES, Henry Stuart.
+                <i>A&nbsp;Greek-English Lexicon</i>. 9.&nbsp;vyd., s&nbsp;revidovaným dodatkem.
+                Oxford: Clarendon Press, 1996, heslo <i>σταυρός</i>; DANKER, Frederick William,
+                ed. <i>A&nbsp;Greek-English Lexicon of the New Testament and Other Early
+                  Christian Literature</i>. 3.&nbsp;vyd. Chicago: University of Chicago Press,
+                2000, s.&nbsp;941; COOK, John Granger. <i>Crucifixion in the Mediterranean
+                  World</i>. Tübingen: Mohr Siebeck, 2014, s.&nbsp;1–50.
               </p>
+
               <p class="bib__back"><a href="#_ftnref26" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 26">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 26">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-l-23-39" role="doc-footnote">
               <p class="bib__ref">[27] Srov. L 23,39–43</p>
@@ -536,31 +578,36 @@
               </p>
 
               <p class="bib__back"><a href="#_ftnref27" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 27">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 27">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-9-24" role="doc-footnote">
               <p class="bib__ref">[28] Srov. Žd 9,24</p>
               <p>„Vždyť Kristus nevešel do svatyně, kterou lidské ruce udělaly jen jako napodobení té pravé, nýbrž vešel
                 do samého nebe, aby se za nás postavil před Boží tváří.“</p>
               <p class="bib__back"><a href="#_ftnref28" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 28">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 28">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-1te-5-19" role="doc-footnote">
               <p class="bib__ref">[29] Srov. 1 Te 5,19</p>
               <p>„Plamen Ducha nezhášejte.“</p>
               <p class="bib__back"><a href="#_ftnref29" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 29">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 29">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-zd-5-11" role="doc-footnote">
               <p class="bib__ref">[30] Srov. Žd 5,11</p>
               <p>„O tom by bylo mnoho co mluvit, ale je těžké vám to vyložit, protože nejste ochotni slyšet.“</p>
               <p class="bib__back"><a href="#_ftnref30" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 30">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 30">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-poznamka26" role="doc-footnote">
               <p class="bib__ref">[31] Viz <a href="#bib-kul" aria-label="Přejít k poznámce 26">pozn. 26</a></p>
               <p class="bib__back"><a href="#_ftnref31" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 31">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 31">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-r-5-10" role="doc-footnote">
               <p class="bib__ref">[32] Srov. Ř 5,10–11</p>
@@ -568,7 +615,8 @@
                 jeho život. A nejen to: chlubíme se dokonce Bohem skrze našeho Pána Ježíše Krista, který nás s ním
                 smířil.“</p>
               <p class="bib__back"><a href="#_ftnref32" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 32">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 32">↩</a>
+              </p>
             </div>
             <div class="bib" id="bib-sk-4-11" role="doc-footnote">
               <p class="bib__ref">[33] Srov. Sk 4,11</p>
@@ -583,7 +631,8 @@
               <p>„Avšak zbabělci, nevěrní, nečistí, vrahové, cizoložníci, zaklínači, modláři a všichni lháři najdou svůj
                 úděl v jezeře, kde hoří oheň a síra. To je ta druhá smrt.“</p>
               <p class="bib__back"><a href="#_ftnref33" role="doc-backlink"
-                  aria-label="Zpět do textu k poznámce 33">↩</a></p>
+                  aria-label="Zpět do textu k poznámce 33">↩</a>
+              </p>
             </div>
           </section>
 
