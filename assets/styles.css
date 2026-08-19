@@ -608,3 +608,12 @@ img {
   color: #702a17;
   text-decoration: underline;
 }
+
+.title-noteref {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0;
+  vertical-align: super;
+  text-decoration: none;
+  white-space: nowrap;
+}
