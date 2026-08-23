@@ -35,8 +35,10 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
+
 
 body {
   margin: 0;
@@ -443,6 +445,11 @@ img {
 }
 
 @media (max-width: 768px) {
+
+html {
+    scroll-padding-top: 4rem;
+  }
+
   .site-header .inner {
     padding: 0.4rem 0;
     gap: 0.4rem;
