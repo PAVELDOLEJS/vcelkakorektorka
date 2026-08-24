@@ -631,3 +631,27 @@ html {
   font-weight: 700;
   line-height: 1.25;
 }
+
+.kontakt-context {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.3rem;
+  border-left: 4px solid currentColor;
+}
+
+.kontakt-context__label {
+  margin: 0 0 .35rem;
+  font-size: .85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.kontakt-context__title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.kontakt-context__text {
+  margin: .6rem 0 0;
+}
