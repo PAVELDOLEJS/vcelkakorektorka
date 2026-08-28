@@ -655,3 +655,9 @@ html {
 .kontakt-context__text {
   margin: .6rem 0 0;
 }
+
+.chapter-card h2 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin: 0 0 0.6rem;
+}
