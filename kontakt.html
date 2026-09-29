@@ -82,17 +82,14 @@
                     <li><a href="index.html">Domů</a></li>
                     <li><a href="info.html">Korektury</a></li>
                     <li><a href="traktaty.html">Traktáty</a></li>
-
                 </ul>
             </nav>
         </header>
     </div>
 
     <main>
-
         <div class="container dark kontakt-hero" id="cko">
             <section id="kontakt" class="kontakt-section kontakt-section--new" aria-labelledby="kontakt-title">
-
                 <div class="kontakt__text">
                     <p class="kontakt__label">Kontakt</p>
 
@@ -103,10 +100,8 @@
                         nebo postřehu k&nbsp;digitálním edicím Petra Chelčického.
                     </p>
 
-
                     <div class="kontakt-card">
                         <img class="kontakt-card__photo" src="./assets/images/profilovka-nobg.png" alt="Pavel Dolejš – Včelka korektorka">
-                        
 
                         <div class="kontakt-card__body">
                             <p class="kontakt-card__name">
@@ -133,14 +128,11 @@
                         Můžete mi napsat e&#8209;mailem nebo využít formulář níže.
                     </p>
                 </div>
-
-
             </section>
         </div>
 
         <div id="formular" class="container light kontakt-formular">
             <section aria-labelledby="formular-title">
-                
                 <div class="kontakt-context" id="kontakt-context" hidden>
                     <p class="kontakt-context__label">Píšete k&nbsp;digitální edici</p>
 
@@ -151,15 +143,13 @@
                     <p class="kontakt-context__text">
                         Uveďte svůj postřeh, případně číslo poznámky nebo konkrétní místo v&nbsp;textu.
                     </p>
-                </div>            
-
+                </div>
 
                 <iframe id="kontakt-form" class="kontakt-formular__iframe" title="Kontaktní formulář Včelka korektorka"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSdwwnrh-Y15IkdE_VEF_ycTvPQnRotCKmcGoLesKjuXG82_Kg/viewform?embedded=true">
                 </iframe>
             </section>
         </div>
-
     </main>
 
     <div class="container light">
@@ -169,6 +159,7 @@
             </p>
         </footer>
     </div>
+
     <script>
         const traktaty = {
             "o-nejvyssim-biskupu": {
@@ -207,7 +198,10 @@
                 title: "Výklad pašijí podle svatého Jana – první kapitola",
                 url: "https://vcelkakorektorka.cz/vyklad-pasiji-1/traktat.html"
             },
-
+            "znameni-antikrista": {
+                title: "Toto jsou znamení antikrista",
+                url: "https://vcelkakorektorka.cz/znameni-antikrista/traktat.html"
+            }
         };
 
         const params = new URLSearchParams(window.location.search);
@@ -233,8 +227,5 @@
             form.src = formUrl.toString();
         }
     </script>
-
-
 </body>
-
 </html>
