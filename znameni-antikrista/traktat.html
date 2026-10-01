@@ -663,7 +663,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref11" aria-label="Zpět k odkazu na poznámku 11 v hlavním textu">↩
                 11</a>
-              <a role="doc-backlink" href="#_xref45to11" aria-label="Zpět k odkazu z poznámky 45">↩ 45</a>
+              <a role="doc-backlink" href="#_ftnref45" aria-label="Zpět do hlavního textu k poznámce 45">↩ 45</a>
             </p>
           </div>
 
@@ -754,7 +754,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref19" aria-label="Zpět k odkazu na poznámku 19 v hlavním textu">↩
                 19</a>
-              <a role="doc-backlink" href="#_xref24to19" aria-label="Zpět k odkazu z poznámky 24">↩ 24</a>
+              <a role="doc-backlink" href="#_ftnref24" aria-label="Zpět do hlavního textu k poznámce 24">↩ 24</a>
             </p>
           </div>
 
@@ -767,7 +767,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref20" aria-label="Zpět k odkazu na poznámku 20 v hlavním textu">↩
                 20</a>
-              <a role="doc-backlink" href="#_xref38to20" aria-label="Zpět k odkazu z poznámky 38">↩ 38</a>
+              <a role="doc-backlink" href="#_ftnref38" aria-label="Zpět do hlavního textu k poznámce 38">↩ 38</a>
             </p>
           </div>
 
@@ -891,7 +891,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref31" aria-label="Zpět k odkazu na poznámku 31 v hlavním textu">↩
                 31</a>
-              <a role="doc-backlink" href="#_xref76to31" aria-label="Zpět k odkazu z poznámky 76">↩ 76</a>
+              <a role="doc-backlink" href="#_ftnref76" aria-label="Zpět do hlavního textu k poznámce 76">↩ 76</a>
             </p>
           </div>
 
@@ -912,8 +912,8 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref33" aria-label="Zpět k odkazu na poznámku 33 v hlavním textu">↩
                 33</a>
-              <a role="doc-backlink" href="#_xref44to33" aria-label="Zpět k odkazu z poznámky 44">↩ 44</a>
-              <a role="doc-backlink" href="#_xref47to33" aria-label="Zpět k odkazu z poznámky 47">↩ 47</a>
+              <a role="doc-backlink" href="#_ftnref44" aria-label="Zpět do hlavního textu k poznámce 44">↩ 44</a>
+              <a role="doc-backlink" href="#_ftnref47" aria-label="Zpět do hlavního textu k poznámce 47">↩ 47</a>
             </p>
           </div>
 
@@ -1399,7 +1399,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref70" aria-label="Zpět k odkazu na poznámku 70 v hlavním textu">↩
                 70</a>
-              <a role="doc-backlink" href="#_xref73to70" aria-label="Zpět k odkazu z poznámky 73">↩ 73</a>
+              <a role="doc-backlink" href="#_ftnref73" aria-label="Zpět do hlavního textu k poznámce 73">↩ 73</a>
             </p>
           </div>
 
@@ -1453,7 +1453,7 @@
             <p class="bib__back">
               <a role="doc-backlink" href="#_ftnref75" aria-label="Zpět k odkazu na poznámku 75 v hlavním textu">↩
                 75</a>
-              <a role="doc-backlink" href="#_xref80to75" aria-label="Zpět k odkazu z poznámky 80">↩ 80</a>
+              <a role="doc-backlink" href="#_ftnref80" aria-label="Zpět do hlavního textu k poznámce 80">↩ 80</a>
             </p>
           </div>
 
@@ -1540,6 +1540,28 @@
     <div class="inner">Autor původního textu: Petr Chelčický.<br>Jazyková modernizace, ediční texty a poznámkový aparát:
       Pavel Dolejš.<br><a href="tiraz.html">Tiráž a licence</a></div>
   </footer>
+  <script>
+    // Na dotykových zařízeních vede tlačítko Zpět po videu přímo k odkazu v textu.
+    if (window.matchMedia('(any-pointer: coarse)').matches) {
+      document.querySelectorAll('a.odkaz-video[target="_blank"]').forEach((link) => {
+        link.removeAttribute('target');
+
+        link.addEventListener('click', (event) => {
+          if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+          const note = link.closest('[role="doc-footnote"]');
+          const target = note?.querySelector('a[role="doc-backlink"]')?.getAttribute('href');
+          if (!target?.startsWith('#')) return;
+
+          const reference = document.getElementById(target.slice(1));
+          if (!reference) return;
+
+          history.replaceState(history.state, '', target);
+          reference.scrollIntoView({ block: 'center' });
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
