@@ -6,7 +6,7 @@
     <title>Digitální edice | Včelka korektorka</title>
     <meta name="author" content="Pavel Dolejš">
     <link rel="canonical" href="https://vcelkakorektorka.cz/traktaty.html">
-    <link rel="stylesheet" href="https://vcelkakorektorka.cz/styles/style.css">
+    <link rel="stylesheet" href="https://vcelkakorektorka.cz/styles/style.css?v=20261003-1">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -280,6 +280,13 @@
         @media (max-width: 480px) {
             .page-traktaty .edice-prehled { width: 100%; }
             .page-traktaty .edice-vyber { padding-left: 1rem; padding-right: 1rem; }
+        }
+        /* Text tlačítek musí zůstat světlý i při načtení starší společné šablony. */
+        .page-traktaty .edice-karta a.button-edice {
+            color: #ffffff;
+        }
+        .page-traktaty .edice-karta a.button-edice:hover {
+            color: #222424;
         }
     </style>
 </head>

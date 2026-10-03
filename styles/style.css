@@ -840,7 +840,7 @@ footer img { height: 40px; width: auto; }
 }
 
 /* Tlačítko */
-.page-traktaty .button-edice {
+.page-traktaty .edice-karta a.button-edice {
   display: inline-block;
   min-width: 130px;
   padding: 0.72rem 1.2rem;
@@ -853,7 +853,7 @@ footer img { height: 40px; width: auto; }
   border: 2px solid #222424;
 }
 
-.page-traktaty .button-edice:hover {
+.page-traktaty .edice-karta a.button-edice:hover {
   background-color: #F1B616;
   color: #222424;
   border-color: #F1B616;
@@ -2564,6 +2564,11 @@ footer img { height: 40px; width: auto; }
 .chelcicky-info__box li {
   margin-bottom: 0.7rem;
   line-height: 1.55;
+  color: var(--color-primary);
+}
+
+.chelcicky-info__box li::marker {
+  color: var(--color-link);
 }
 
 /* =========================================================
