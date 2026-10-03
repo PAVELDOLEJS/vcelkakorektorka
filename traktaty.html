@@ -199,12 +199,14 @@
             line-height: 1.5;
         }
         .page-traktaty .edice-vyber__fields {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: .8rem;
         }
         .page-traktaty .edice-vyber label {
             display: grid;
+            flex: 1 1 18rem;
+            min-width: 0;
             gap: .42rem;
             font-size: .9rem;
             font-weight: 700;
@@ -274,9 +276,6 @@
         }
         @media (max-width: 850px) {
             .page-traktaty .edice-vyber { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 610px) {
-            .page-traktaty .edice-vyber__fields { grid-template-columns: 1fr; }
         }
     </style>
 </head>
