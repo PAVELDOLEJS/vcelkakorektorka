@@ -92,6 +92,58 @@
 }
 </script>
 
+  <style>
+    .traktat-share {
+      display: flex;
+      justify-content: flex-end;
+      margin: .5rem 0 .25rem;
+    }
+
+    .traktat-share[hidden] {
+      display: none !important;
+    }
+
+    .traktat-share__button {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      color: var(--muted, #6f746d);
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .traktat-share__button:hover {
+      color: var(--text, #30372f);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .traktat-share__button:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+
+    .traktat-share__button svg {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+
+    @media print {
+      .traktat-share {
+        display: none !important;
+      }
+    }
+  </style>
+
 </head>
 
 <body><a class="skip-link" href="#obsah-stranky">Přejít k&nbsp;obsahu</a>
@@ -519,6 +571,19 @@
             velikou milostí od Boha, když někomu ze své přízně dá při takových věcech
             rozpoznat ducha pravdy a&nbsp;ducha bludu.</p>
 
+        </div>
+
+        <div class="traktat-share" id="traktat-share" hidden>
+          <button class="traktat-share__button" id="share-traktat" type="button"
+            aria-label="Sdílet traktát" title="Sdílet traktát">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <path d="M8.59 10.49 15.42 6.51M8.59 13.51 15.42 17.49"></path>
+            </svg>
+          </button>
         </div>
 
         <p>
@@ -1527,6 +1592,35 @@
         reference.scrollIntoView({ block: 'center' });
       });
     });
+  </script>
+  <script>
+    (() => {
+      const container = document.getElementById('traktat-share');
+      const button = document.getElementById('share-traktat');
+      if (!container || !button || typeof navigator.share !== 'function') return;
+
+      const shareData = {
+        title: document.querySelector('.article-header h1').textContent.trim(),
+        text: 'Petr Chelčický v jazyce 21. století',
+        url: document.querySelector('link[rel="canonical"]').href
+      };
+
+      // Ikona se zobrazí, jen když prohlížeč podporuje systémové sdílení.
+      if (typeof navigator.canShare === 'function' && !navigator.canShare(shareData)) return;
+
+      container.hidden = false;
+      button.addEventListener('click', async () => {
+        button.disabled = true;
+        try {
+          await navigator.share(shareData);
+        } catch (error) {
+          // Zavření systémové nabídky čtenáře nijak neruší.
+          if (error.name !== 'AbortError') console.warn('Sdílení se nepodařilo otevřít.', error);
+        } finally {
+          button.disabled = false;
+        }
+      });
+    })();
   </script>
 </body>
 
