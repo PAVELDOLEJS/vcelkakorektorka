@@ -1,0 +1,20 @@
+
+:focus-visible{outline:3px solid #8b611f;outline-offset:4px}
+.skip-link{position:absolute;left:1rem;top:-5rem;background:white;padding:1rem;z-index:30}.skip-link:focus{top:1rem}
+.edition-breadcrumbs{width:min(1120px,calc(100% - 2rem));margin:1rem auto;line-height:1.6}
+[aria-current="page"]{font-weight:600}
+.article-shell,.sidebar{min-width:0;width:100%}
+.prose{overflow-wrap:break-word}
+.prose a[role="doc-noteref"]{font-size:.75em;vertical-align:super;line-height:0;padding:0 .1em;text-decoration:none}
+.prose [role="doc-footnote"]{padding:1rem 0;border-bottom:1px solid var(--line);scroll-margin-top:6rem}
+.prose div.bib{margin-top:2.25rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.prose div.bib p{font-size:1.08rem;line-height:1.7;color:#433a31}
+.prose [role="doc-footnote"]:target{background:#fff0c9;outline:2px solid #b88c42;outline-offset:.3rem}
+.prose [role="doc-noteref"]:target{background:#ffdf80;outline:2px solid #b88c42}
+.bib__back{text-align:right}.bib__back a{display:inline-block;padding:.2rem .5rem}
+.section-links{display:flex;gap:1rem;flex-wrap:wrap;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.cover-web{margin:0 0 1.5rem;overflow:hidden}.cover-web img{width:100%;height:auto}
+.home-wrap{width:min(1120px,calc(100% - 2rem));margin:2rem auto 4rem}.home-hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:start}.home-hero h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;margin:1rem 0}.home-hero figure{margin:0}.home-wrap .chapter-grid{width:100%;margin-top:2rem}.hero-figure img{min-height:0;width:100%;height:auto}.tiraz{text-align:center}.tiraz hr{width:40%;border:0;border-top:1px solid var(--line)}
+@media(max-width:800px){.home-hero{grid-template-columns:1fr}.site-header .inner{display:block}.top-nav{flex-wrap:wrap;gap:.5rem 1rem}.article-shell{border-radius:1.2rem}.chapter-nav{flex-wrap:wrap}.prose p{font-size:1.2rem;line-height:1.7}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.site-header,.sidebar,.edition-breadcrumbs,.chapter-nav,.skip-link,.section-links,.button-row{display:none!important}.content-wrap{display:block;width:100%;padding:0}.card{box-shadow:none;border:0}.article-shell{padding:0}.prose{max-width:none}.prose p{font-size:12pt}body{background:white}.cover-web{display:none}a{color:inherit}}
