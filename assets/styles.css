@@ -371,6 +371,15 @@ img {
   font-size: .8rem
 }
 
+/* Číselné odkazy v textu jako horní index; nadpis má vlastní styl. */
+.prose a[role="doc-noteref"]:not(.title-noteref) {
+  font-size: .75em;
+  vertical-align: super;
+  line-height: 0;
+  padding: 0 .1em;
+  text-decoration: none;
+}
+
 .prose section.bib,
 .prose section.bible-block {
   margin-top: 2.25rem;
@@ -383,6 +392,19 @@ img {
   font-size: 1.08rem;
   line-height: 1.7;
   color: #433a31
+}
+
+/* Poznámky – vzhled shodný s edicí Toto jsou znamení antikrista. */
+.prose [role="doc-footnote"] {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 6rem;
+}
+
+.prose [role="doc-footnote"]:target {
+  background: #fff0c9;
+  outline: 2px solid #b88c42;
+  outline-offset: .3rem;
 }
 
 .prose .titlepage,
