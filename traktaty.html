@@ -570,6 +570,7 @@
           display: none !important;
         }
       }
+    
     </style>
   </head>
 
@@ -640,7 +641,7 @@
               <h3>Co si přečíst jako první?</h3>
 
               <p>
-                Vyberte si téma, rozsah a&nbsp;náročnost. Přehled níže zobrazí edice,
+                Vyberte si téma, biblickou pasáž, rozsah nebo náročnost. Přehled níže zobrazí edice,
                 které odpovídají vašemu výběru.
               </p>
             </div>
@@ -692,11 +693,28 @@
                     <option value="narocnejsi">Náročnější</option>
                   </select>
                 </label>
+                <label for="filtr-pasaz">Biblická pasáž
+                  <select id="filtr-pasaz" name="pasaz">
+                    <option value="">Všechny pasáže</option>
+                    <option value="antikrist">1 J 4,5–6 · Duch pravdy a bludu</option>
+                    <option value="veleknez">Žd 4,14–16; 7,24–26 · Kristus, velekněz</option>
+                    <option value="duchove">1 J 4,1 · Zkoumejte duchy</option>
+                    <option value="pasije">Lk 23,32–33 · Ježíš umírá mezi zločinci</option>
+                    <option value="ocisteni">J 15,3–4a; 1 J 1,7 · Očištění v Kristu</option>
+                    <option value="zbroj">Ef 6,10–20 · Boží zbroj</option>
+                    <option value="laska">J 14,23 · Láska a zachovávání slova</option>
+                    <option value="blahoslaveni">Mt 5,3–12 · Blahoslavenství, šťastní </option>
+                    <option value="sit">Lk 5,4–6 · Zajeď na hlubinu</option>
+                    <option value="pavel">Fp 2,5–7a · Smýšlejte jako Kristus</option>
+                    <option value="blazni">1 K 4,10a · Blázni pro Krista</option>
+</select>
+                </label>
+
               </div>
 
               <p class="edice-vyber__note">
                 Rozsah vychází z&nbsp;hlavního textu bez poznámek. Náročnost je
-                orientační čtenářské doporučení.
+                orientační čtenářské doporučení. Biblické pasáže označují hlavní místa výkladu jednotlivých edic.
               </p>
 
               <div class="edice-vyber__status">
@@ -723,7 +741,7 @@
 
           <div class="edice-grid">
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="antikrist"
               data-temata="pravda-klam zapas-utrpeni"
               data-rozsah="delsi"
               data-narocnost="soustredene"
@@ -787,7 +805,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="veleknez"
               data-temata="kristus-nasledovani vira-spasa"
               data-rozsah="delsi"
               data-narocnost="soustredene"
@@ -850,7 +868,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="duchove"
               data-temata="pravda-klam"
               data-rozsah="stredni"
               data-narocnost="narocnejsi"
@@ -912,7 +930,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="pasije"
               data-temata="kristus-nasledovani zapas-utrpeni"
               data-rozsah="delsi"
               data-narocnost="soustredene"
@@ -973,7 +991,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="ocisteni"
               data-temata="vira-spasa"
               data-rozsah="kratke"
               data-narocnost="narocnejsi"
@@ -1033,7 +1051,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="zbroj"
               data-temata="zapas-utrpeni"
               data-rozsah="delsi"
               data-narocnost="soustredene"
@@ -1095,7 +1113,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="sit"
               data-temata="vira-spasa"
               data-rozsah="kratke"
               data-narocnost="zacatek"
@@ -1155,7 +1173,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="pavel"
               data-temata="kristus-nasledovani"
               data-rozsah="kratke"
               data-narocnost="zacatek"
@@ -1215,7 +1233,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="blazni"
               data-temata="pravda-klam kristus-nasledovani"
               data-rozsah="kratke"
               data-narocnost="narocnejsi"
@@ -1277,7 +1295,7 @@
             </article>
 
             <article
-              class="edice-karta"
+              class="edice-karta" data-pasaze="laska blahoslaveni"
               data-temata="kristus-nasledovani"
               data-rozsah="stredni"
               data-narocnost="soustredene"
@@ -1420,7 +1438,8 @@
 
           const difficulty = form.elements.narocnost.value;
 
-          const active = Boolean(theme || length || difficulty);
+          const passage = form.elements.pasaz.value;
+          const active = Boolean(theme || length || difficulty || passage);
 
           let visible = 0;
 
@@ -1430,7 +1449,8 @@
             const matches =
               (!theme || themes.includes(theme)) &&
               (!length || card.dataset.rozsah === length) &&
-              (!difficulty || card.dataset.narocnost === difficulty);
+              (!difficulty || card.dataset.narocnost === difficulty) &&
+              (!passage || (card.dataset.pasaze || "").split(" ").includes(passage));
 
             card.hidden = !matches;
 
