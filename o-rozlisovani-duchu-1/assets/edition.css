@@ -1,0 +1,104 @@
+/* Doplňky této edice; společný vzhled přebírá ../assets/styles.css. */
+.edition-discernment .skip-link {
+  position: fixed; z-index: 100; left: 1rem; top: -5rem;
+  padding: .7rem 1rem; background: var(--paper); border: 2px solid var(--accent);
+}
+.edition-discernment .skip-link:focus { top: .7rem; }
+.edition-discernment a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.edition-discernment .visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.edition-discernment .edition-breadcrumbs {
+  width: min(1120px, calc(100% - 2rem)); margin: 1rem auto 0;
+  font-size: .98rem; line-height: 1.6;
+}
+.edition-discernment .crumb-sep { margin: 0 .45rem; color: var(--muted); }
+.edition-discernment .top-nav a { white-space: nowrap; padding: .25rem 0; }
+.edition-discernment .top-nav a[aria-current="page"],
+.edition-discernment .toc a[aria-current="page"] { font-weight: 600; color: var(--accent); }
+.edition-discernment .hero {
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+  gap: 1.5rem; align-items: start;
+  width: min(1120px, calc(100% - 2rem)); margin: 0 auto;
+}
+.edition-discernment .hero-copy { padding: clamp(1.4rem, 4vw, 3rem); }
+.edition-discernment .hero h1 {
+  font-size: clamp(2rem, 4.3vw, 3.25rem); line-height: 1.12; margin: .7rem 0 1rem;
+}
+.edition-discernment .hero .chapter-label { font-size: 1.3rem; margin: .5rem 0; }
+.edition-discernment .subtitle { font-style: italic; }
+.edition-discernment .hero .lead { margin-top: .5rem; }
+.edition-discernment .hero-figure { margin: 0; width: 100%; max-width: 30rem; justify-self: center; }
+.edition-discernment .hero-figure img { width: 100%; height: auto; min-height: 0; object-fit: contain; }
+.edition-discernment .meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.edition-discernment .edition-contents .chapter-card h2 { font-size: 1.55rem; line-height: 1.25; margin: .3rem 0 .6rem; }
+.edition-discernment .article-shell { min-width: 0; width: 100%; }
+.edition-discernment .article-cover { width: 100%; max-width: 28rem; margin: 0 auto 1.75rem; padding: .65rem; overflow: hidden; }
+.edition-discernment .article-cover img { width: 100%; height: auto; border-radius: 1.35rem; }
+.edition-discernment .edition-updated { font-size: 1rem; line-height: 1.5; }
+.edition-discernment .prose .chapter-text > h1 {
+  margin-top: .25rem; font-size: clamp(1.75rem, 4vw, 2.5rem); overflow-wrap: anywhere;
+}
+.edition-discernment .hero h1 { overflow-wrap: anywhere; }
+.edition-discernment .prose .title-note-word { white-space: nowrap; }
+/* Jedna velikost pro všechny odkazy, včetně odkazu v nadpisu. */
+.edition-discernment .prose a[role="doc-noteref"],
+.edition-discernment .prose a[role="doc-noteref"]:hover,
+.edition-discernment .prose a[role="doc-noteref"]:focus {
+  font-size: 1rem; font-weight: 600; font-style: normal; line-height: 0;
+  vertical-align: super; letter-spacing: normal; padding: 0 .08em;
+  text-decoration: none; white-space: nowrap;
+}
+.edition-discernment .wolf-passage { display: flow-root; }
+.edition-discernment img.wolf-illustration {
+  float: right; display: block; width: 180px; max-width: 35%; height: auto;
+  /* Původní horní okraj plus přibližně jeden řádek odstavce. */
+  margin: 2.62rem 0 .8rem 1.25rem; border-radius: .8rem;
+}
+.edition-discernment .bible-block { clear: both; }
+.edition-discernment .anchor-alias { display: block; scroll-margin-top: 7rem; }
+.edition-discernment .prose .bib { padding: 1.1rem .4rem; }
+.edition-discernment .prose .bib p { margin: .65rem 0; }
+.edition-discernment .prose .bib .bib__ref { margin-top: 0; }
+.edition-discernment .note-label-number { font-weight: 600; }
+.edition-discernment .prose .bib .bib__back { margin: .5rem 0 0; text-align: right; }
+.edition-discernment .bib__back a { display: inline-block; padding: .2rem .4rem; font-weight: 600; white-space: nowrap; }
+.edition-discernment .bib a[href^="http"] { overflow-wrap: anywhere; }
+.edition-discernment .prose .tiraz { text-align: center; }
+.edition-discernment .prose .tiraz p { font-size: 1.15rem; line-height: 1.6; margin: .85rem 0; }
+.edition-discernment .tiraz-author { font-weight: 600; }
+.edition-discernment .tiraz hr { border: 0; border-top: 1px solid var(--line); width: 40%; margin: 1.2rem auto; }
+.edition-discernment .tiraz-license { break-inside: avoid; page-break-inside: avoid; }
+.edition-discernment .chapter-nav a { max-width: 48%; }
+@media (max-width: 900px) {
+  .edition-discernment .hero { grid-template-columns: minmax(0, 1fr); }
+  .edition-discernment .hero-figure { max-width: 26rem; }
+  .edition-discernment .meta-grid { grid-template-columns: minmax(0, 1fr); }
+  .edition-discernment .sidebar { width: 100%; }
+}
+@media (max-width: 700px) {
+  .edition-discernment img.wolf-illustration {
+    float: none; width: 180px; max-width: 65%; margin: 1rem auto;
+  }
+  .edition-discernment .article-cover { max-width: 22rem; }
+  .edition-discernment .chapter-nav { flex-wrap: wrap; }
+  .edition-discernment .chapter-nav a { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.edition-discernment) { scroll-behavior: auto; }
+  .edition-discernment .button { transition: none; }
+}
+@media print {
+  .edition-discernment { background: white; color: black; }
+  .edition-discernment .site-header, .edition-discernment .sidebar,
+  .edition-discernment .edition-breadcrumbs, .edition-discernment .chapter-nav,
+  .edition-discernment .reader-response, .edition-discernment .article-cover,
+  .edition-discernment .site-footer, .edition-discernment .skip-link { display: none; }
+  .edition-discernment .content-wrap { display: block; width: 100%; padding: 0; }
+  .edition-discernment .article-shell { padding: 0; border: 0; box-shadow: none; }
+  .edition-discernment .prose { max-width: none; }
+  .edition-discernment .prose p { font-size: 11pt; line-height: 1.45; }
+  .edition-discernment .prose .bib p { font-size: 10pt; }
+  .edition-discernment .prose a[role="doc-noteref"] { font-size: 8pt; }
+}
