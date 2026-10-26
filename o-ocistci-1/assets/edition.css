@@ -1,0 +1,24 @@
+/* Doplňky revidované edice; společný styl webu zůstává zachován. */
+.edition-ocistec .edition-cover{width:min(100%,30rem);margin:1.5rem auto;padding:1rem;box-sizing:border-box;overflow:hidden}
+.edition-ocistec .edition-cover img{display:block;width:100%;height:auto;object-fit:contain}
+.edition-ocistec .article-shell{min-width:0;width:100%}
+.edition-ocistec .edition-status{color:#645061;font-size:.9rem;font-weight:600;line-height:1.5}
+.edition-ocistec .prose{font-size:1.125rem}
+.edition-ocistec a.noteref{font-size:.75rem!important;font-style:normal;font-weight:normal;vertical-align:super;line-height:0;text-decoration:none!important;white-space:nowrap;padding:0 .12em}
+.edition-ocistec .bib{padding:1rem 0;border-bottom:1px solid var(--line,#ddd);scroll-margin-top:6rem}
+.edition-ocistec .prose .bib p{font-size:1.08rem;line-height:1.7}
+.edition-ocistec .bib__ref,.edition-ocistec .bib__ref a{font-style:normal!important}
+.edition-ocistec .bib__ref a,.edition-ocistec .bib__back a{text-decoration:none!important;font-style:normal!important}
+.edition-ocistec .bib__back{text-align:right!important;white-space:nowrap;margin-top:.3rem;font-size:.9em}
+.edition-ocistec .bib:target{background:#f6eef3;outline:2px solid #aa8a9e;outline-offset:.3rem}
+.edition-ocistec .bib a{overflow-wrap:anywhere}
+.edition-ocistec .edition-note__heading{font-size:1.35rem;margin-top:1.6em}
+.edition-ocistec .subtitle{font-style:italic;color:var(--muted,#666)}
+.edition-ocistec .tiraz-author{font-weight:bold}
+.edition-ocistec .tiraz-title{font-size:1.3em}
+.edition-ocistec a:focus-visible{outline:2px solid #78546d;outline-offset:3px}
+.edition-ocistec [aria-current=page]{font-weight:600}
+.edition-ocistec .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.edition-ocistec .hero-copy h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15}
+.edition-ocistec .edition-breadcrumbs{width:min(1120px,calc(100% - 2rem));margin:1rem auto;line-height:1.6}
+@media(max-width:600px){.edition-ocistec .chapter-nav{flex-wrap:wrap}.edition-ocistec .meta-grid{grid-template-columns:1fr}.edition-ocistec .edition-cover{max-width:100%}}
