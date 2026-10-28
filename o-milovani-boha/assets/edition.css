@@ -1,0 +1,12 @@
+/* Local styles for the revised edition. */
+.edition-milovani .noteref { font-size: .72rem; line-height: 0; vertical-align: super; font-style: normal; font-weight: normal; text-decoration: none; white-space: nowrap; }
+.edition-milovani .bib__ref, .edition-milovani .bib__ref a, .edition-milovani .bib__heading, .edition-milovani .note-number { font-style: normal; text-decoration: none; }
+.edition-milovani .bib__back { text-align: right; font-size: .85em; }
+.edition-milovani .bib__back a { display: inline-block; white-space: nowrap; font-style: normal; text-decoration: none; margin-left: .5em; }
+.edition-milovani .bib__ref, .edition-milovani .bib__heading, .edition-milovani .bib__last { page-break-after: avoid; break-after: avoid; }
+.edition-milovani .bib__back { page-break-before: avoid; break-before: avoid; break-inside: avoid; }
+.edition-milovani [id] { scroll-margin-top: 5rem; }
+.edition-milovani .edition-status { font-size: .9rem; color: #66585e; }
+.edition-milovani .article-shell > figure img { display: block; max-width: 100%; width: min(100%, 28rem); height: auto; margin: auto; }
+.edition-milovani .hero-figure img { display: block; width: 100%; height: auto; }
+.edition-milovani .sidebar__title { font-size: 1.2rem; }
