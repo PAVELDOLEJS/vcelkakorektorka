@@ -1,0 +1,39 @@
+/* Výklad pašijí podle svatého Jana – doplňky ke společným stylům webu. */
+body.edition-pasije a.noteref,
+body.edition-pasije .prose a.noteref[role="doc-noteref"] {
+  font-size: .85rem; line-height: 0; vertical-align: super;
+  font-style: normal; font-weight: normal; text-decoration: none; white-space: nowrap;
+}
+body.edition-pasije .bib__ref,
+body.edition-pasije .bib__ref a,
+body.edition-pasije .note-number,
+body.edition-pasije .bib__back a {
+  font-style: normal; text-decoration: none;
+}
+body.edition-pasije .bib__back { text-align: right; }
+body.edition-pasije .bib__back a { white-space: nowrap; }
+body.edition-pasije .bib__ref { margin-bottom: .35rem; }
+body.edition-pasije .bib__back { margin-top: .35rem; }
+body.edition-pasije [id] { scroll-margin-top: 6rem; }
+body.edition-pasije .prose .no-indent::first-letter {
+  float: none; font-size: inherit; line-height: inherit; padding: 0; margin: 0;
+}
+body.edition-pasije .edition-cover,
+body.edition-pasije .hero-figure {
+  width: min(100%, 30rem); margin: 0 auto 2rem; overflow: hidden;
+}
+body.edition-pasije .edition-cover img,
+body.edition-pasije .hero-figure img {
+  display: block; width: 100%; height: auto; object-fit: contain;
+}
+body.edition-pasije .edition-note__heading { font-size: 1.65rem; }
+body.edition-pasije .tiraz { text-align: center; }
+body.edition-pasije .tiraz p { text-indent: 0; }
+body.edition-pasije .tiraz hr { width: 40%; margin: 1.5rem auto; }
+@media print {
+  body.edition-pasije .bib__ref, body.edition-pasije .bib__last,
+  body.edition-pasije h1, body.edition-pasije h2 { break-after: avoid; page-break-after: avoid; }
+  body.edition-pasije .bib__ref + p, body.edition-pasije .bib__back { break-before: avoid; page-break-before: avoid; }
+  body.edition-pasije .bib__back { break-inside: avoid; page-break-inside: avoid; }
+  body.edition-pasije p { orphans: 2; widows: 2; }
+}
