@@ -1,236 +1,338 @@
-:focus-visible {
-    outline: 3px solid #8b611f;
-    outline-offset: 4px
+/* Vzhled podle vzoru Síť víry. Společný základ: ../../assets/styles.css. */
+
+      .edition-blazni .skip-link {
+        position: fixed;
+        top: -6rem;
+        left: 1rem;
+        z-index: 30;
+        padding: 0.75rem;
+        background: var(--paper, #fffdf8);
+      }
+      .edition-blazni .skip-link:focus {
+        top: 0.5rem;
+      }
+      .edition-blazni .hero,
+      .edition-blazni .hero-figure {
+        width: min(1120px, calc(100% - 2rem));
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .edition-blazni .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        line-height: 1.1;
+        margin: 0.3rem 0 1rem;
+      }
+      .edition-blazni .hero .subtitle {
+        font-style: italic;
+      }
+      .edition-blazni .hero-figure img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0 auto;
+      }
+      .edition-blazni .meta-grid > *,
+      .edition-blazni .chapter-grid > * {
+        min-width: 0;
+        overflow-wrap: break-word;
+      }
+      .edition-blazni .button {
+        max-width: 100%;
+      }
+      @media (max-width: 768px) {
+        .edition-blazni .top-nav {
+          min-width: 0;
+        }
+        .edition-blazni .top-nav a {
+          white-space: nowrap;
+        }
+      }
+    
+
+.edition-blazni .article-shell,
+.edition-blazni .prose {
+  min-width: 0;
+}
+.edition-blazni .article-shell,
+.edition-blazni .sidebar {
+  width: 100%;
+}
+.edition-blazni .article-cover img {
+  width: 100%;
+  height: auto;
 }
 
-.skip-link {
-    position: absolute;
-    left: 1rem;
-    top: -5rem;
-    background: white;
-    padding: 1rem;
-    z-index: 30
+
+.edition-blazni .article-shell,
+.edition-blazni .prose {
+  min-width: 0;
+}
+.edition-blazni .article-shell,
+.edition-blazni .sidebar {
+  width: 100%;
+}
+.edition-blazni .edition-note {
+  overflow-wrap: break-word;
+}
+.edition-blazni .prose .edition-note__heading {
+  margin: 2rem 0 0.7rem;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  page-break-after: avoid;
+  break-after: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.edition-blazni .edition-note__heading + p {
+  text-indent: 0;
+  orphans: 3;
+  widows: 3;
 }
 
-.skip-link:focus {
-    top: 1rem
-}
 
-.edition-breadcrumbs {
-    width: min(1120px, calc(100% - 2rem));
-    margin: 1rem auto;
-    line-height: 1.6
-}
-
-[aria-current="page"] {
-    font-weight: 600
-}
-
-.article-shell,
-.sidebar {
-    min-width: 0;
-    width: 100%
-}
-
-.prose {
-    overflow-wrap: break-word
-}
-
-.prose a[role="doc-noteref"] {
-  font-size: .7em;
-  vertical-align: super;
-  line-height: 0;
-  padding: 0 .1em;
-  color: inherit;
-  text-decoration: none;
-}
-
-.prose a[role="doc-noteref"]:hover {
-  color: #8b611f;
-  text-decoration: underline;
-}
-
-.prose [role="doc-footnote"] {
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--line);
-    scroll-margin-top: 6rem
-}
-
-.prose div.bib {
-    margin-top: 2.25rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--line)
-}
-
-.prose div.bib p {
-    font-size: 1.08rem;
-    line-height: 1.7;
-    color: #433a31
-}
-
-.prose [role="doc-footnote"]:target {
-    background: #fff0c9;
-    outline: 2px solid #b88c42;
-    outline-offset: .3rem
-}
-
-.prose [role="doc-noteref"]:target {
-    background: #ffdf80;
-    outline: 2px solid #b88c42
-}
-
-.bib__back {
-    text-align: right
-}
-
-.bib__back a {
-    display: inline-block;
-    padding: .2rem .5rem
-}
-
-.section-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: .8rem 0;
-    border-bottom: 1px solid var(--line)
-}
-
-.cover-web {
-    margin: 0 0 1.5rem;
-    overflow: hidden
-}
-
-.cover-web img {
-    width: 100%;
-    height: auto
-}
-
-.home-wrap {
-    width: min(1120px, calc(100% - 2rem));
-    margin: 2rem auto 4rem
-}
-
-.home-hero {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 2rem;
-    align-items: start
-}
-
-.home-hero h1 {
-    font-size: clamp(2.4rem, 5vw, 4rem);
-    line-height: 1.05;
-    margin: 1rem 0
-}
-
-.home-hero figure {
-    margin: 0
-}
-
-.home-wrap .chapter-grid {
-    width: 100%;
-    margin-top: 2rem
-}
-
-.hero-figure img {
-    min-height: 0;
-    width: 100%;
-    height: auto
-}
-
-.tiraz {
-    text-align: center
-}
-
-.tiraz hr {
-    width: 40%;
-    border: 0;
-    border-top: 1px solid var(--line)
-}
-
-@media(max-width:800px) {
-    .home-hero {
-        grid-template-columns: 1fr
-    }
-
-    .site-header .inner {
-        display: block
-    }
-
-    .top-nav {
-        flex-wrap: wrap;
-        gap: .5rem 1rem
-    }
-
-    .article-shell {
-        border-radius: 1.2rem
-    }
-
-    .chapter-nav {
-        flex-wrap: wrap
-    }
-
-    .prose p {
-        font-size: 1.2rem;
-        line-height: 1.7
-    }
-}
-
-@media(prefers-reduced-motion:reduce) {
-    html {
-        scroll-behavior: auto
-    }
-
-    * {
-        transition: none !important
-    }
-}
-
-@media print {
-
-    .site-header,
-    .sidebar,
-    .edition-breadcrumbs,
-    .chapter-nav,
-    .skip-link,
-    .section-links,
-    .button-row {
-        display: none !important
-    }
-
-    .content-wrap {
-        display: block;
+      /* Doplňky pouze pro tuto stránku; společný vzhled zajišťuje assets/styles.css. */
+      .edition-blazni .article-shell,
+      .edition-blazni .prose {
+        min-width: 0;
+      }
+      .edition-blazni .article-shell,
+      .edition-blazni .sidebar {
         width: 100%;
-        padding: 0
-    }
+      }
+      .edition-blazni .prose a[role="doc-noteref"].shared-note-link {
+        font-size: inherit;
+        vertical-align: baseline;
+        line-height: inherit;
+        padding: 0;
+        text-decoration: underline;
+        text-underline-offset: 0.12em;
+      }
+      .edition-blazni .prose [id^="_ftnref"] {
+        scroll-margin-top: 7rem;
+      }
+      .edition-blazni .prose a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 3px;
+      }
+      .edition-blazni .bible-block p.bib__ref {
+        margin: 0.5rem 0;
+        font-style: italic;
+      }
+      .edition-blazni .bible-block p.bib__ref strong {
+        font-style: normal;
+      }
+      .edition-blazni .citation-excerpt > .bible-reference:first-child {
+        font-style: italic;
+      }
+      .edition-blazni .bible-block p.bib__last {
+        margin-bottom: 0.3rem;
+      }
+      .edition-blazni .bible-block p.bib__back {
+        margin: 0.3rem 0 0.5rem;
+        text-align: right;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      .edition-blazni .bib__back a {
+        display: inline-block;
+        white-space: nowrap;
+      }
+      .edition-blazni .parable-illustrated {
+        display: flow-root;
+      }
+      .edition-blazni .illustration--wrap {
+        float: none;
+        width: auto;
+        max-width: 26rem;
+        margin: 1.5rem auto;
+      }
+      .edition-blazni .illustration--wrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.75rem;
+      }
+      /* Široký sloupec: mobilní rozvržení od 700 px nebo velký desktop. */
+      @media (min-width: 700px) and (max-width: 900px), (min-width: 1100px) {
+        .edition-blazni .illustration--wrap {
+          float: right;
+          width: 44%;
+          max-width: 22rem;
+          margin: 0.4rem 0 1rem 1.5rem;
+        }
+      }
+      @media (max-width: 600px) {
+        .edition-blazni .prose h1 {
+          font-size: clamp(1.8rem, 8vw, 2.5rem);
+        }
+      }
+      @media print {
+        .edition-blazni .bible-block .bib__back {
+          break-before: avoid;
+          page-break-before: avoid;
+        }
+      }
+    
 
-    .card {
-        box-shadow: none;
-        border: 0
-    }
-
-    .article-shell {
-        padding: 0
-    }
-
-    .prose {
-        max-width: none
-    }
-
-    .prose p {
-        font-size: 12pt
-    }
-
-    body {
-        background: white
-    }
-
-    .cover-web {
-        display: none
-    }
-
-    a {
-        color: inherit
-    }
+.edition-blazni .article-shell,
+.edition-blazni .prose {
+  min-width: 0;
 }
+.edition-blazni .article-shell,
+.edition-blazni .sidebar {
+  width: 100%;
+}
+.edition-blazni .prose {
+  overflow-wrap: break-word;
+}
+
+
+.edition-blazni .article-shell,
+.edition-blazni .prose {
+  min-width: 0;
+}
+.edition-blazni .article-shell,
+.edition-blazni .sidebar {
+  width: 100%;
+}
+.edition-blazni .skip-link {
+  position: fixed;
+  top: -6rem;
+  left: 1rem;
+  z-index: 30;
+  padding: 0.75rem;
+  background: var(--paper, #fffdf8);
+}
+.edition-blazni .skip-link:focus {
+  top: 0.5rem;
+}
+.edition-blazni .tiraz {
+  overflow-wrap: break-word;
+}
+.edition-blazni .tiraz p.tiraz-author {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.edition-blazni .tiraz p.tiraz-title {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.55rem;
+}
+.edition-blazni .tiraz p.subtitle {
+  font-size: 1.15rem;
+}
+.edition-blazni .tiraz hr {
+  border: 0;
+  border-top: 1px solid var(--line, #d8d0c4);
+  margin: 1.5rem 0;
+}
+
+
+    .traktat-share {
+
+      display: flex;
+
+      justify-content: flex-end;
+
+      margin: .5rem 0 .25rem;
+
+    }
+
+
+
+    .traktat-share[hidden] {
+
+      display: none !important;
+
+    }
+
+
+
+    .traktat-share__button {
+
+      appearance: none;
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      width: 44px;
+
+      height: 44px;
+
+      padding: 0;
+
+      border: 0;
+
+      border-radius: 0;
+
+      background: transparent;
+
+      box-shadow: none;
+
+      color: var(--muted, #6f746d);
+
+      cursor: pointer;
+
+      line-height: 1;
+
+    }
+
+
+
+    .traktat-share__button:hover {
+
+      color: var(--text, #30372f);
+
+      background: transparent;
+
+      box-shadow: none;
+
+    }
+
+
+
+    .traktat-share__button:focus-visible {
+
+      outline: 2px solid currentColor;
+
+      outline-offset: 2px;
+
+    }
+
+
+
+    .traktat-share__button svg {
+
+      display: block;
+
+      width: 18px;
+
+      height: 18px;
+
+    }
+
+
+
+    @media print {
+
+      .traktat-share {
+
+        display: none !important;
+
+      }
+
+    }
+  
+
+.edition-blazni .edition-breadcrumbs {
+  width: min(1120px, calc(100% - 2rem)); margin: 1rem auto; line-height: 1.6;
+}
+.edition-blazni .prose { overflow-wrap: break-word; }
+.edition-blazni .chapter-nav { flex-wrap: wrap; gap: 1rem; }
+.edition-blazni .article-cover { overflow: hidden; margin: 0 0 1.5rem; }
+.edition-blazni .brand strong { margin-left: .25em; }
+.edition-blazni .tiraz-cc img { margin: 0; }
+@media print { .edition-blazni .skip-link { display: none; } }

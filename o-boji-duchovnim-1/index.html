@@ -26,7 +26,6 @@
     <meta name="citation_language" content="cs">
     <meta name="citation_public_url" content="https://vcelkakorektorka.cz/o-boji-duchovnim-1/">
     <meta name="citation_date" content="2026">
-    <link rel="stylesheet" href="https://vcelkakorektorka.cz/assets/styles.css">
     <link rel="canonical" href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/">
 
     <script type="application/ld+json">
@@ -196,27 +195,82 @@
 </script>
 
 
-<link rel="stylesheet" href="./assets/edition.css?v=20261011-2"></head>
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+      .edition-boj .skip-link {
+        position: fixed;
+        top: -6rem;
+        left: 1rem;
+        z-index: 30;
+        padding: 0.75rem;
+        background: var(--paper, #fffdf8);
+      }
+      .edition-boj .skip-link:focus {
+        top: 0.5rem;
+      }
+      .edition-boj .hero,
+      .edition-boj .hero-figure {
+        width: min(1120px, calc(100% - 2rem));
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .edition-boj .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        line-height: 1.1;
+        margin: 0.3rem 0 1rem;
+      }
+      .edition-boj .hero .subtitle {
+        font-style: italic;
+      }
+      .edition-boj .hero-figure img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0 auto;
+      }
+      .edition-boj .meta-grid > *,
+      .edition-boj .chapter-grid > * {
+        min-width: 0;
+        overflow-wrap: break-word;
+      }
+      .edition-boj .button {
+        max-width: 100%;
+      }
+      @media (max-width: 768px) {
+        .edition-boj .top-nav {
+          min-width: 0;
+        }
+        .edition-boj .top-nav a {
+          white-space: nowrap;
+        }
+      }
+    
+
+.edition-boj .edition-breadcrumbs { width: min(1120px, calc(100% - 2rem)); margin: 1rem auto; line-height: 1.6; }
+.edition-boj .article-shell, .edition-boj .prose { min-width: 0; }
+.edition-boj .article-shell, .edition-boj .sidebar { width: 100%; }
+.edition-boj .prose { overflow-wrap: break-word; }
+.edition-boj .article-cover { overflow: hidden; margin: 0 0 1.5rem; }
+.edition-boj .article-cover img { width: 100%; height: auto; }
+.edition-boj .chapter-nav { flex-wrap: wrap; gap: 1rem; }
+.edition-boj .skip-link { position: fixed; top: -6rem; left: 1rem; z-index: 30; padding: .75rem; background: var(--paper, #fffdf8); }
+.edition-boj .skip-link:focus { top: .5rem; }
+.edition-boj .brand strong { margin-left: .25em; }
+@media print { .edition-boj .skip-link { display: none; } }
+</style>
+</head>
 
 <body class="edition-boj">
     <a class="skip-link" href="#obsah-stranky">Přejít k obsahu</a><header class="site-header">
         <div class="inner">
             <a class="brand" href="https://vcelkakorektorka.cz/">vcelkakorektorka.cz <strong>Digitální
                     edice</strong></a>
-            <nav class="top-nav" aria-label="Navigace digitální edice"><a href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/uvod.html">Úvod</a><a href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/traktat.html">Traktát</a><a href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/edicni-poznamka.html">Ediční poznámka</a><a href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/doslov.html">Doslov</a></nav>
-        </div>
+            <nav class="top-nav"><a href="uvod.html">Úvod</a><a href="traktat.html">Traktát</a><a href="edicni-poznamka.html">Ediční poznámka</a><a href="doslov.html">Doslov</a><a href="tiraz.html">Tiráž</a></nav>
+</div>
     </header>
 
-    <nav class="edition-breadcrumbs" aria-label="Drobečková navigace">
-        <a class="crumb-home" href="../index.html">Domů</a>
-        <span class="crumb-sep">›</span>
-        <a href="../traktaty.html">Traktáty</a>
-        <span class="crumb-sep">›</span>
-        <span class="current-crumb">O boji duchovním – první kapitola</span>
-    </nav>
-
-
-    <main id="obsah-stranky" tabindex="-1">
+    <nav class="edition-breadcrumbs" aria-label="Drobečková navigace"><a href="../index.html">Domů</a><span class="crumb-sep">›</span><a href="../traktaty.html">Traktáty</a><span class="crumb-sep">›</span><span class="current-crumb" aria-current="page">O boji duchovním – první kapitola</span></nav><main id="obsah-stranky" tabindex="-1">
         <section class="hero section">
             <div class="card hero-copy">
 
@@ -236,9 +290,7 @@
                     </a>
 
                     <a class="button secondary" href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/traktat.html">Přejít k traktátu</a>
-                    <a class="button secondary" href="assets/o-boji-duchovnim-1.epub" download="O boji duchovním – první kapitola – Petr Chelčický.epub" rel="noopener">
-                       Stáhnout EPUB
-                    </a>
+                    <a class="button secondary" href="assets/o-boji-duchovnim-1.epub" download="O boji duchovním – první kapitola – Petr Chelčický.epub" rel="noopener">Stáhnout EPUB</a>
 
                     <a class="button secondary" href="assets/o-boji-duchovnim-1.pdf" download="O boji duchovním – první kapitola – Petr Chelčický.pdf" rel="noopener">Stáhnout PDF</a>
                 </div>
@@ -246,7 +298,7 @@
         </section>
 
         <figure class="card hero-figure">
-            <img src="assets/images/o-boji-duchovnim-1.jpeg" alt="Petr Chelčický - O boji duchovním – první kapitola, obálka digitální edice">
+            <img src="assets/images/o-boji-duchovnim-1.jpeg" alt="Petr Chelčický - O boji duchovním – první kapitola, obálka digitální edice" width="1024" height="1536">
         </figure>
 
 
