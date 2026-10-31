@@ -20,11 +20,17 @@ body.edition-pasije .prose .no-indent::first-letter {
 }
 body.edition-pasije .edition-cover,
 body.edition-pasije .hero-figure {
-  width: min(100%, 30rem); margin: 0 auto 2rem; overflow: hidden;
+  width: 100%; max-width: 100%; margin: 0 auto 2rem;
+  padding: 0; box-sizing: border-box;
+  border: 0; border-radius: 1.35rem;
+  box-shadow: none; background: transparent; overflow: hidden;
 }
 body.edition-pasije .edition-cover img,
 body.edition-pasije .hero-figure img {
-  display: block; width: 100%; height: auto; object-fit: contain;
+  display: block; width: 100%; max-width: 100%;
+  height: auto; min-height: 0; object-fit: contain;
+  margin: 0; padding: 0; border: 0;
+  border-radius: inherit; box-shadow: none;
 }
 body.edition-pasije .edition-note__heading { font-size: 1.65rem; }
 body.edition-pasije .tiraz { text-align: center; }

@@ -1,20 +1,27 @@
-/* Doplňky revidované edice; společný styl webu zůstává zachován. */
-.edition-ocistec .edition-cover{width:min(100%,30rem);margin:1.5rem auto;padding:1rem;box-sizing:border-box;overflow:hidden}
-.edition-ocistec .edition-cover img{display:block;width:100%;height:auto;object-fit:contain}
-
-/* Větší obálka pouze na titulní stránce; ostatní stránky zůstávají na 30rem. */
-.edition-ocistec main > .edition-cover {
-  width: min(48rem, calc(100% - 2rem));
-  margin: 1.5rem auto 2rem;
-  padding: clamp(0.5rem, 1.5vw, 1rem);
+/* Obálka přes dostupnou šířku, se zachováním proporcí. */
+.edition-ocistec .edition-cover {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.edition-ocistec main > .edition-cover img {
+
+.edition-ocistec .edition-cover img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
   min-height: 0;
   object-fit: contain;
+}
+
+/* Obálka na titulní stránce. */
+.edition-ocistec main > .edition-cover {
+  width: calc(100% - 2rem);
+  margin: 1.5rem auto 2rem;
+  padding: clamp(0.5rem, 1.5vw, 1rem);
 }
 
 .edition-ocistec .article-shell{min-width:0;width:100%}
@@ -38,3 +45,26 @@
 .edition-ocistec .hero-copy h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15}
 .edition-ocistec .edition-breadcrumbs{width:min(1120px,calc(100% - 2rem));margin:1rem auto;line-height:1.6}
 @media(max-width:600px){.edition-ocistec .chapter-nav{flex-wrap:wrap}.edition-ocistec .meta-grid{grid-template-columns:1fr}.edition-ocistec .edition-cover{max-width:100%}}
+
+/* Obálka bez vnitřního odsazení a samostatného rámečku. */
+.edition-ocistec .edition-cover,
+.edition-ocistec main > .edition-cover {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  overflow: hidden;
+}
+
+.edition-ocistec .edition-cover img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}

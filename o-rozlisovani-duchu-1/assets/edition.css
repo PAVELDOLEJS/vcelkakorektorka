@@ -29,13 +29,24 @@
 .edition-discernment .hero .chapter-label { font-size: 1.3rem; margin: .5rem 0; }
 .edition-discernment .subtitle { font-style: italic; }
 .edition-discernment .hero .lead { margin-top: .5rem; }
-.edition-discernment .hero-figure { margin: 0; width: 100%; max-width: 30rem; justify-self: center; }
-.edition-discernment .hero-figure img { width: 100%; height: auto; min-height: 0; object-fit: contain; }
+/* Obálky bez vnitřního rámečku, přes dostupnou šířku. */
+.edition-discernment .hero-figure,
+.edition-discernment .article-cover {
+  width: 100%; max-width: 100%; padding: 0;
+  box-sizing: border-box; border: 0; box-shadow: none;
+  background: transparent; overflow: hidden;
+}
+.edition-discernment .hero-figure { margin: 0; justify-self: center; }
+.edition-discernment .hero-figure img,
+.edition-discernment .article-cover img {
+  display: block; width: 100%; max-width: 100%;
+  height: auto; min-height: 0; object-fit: contain;
+  margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none;
+}
 .edition-discernment .meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .edition-discernment .edition-contents .chapter-card h2 { font-size: 1.55rem; line-height: 1.25; margin: .3rem 0 .6rem; }
 .edition-discernment .article-shell { min-width: 0; width: 100%; }
-.edition-discernment .article-cover { width: 100%; max-width: 28rem; margin: 0 auto 1.75rem; padding: .65rem; overflow: hidden; }
-.edition-discernment .article-cover img { width: 100%; height: auto; border-radius: 1.35rem; }
+.edition-discernment .article-cover { margin: 0 0 1.75rem; }
 .edition-discernment .edition-updated { font-size: 1rem; line-height: 1.5; }
 .edition-discernment .prose .chapter-text > h1 {
   margin-top: .25rem; font-size: clamp(1.75rem, 4vw, 2.5rem); overflow-wrap: anywhere;
@@ -73,7 +84,6 @@
 .edition-discernment .chapter-nav a { max-width: 48%; }
 @media (max-width: 900px) {
   .edition-discernment .hero { grid-template-columns: minmax(0, 1fr); }
-  .edition-discernment .hero-figure { max-width: 26rem; }
   .edition-discernment .meta-grid { grid-template-columns: minmax(0, 1fr); }
   .edition-discernment .sidebar { width: 100%; }
 }
@@ -81,7 +91,6 @@
   .edition-discernment img.wolf-illustration {
     float: none; width: 180px; max-width: 65%; margin: 1rem auto;
   }
-  .edition-discernment .article-cover { max-width: 22rem; }
   .edition-discernment .chapter-nav { flex-wrap: wrap; }
   .edition-discernment .chapter-nav a { max-width: 100%; }
 }

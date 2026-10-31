@@ -7,6 +7,20 @@
 .edition-milovani .bib__back { page-break-before: avoid; break-before: avoid; break-inside: avoid; }
 .edition-milovani [id] { scroll-margin-top: 5rem; }
 .edition-milovani .edition-status { font-size: .9rem; color: #66585e; }
-.edition-milovani .article-shell > figure img { display: block; max-width: 100%; width: min(100%, 28rem); height: auto; margin: auto; }
-.edition-milovani .hero-figure img { display: block; width: 100%; height: auto; }
+/* Obrázek nad vlastním textem traktátu. */
+.edition-milovani .article-shell > figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+/* Obálka na titulní stránce edice. */
+.edition-milovani .hero-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  height: auto;
+}
 .edition-milovani .sidebar__title { font-size: 1.2rem; }
