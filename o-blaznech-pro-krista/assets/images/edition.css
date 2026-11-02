@@ -495,3 +495,64 @@
     flex: 1 1 100%;
   }
 }
+
+
+/* ===== Vnitřní stránka bez boční navigace (např. Úvod) ===== */
+/* Vlastní šířka hlavního sloupce zachovává pohodlnou délku řádku. */
+.edition-blazni.page--no-sidebar .content-wrap {
+  display: block;
+  box-sizing: border-box;
+  width: min(860px, calc(100% - 2rem));
+  max-width: 860px;
+  margin: 1.5rem auto 3rem;
+  padding: 0;
+}
+
+.edition-blazni.page--no-sidebar .content-wrap > .article-shell {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+/* Přechod na titulní stranu jako součást spodní navigace. */
+.edition-blazni.page--no-sidebar .chapter-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.edition-blazni.page--no-sidebar .chapter-nav__home {
+  white-space: normal;
+}
+
+@media (max-width: 560px) {
+  .edition-blazni.page--no-sidebar .chapter-nav {
+    align-items: stretch;
+  }
+}
+
+/* Odkaz na titulní stránku pod navigací mezi kapitolami. */
+.edition-blazni.page--no-sidebar .edition-back {
+  margin: 1.1rem 0 0;
+  text-align: center;
+}
+.edition-blazni.page--no-sidebar .edition-back a {
+  display: inline-block;
+  padding: 0.45rem 0.65rem;
+  color: #30432d;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  border-radius: 0.35rem;
+}
+.edition-blazni.page--no-sidebar .edition-back a:hover {
+  color: #172a17;
+  background: #edf2ea;
+}
+.edition-blazni.page--no-sidebar .edition-back a:focus-visible {
+  outline: 2px solid #30432d;
+  outline-offset: 3px;
+}

@@ -1,0 +1,68 @@
+/* O boji duchovním – první kapitola.
+   Společné rozvržení je v /assets/styles.css. */
+
+/* Pojistka pro čtecí sloupec bez bočního navigačního panelu. */
+body.edition-boj.page--no-sidebar main.content-wrap {
+  display: block;
+  grid-template-columns: none;
+  box-sizing: border-box;
+  width: min(860px, calc(100% - 2rem));
+  max-width: 860px;
+  margin: 1.5rem auto 3rem;
+  padding: 0;
+}
+body.edition-boj.page--no-sidebar main.content-wrap > article.article-shell {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  grid-column: 1 / -1;
+}
+
+/* Obrázek duchovní zbroje – zvláštnost této edice. */
+.edition-boj .prose figure.illustration {
+  width: 300px;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+.edition-boj .prose figure.illustration img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.edition-boj .prose .opening-with-illustration {
+  display: flow-root;
+}
+.edition-boj .prose .opening-with-illustration > figure.illustration {
+  float: right;
+  width: 225px;
+  max-width: 40%;
+  margin: .3rem 0 1rem 1.5rem;
+}
+@media (max-width: 700px) {
+  .edition-boj .prose .opening-with-illustration > figure.illustration {
+    float: none;
+    width: 225px;
+    max-width: 100%;
+    margin: 0 auto 1.25rem;
+  }
+}
+
+
+/* Výstižný nadpis je dostupný čtečkám obrazovky,
+   vizuálně jej již obsahuje samotná obálka. */
+.edition-boj .edition-cover-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

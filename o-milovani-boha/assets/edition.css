@@ -1,26 +1,62 @@
-/* Local styles for the revised edition. */
-.edition-milovani .noteref { font-size: .72rem; line-height: 0; vertical-align: super; font-style: normal; font-weight: normal; text-decoration: none; white-space: nowrap; }
-.edition-milovani .bib__ref, .edition-milovani .bib__ref a, .edition-milovani .bib__heading, .edition-milovani .note-number { font-style: normal; text-decoration: none; }
-.edition-milovani .bib__back { text-align: right; font-size: .85em; }
-.edition-milovani .bib__back a { display: inline-block; white-space: nowrap; font-style: normal; text-decoration: none; margin-left: .5em; }
-.edition-milovani .bib__ref, .edition-milovani .bib__heading, .edition-milovani .bib__last { page-break-after: avoid; break-after: avoid; }
-.edition-milovani .bib__back { page-break-before: avoid; break-before: avoid; break-inside: avoid; }
-.edition-milovani [id] { scroll-margin-top: 5rem; }
-.edition-milovani .edition-status { font-size: .9rem; color: #66585e; }
-/* Obrázek nad vlastním textem traktátu. */
-.edition-milovani .article-shell > figure img {
+/* Řeč o milování Boha — první část.
+   Základní styl edic je ve společném /assets/styles.css.
+   Doplňková pravidla ponechávají správnou šířku čtecího sloupce
+   i při načtení staršího společného stylopisu. */
+body.edition-milovani.page--no-sidebar main.content-wrap {
   display: block;
+  grid-template-columns: none;
+  box-sizing: border-box;
+  width: min(860px, calc(100% - 2rem));
+  max-width: 860px;
+  margin: 1.5rem auto 3rem;
+  padding: 0;
+}
+body.edition-milovani.page--no-sidebar main.content-wrap > article.article-shell {
+  display: block;
+  box-sizing: border-box;
+  grid-column: 1 / -1;
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  max-width: none;
+  min-width: 0;
   margin: 0;
 }
-/* Obálka na titulní stránce edice. */
-.edition-milovani .hero-figure img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  min-height: 0;
-  height: auto;
+/* Údaj o revidovaném vydání v záhlaví Úvodu. */
+.edition-milovani .edition-status {
+  margin: .8rem 0 0;
+  color: var(--muted, #6f6558);
+  font-size: .97rem;
+  line-height: 1.45;
+  text-indent: 0;
 }
-.edition-milovani .sidebar__title { font-size: 1.2rem; }
+
+/* Titulní stránka – doplňující barevný akcent a skrytý nadpis.
+   Obálka, navigace a tlačítka jsou nastaveny ve společném styles.css. */
+.edition-milovani {
+  --edition-action-color: #61503b;
+  --edition-action-hover: #413522;
+  --edition-action-soft: #f0e8db;
+  --edition-start-color: #161616;
+}
+.edition-milovani .edition-cover-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.edition-milovani.page--edition-home .edition-actions {
+  margin-bottom: 0;
+}
+.edition-milovani.page--edition-home .edition-home-status {
+  margin: .7rem auto 2.8rem;
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--muted, #6f6558);
+  font-size: .95rem;
+  line-height: 1.5;
+}

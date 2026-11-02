@@ -1,0 +1,51 @@
+/* O nejvyšším biskupu, Pánu Kristu — doplňkové styly.
+   Rozvržení všech edic spravuje ../assets/styles.css. */
+body.edition-biskup.page--no-sidebar main.content-wrap {
+  display: block;
+  grid-template-columns: none;
+  box-sizing: border-box;
+  width: min(860px, calc(100% - 2rem));
+  max-width: 860px;
+  margin: 1.5rem auto 3rem;
+  padding: 0;
+}
+body.edition-biskup.page--no-sidebar main.content-wrap > article.article-shell {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+/* Drobné zvláštnosti ediční poznámky. */
+.edition-biskup .edition-note__meta { margin-top: 2rem; font-size: .95em; }
+
+/* Titulní stránka: jemný tmavě hnědý akcent při zachování společného vzhledu. */
+.edition-biskup {
+  --edition-action-color: #58452d;
+  --edition-action-hover: #3d2f20;
+  --edition-action-soft: #f3eade;
+  --edition-start-color: #161616;
+}
+/* Nadpis zůstává přístupný čtečkám obrazovky; na samotné stránce je vizuálně ukryt. */
+.edition-biskup .edition-cover-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.edition-biskup.page--edition-home .edition-actions { margin-bottom: 0; }
+.edition-biskup.page--edition-home .edition-home-status {
+  margin: .7rem auto 2.8rem;
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--muted, #6f6558);
+  font-size: .95rem;
+  line-height: 1.5;
+}

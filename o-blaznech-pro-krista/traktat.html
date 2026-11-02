@@ -125,12 +125,21 @@
       }
     </script>
 
-    <link rel="stylesheet" href="../assets/styles.css" />
-    <link rel="stylesheet" href="assets/edition.css?v=20261031-1" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20261102-11" />
+    <link rel="stylesheet" href="assets/edition.css?v=20261102-11" />
   </head>
 
-  <body class="edition-blazni">
+  <body class="edition-layout edition-blazni page--no-sidebar">
     <a class="skip-link" href="#obsah-stranky">Přejít k obsahu</a>
+
+    <nav class="edition-breadcrumbs" aria-label="Drobečková navigace">
+      <a class="crumb-home" href="../index.html">Domů</a
+      ><span class="crumb-sep">›</span><a href="../traktaty.html">Traktáty</a
+      ><span class="crumb-sep">›</span
+      ><a href="index.html">My blázni pro Krista</a
+      ><span class="crumb-sep">›</span
+      ><span class="current-crumb" aria-current="page">Traktát</span>
+    </nav>
 
     <header class="site-header">
       <div class="inner">
@@ -147,71 +156,7 @@
       </div>
     </header>
 
-    <nav class="edition-breadcrumbs" aria-label="Drobečková navigace">
-      <a class="crumb-home" href="../index.html">Domů</a
-      ><span class="crumb-sep">›</span><a href="../traktaty.html">Traktáty</a
-      ><span class="crumb-sep">›</span
-      ><a href="index.html">My blázni pro Krista</a
-      ><span class="crumb-sep">›</span
-      ><span class="current-crumb" aria-current="page">Traktát</span>
-    </nav>
     <main class="content-wrap" id="hlavni-obsah" tabindex="-1">
-      <aside class="card sidebar" aria-labelledby="sidebar-title">
-        <div class="eyebrow">Traktát</div>
-
-        <h2 id="sidebar-title" class="sidebar__title">My blázni pro Krista</h2>
-
-        <nav aria-label="Části traktátu">
-          <ul class="toc">
-            <li>
-              <a href="uvod.html"
-                >Úvod<small
-                  >Úvodní uvedení do Chelčického traktátu a jeho duchovního
-                  záměru.</small
-                ></a
-              >
-            </li>
-
-            <li>
-              <a href="traktat.html" aria-current="page"
-                >My blázni pro Krista<small
-                  >Hlavní text traktátu s biblickými odkazy
-                  a vysvětlivkami.</small
-                ></a
-              >
-            </li>
-
-            <li>
-              <a href="edicni-poznamka.html"
-                >Ediční poznámka<small
-                  >Informace o předloze, modernizaci jazyka a edičním
-                  postupu.</small
-                ></a
-              >
-            </li>
-
-            <li>
-              <a href="doslov.html"
-                >Doslov<small
-                  >Závěrečné shrnutí významu textu pro dnešního čtenáře.</small
-                ></a
-              >
-            </li>
-
-            <li>
-              <a href="tiraz.html"
-                >Tiráž<small
-                  >Ediční a autorské údaje k této digitální podobě.</small
-                ></a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <p class="note">
-          <a href="index.html">← Zpět na titulní stranu traktátu</a>
-        </p>
-      </aside>
 
       <article class="card article-shell" id="obsah-stranky" tabindex="-1">
         <header class="article-header">
@@ -992,6 +937,8 @@
             ><span class="muted">Další →</span>Ediční poznámka</a
           >
         </nav>
+
+        <p class="edition-back"><a href="index.html">← Zpět na titulní stránku</a></p>
       </article>
     </main>
 
