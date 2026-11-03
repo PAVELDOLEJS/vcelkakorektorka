@@ -3,6 +3,7 @@
   src: url("fonts/EBGaramond-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("fonts/EBGaramond-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url("fonts/EBGaramond-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -30,15 +33,12 @@
   --shadow: 0 14px 40px rgba(44, 31, 12, .08);
 }
 
-* {
-  box-sizing: border-box
-}
+* { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 }
-
 
 body {
   margin: 0;
@@ -51,16 +51,14 @@ body {
 
 a {
   color: var(--accent);
-  text-decoration: none
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline
-}
+a:hover { text-decoration: underline; }
 
 img {
   max-width: 100%;
-  display: block
+  display: block;
 }
 
 .site-header {
@@ -72,11 +70,7 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
-.site-header .inner,
-.content-wrap,
-.site-footer .inner,
-.chapter-grid,
-.meta-grid {
+.site-header .inner, .content-wrap, .site-footer .inner, .chapter-grid, .meta-grid {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
 }
@@ -93,7 +87,7 @@ img {
   letter-spacing: .18em;
   text-transform: uppercase;
   font-size: .76rem;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 .brand strong {
@@ -102,14 +96,14 @@ img {
   text-transform: none;
   font-size: 1rem;
   color: var(--ink);
-  margin-top: .15rem
+  margin-top: .15rem;
 }
 
 .top-nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .card {
@@ -119,29 +113,26 @@ img {
   box-shadow: var(--shadow);
 }
 
-.hero-copy {
-  padding: 3rem
-}
+.hero-copy { padding: 3rem; }
 
-.kicker,
-.eyebrow {
+.kicker, .eyebrow {
   letter-spacing: .22em;
   text-transform: uppercase;
   font-size: .78rem;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 .lead {
   font-size: 1.35rem;
   line-height: 1.6;
-  max-width: 34rem
+  max-width: 34rem;
 }
 
 .button-row {
   display: flex;
   gap: .9rem;
   flex-wrap: wrap;
-  margin-top: 1.75rem
+  margin-top: 1.75rem;
 }
 
 .button {
@@ -156,32 +147,28 @@ img {
 .button.primary {
   background: var(--ink);
   color: #fff;
-  border-color: var(--ink)
+  border-color: var(--ink);
 }
 
-.button.secondary {
-  background: var(--paper)
-}
+.button.secondary { background: var(--paper); }
 
 .button:hover {
   text-decoration: none;
-  transform: translateY(-1px)
+  transform: translateY(-1px);
 }
 
 .hero-figure {
   padding: 1.25rem;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .hero-figure img {
   border-radius: 1.35rem;
   min-height: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
-.section {
-  padding: 1.25rem 0 2.5rem
-}
+.section { padding: 1.25rem 0 2.5rem; }
 
 .section h2 {
   font-size: clamp(2rem, 4.5vw, 3.2rem);
@@ -196,20 +183,18 @@ img {
   margin-top: 1.25rem;
 }
 
-.meta-box {
-  padding: 1.25rem 1.3rem
-}
+.meta-box { padding: 1.25rem 1.3rem; }
 
 .meta-box .label {
   font-size: .8rem;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 .meta-box .value {
   margin-top: .5rem;
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
 .chapter-grid {
@@ -218,75 +203,29 @@ img {
   gap: 1rem;
 }
 
-.chapter-card {
-  padding: 1.4rem 1.4rem 1.2rem
-}
+.chapter-card { padding: 1.4rem 1.4rem 1.2rem; }
 
 .chapter-card h3 {
   font-size: 1.6rem;
-  margin: .3rem 0 .6rem
+  margin: .3rem 0 .6rem;
 }
 
 .chapter-card p {
   font-size: 1.08rem;
   line-height: 1.65;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 .chapter-card .chapter-link {
   margin-top: .75rem;
   display: inline-block;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
-.content-wrap {
-  display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
-  gap: 2rem;
-  align-items: start;
-  padding: 2rem 0 4rem;
-}
 
-.sidebar {
-  position: sticky;
-  top: 5rem;
-  padding: 1.25rem 1.1rem;
-}
+.content-wrap { padding: 2rem 0 4rem; }
 
-.sidebar h3 {
-  margin: .2rem 0 .8rem;
-  font-size: 1.2rem
-}
-
-.toc {
-  list-style: none;
-  padding: 0;
-  margin: 0
-}
-
-.toc li {
-  border-top: 1px solid var(--line)
-}
-
-.toc li:first-child {
-  border-top: 0
-}
-
-.toc a {
-  display: block;
-  padding: .75rem 0;
-  color: var(--ink)
-}
-
-.toc small {
-  display: block;
-  color: var(--muted);
-  margin-top: .25rem
-}
-
-.article-shell {
-  padding: 2rem clamp(1.1rem, 4vw, 3rem)
-}
+.article-shell { padding: 2rem clamp(1.1rem, 4vw, 3rem); }
 
 .article-grid {
   display: grid;
@@ -297,61 +236,44 @@ img {
 .article-header {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--line)
+  border-bottom: 1px solid var(--line);
 }
 
 .article-header h1 {
   font-size: clamp(2rem, 5vw, 3.3rem);
   line-height: 1;
-  margin: .45rem 0
+  margin: .45rem 0;
 }
 
 .article-header .sub {
   color: var(--muted);
-  font-size: 1rem
+  font-size: 1rem;
 }
 
-.prose {
-  max-width: 43rem
-}
+.prose { max-width: 43rem; }
 
-.prose h1,
-.prose h2,
-.prose h3,
-.prose h4 {
+.prose h1, .prose h2, .prose h3, .prose h4 {
   font-weight: 600;
   line-height: 1.15;
   margin: 2rem 0 1rem;
   color: var(--ink);
 }
 
-.prose h1 {
-  font-size: 2.5rem
-}
+.prose h1 { font-size: 2.5rem; }
 
-.prose h2 {
-  font-size: 2rem
-}
+.prose h2 { font-size: 2rem; }
 
-.prose h3,
-.prose h4 {
-  font-size: 1.5rem
-}
+.prose h3, .prose h4 { font-size: 1.5rem; }
 
-.prose p,
-.prose li {
+.prose p, .prose li {
   font-size: 1.33rem;
   line-height: 1.78;
   margin: 1rem 0;
 }
 
-.prose p.dropcap,
-.prose p.no-indent:first-of-type {
-  line-height: 1.68;
-}
+.prose p.dropcap, .prose p.no-indent:first-of-type { line-height: 1.68; }
 
-.prose p.no-indent:first-of-type::first-letter,
-.prose p.dropcap::first-letter {
+.prose p.no-indent:first-of-type::first-letter, .prose p.dropcap::first-letter {
   float: left;
   font-size: 4.25rem;
   line-height: .75;
@@ -367,11 +289,10 @@ img {
   background: var(--accent-soft);
 }
 
-.prose sup {
-  font-size: .8rem
-}
+.prose sup { font-size: .8rem; }
 
 /* Číselné odkazy v textu jako horní index; nadpis má vlastní styl. */
+
 .prose a[role="doc-noteref"]:not(.title-noteref) {
   font-size: .75em;
   vertical-align: super;
@@ -380,21 +301,20 @@ img {
   text-decoration: none;
 }
 
-.prose section.bib,
-.prose section.bible-block {
+.prose section.bib, .prose section.bible-block {
   margin-top: 2.25rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--line);
 }
 
-.prose section.bib p,
-.prose section.bible-block p {
+.prose section.bib p, .prose section.bible-block p {
   font-size: 1.08rem;
   line-height: 1.7;
-  color: #433a31
+  color: #433a31;
 }
 
 /* Poznámky – vzhled shodný s edicí Toto jsou znamení antikrista. */
+
 .prose [role="doc-footnote"] {
   padding: 1rem 0;
   border-bottom: 1px solid var(--line);
@@ -407,13 +327,7 @@ img {
   outline-offset: .3rem;
 }
 
-.prose .titlepage,
-.prose .tiraz,
-.prose .edition-note,
-.prose .introduction {
-  max-width: 43rem
-}
-
+.prose .titlepage, .prose .tiraz, .prose .edition-note, .prose .introduction { max-width: 43rem; }
 
 .chapter-nav {
   display: flex;
@@ -428,59 +342,35 @@ img {
 .chapter-nav .muted {
   display: block;
   color: var(--muted);
-  font-size: .95rem
+  font-size: .95rem;
 }
 
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem 0 2.4rem;
   color: var(--muted);
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .note {
   color: var(--muted);
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 @media (max-width: 900px) {
-  .content-wrap {
-    grid-template-columns: 1fr
-  }
-
-  .meta-grid,
-  .chapter-grid {
-    grid-template-columns: 1fr
-  }
-
-  .sidebar {
-    position: static
-  }
-
-  .hero-copy {
-    padding: 2rem
-  }
-
-  .article-shell {
-    padding: 1.3rem
-  }
+  .meta-grid, .chapter-grid { grid-template-columns: 1fr; }
+  .hero-copy { padding: 2rem; }
+  .article-shell { padding: 1.3rem; }
+  .prose { max-width: none; }
 }
 
 @media (max-width: 768px) {
-
-html {
-    scroll-padding-top: 4rem;
-  }
-
+  html { scroll-padding-top: 4rem; }
   .site-header .inner {
     padding: 0.4rem 0;
     gap: 0.4rem;
   }
-
-  .brand {
-    display: none;
-  }
-
+  .brand { display: none; }
   .top-nav {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -490,16 +380,14 @@ html {
     font-size: 0.9rem;
     align-items: center;
   }
-
-  .top-nav::-webkit-scrollbar {
-    display: none;
-  }
-
+  .top-nav::-webkit-scrollbar { display: none; }
   .edition-breadcrumbs {
     margin: 0.4rem auto 0 auto;
     padding: 0 0.8rem;
     font-size: 0.85rem;
   }
+  .edition-layout .top-nav { min-width: 0; }
+  .edition-layout .top-nav a { white-space: nowrap; }
 }
 
 @media (max-width: 600px) {
@@ -507,27 +395,7 @@ html {
     font-size: 1.6rem;
     line-height: 1.25;
   }
-}
-
-@media (max-width: 900px) {
-  .prose {
-    max-width: none;
-  }
-}
-
-@media (max-width: 800px) {
-  .content-wrap {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article-shell {
-    order: 1;
-  }
-
-  .sidebar {
-    order: 2;
-  }
+  .edition-layout .prose h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
 }
 
 .reader-feedback-fixed {
@@ -535,28 +403,22 @@ html {
   right: 24px;
   bottom: 24px;
   z-index: 1000;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 12px 18px;
   border-radius: 999px;
-
   background: #2b2118;
   color: #fff;
   text-decoration: none;
-
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.2;
-
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.reader-feedback-fixed:hover,
-.reader-feedback-fixed:focus {
+.reader-feedback-fixed:hover, .reader-feedback-fixed:focus {
   background: #5a3b1d;
   color: #fff;
   transform: translateY(-2px);
@@ -583,19 +445,14 @@ html {
   margin-bottom: 0.75rem;
 }
 
-.reader-response p {
-  margin-bottom: 0.85rem;
-}
+.reader-response p { margin-bottom: 0.85rem; }
 
 .reader-response__link {
   font-weight: 600;
   text-decoration: none;
 }
 
-.reader-response__link:hover,
-.reader-response__link:focus {
-  text-decoration: underline;
-}
+.reader-response__link:hover, .reader-response__link:focus { text-decoration: underline; }
 
 .edition-breadcrumbs .crumb-home {
   display: inline-block;
@@ -608,8 +465,7 @@ html {
   border: 1px solid #e0b84f;
 }
 
-.edition-breadcrumbs .crumb-home:hover,
-.edition-breadcrumbs .crumb-home:focus {
+.edition-breadcrumbs .crumb-home:hover, .edition-breadcrumbs .crumb-home:focus {
   background: #f3c14b;
   color: #3b2a14;
 }
@@ -620,8 +476,7 @@ html {
   text-decoration: none;
 }
 
-.prose a[href$="citaty-petra-chelcickeho.html"]:hover,
-.prose a[href$="citaty-petra-chelcickeho.html"]:focus-visible {
+.prose a[href$="citaty-petra-chelcickeho.html"]:hover, .prose a[href$="citaty-petra-chelcickeho.html"]:focus-visible {
   color: #5d3200;
   text-decoration: none;
 }
@@ -632,8 +487,7 @@ html {
   text-decoration: none;
 }
 
-.odkaz-video:hover,
-.odkaz-video:focus {
+.odkaz-video:hover, .odkaz-video:focus {
   color: #702a17;
   text-decoration: underline;
 }
@@ -645,13 +499,6 @@ html {
   vertical-align: super;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.sidebar__title {
-  margin: 0.3rem 0 1rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.25;
 }
 
 .kontakt-context {
@@ -674,24 +521,13 @@ html {
   font-weight: 600;
 }
 
-.kontakt-context__text {
-  margin: .6rem 0 0;
-}
+.kontakt-context__text { margin: .6rem 0 0; }
 
 .chapter-card h2 {
   font-size: 1.3rem;
   line-height: 1.25;
   margin: 0 0 0.6rem;
 }
-
-/* ================================================================
-   SPOLEČNÝ VZHLED DIGITÁLNÍCH EDIC
-   Aktivuje se třídou .edition-layout na elementu <body>.
-   .page--edition-home: titulní stránka s obálkou a ovládáním.
-   .page--no-sidebar: stránky Úvod / Traktát / Ediční poznámka / Doslov / Tiráž.
-   Barvy je možné změnit proměnnými --edition-action-* v edition.css.
-   Tato pravidla nemění ostatní stránky webu bez .edition-layout.
-   ================================================================ */
 
 .edition-layout {
   --edition-action-color: #30432d;
@@ -701,6 +537,7 @@ html {
 }
 
 /* Přístupnost, navigace, text a společné komponenty. */
+
 .edition-layout .skip-link {
   position: fixed;
   top: -6rem;
@@ -709,27 +546,47 @@ html {
   padding: .75rem;
   background: var(--paper, #fffdf8);
 }
+
 .edition-layout .skip-link:focus { top: .5rem; }
+
 .edition-layout .edition-breadcrumbs {
   width: min(1120px, calc(100% - 2rem));
   margin: 1rem auto;
   line-height: 1.6;
 }
+
 .edition-layout .brand strong { margin-left: .25em; }
-.edition-layout .article-shell,
-.edition-layout .prose { min-width: 0; }
+
+.edition-layout .article-shell, .edition-layout .prose { min-width: 0; }
+
 .edition-layout .article-shell { width: 100%; }
-.edition-layout .prose,
-.edition-layout .edition-note,
-.edition-layout .tiraz { overflow-wrap: break-word; }
-.edition-layout .chapter-nav { flex-wrap: wrap; gap: 1rem; }
-.edition-layout .article-cover { overflow: hidden; margin: 0 0 1.5rem; }
-.edition-layout .article-cover img { width: 100%; height: auto; }
+
+.edition-layout .prose, .edition-layout .edition-note, .edition-layout .tiraz { overflow-wrap: break-word; }
+
+.edition-layout .chapter-nav {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.edition-layout .article-cover {
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+}
+
+.edition-layout .article-cover img {
+  width: 100%;
+  height: auto;
+}
+
 .edition-layout .button { max-width: 100%; }
-.edition-layout .meta-grid > *,
-.edition-layout .chapter-grid > * { min-width: 0; overflow-wrap: break-word; }
+
+.edition-layout .meta-grid > *, .edition-layout .chapter-grid > * {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
 
 /* Editorská poznámka a bibliografický aparát. */
+
 .edition-layout .prose .edition-note__heading {
   margin: 2rem 0 .7rem;
   font-size: 1.35rem;
@@ -739,11 +596,13 @@ html {
   page-break-inside: avoid;
   break-inside: avoid;
 }
+
 .edition-layout .edition-note__heading + p {
   text-indent: 0;
   orphans: 3;
   widows: 3;
 }
+
 .edition-layout .prose a[role="doc-noteref"].shared-note-link {
   font-size: inherit;
   vertical-align: baseline;
@@ -752,33 +611,54 @@ html {
   text-decoration: underline;
   text-underline-offset: .12em;
 }
+
 .edition-layout .prose [id^="_ftnref"] { scroll-margin-top: 7rem; }
-.edition-layout .prose a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-.edition-layout .bible-block p.bib__ref { margin: .5rem 0; font-style: italic; }
+
+.edition-layout .prose a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.edition-layout .bible-block p.bib__ref {
+  margin: .5rem 0;
+  font-style: italic;
+}
+
 .edition-layout .bible-block p.bib__ref strong { font-style: normal; }
+
 .edition-layout .citation-excerpt > .bible-reference:first-child { font-style: italic; }
+
 .edition-layout .bible-block p.bib__last { margin-bottom: .3rem; }
+
 .edition-layout .bible-block p.bib__back {
   margin: .3rem 0 .5rem;
   text-align: right;
   font-size: .95rem;
   line-height: 1.5;
 }
-.edition-layout .bib__back a { display: inline-block; white-space: nowrap; }
+
+.edition-layout .bib__back a {
+  display: inline-block;
+  white-space: nowrap;
+}
 
 /* Ilustrace vložené do těla traktátu. */
+
 .edition-layout .parable-illustrated { display: flow-root; }
+
 .edition-layout .illustration--wrap {
   float: none;
   width: auto;
   max-width: 26rem;
   margin: 1.5rem auto;
 }
+
 .edition-layout .illustration--wrap img {
   width: 100%;
   height: auto;
   border-radius: .75rem;
 }
+
 @media (min-width: 700px) and (max-width: 900px), (min-width: 1100px) {
   .edition-layout .illustration--wrap {
     float: right;
@@ -789,27 +669,38 @@ html {
 }
 
 /* Tiráž. */
-.edition-layout .tiraz p.tiraz-author { margin-bottom: .4rem; font-weight: 600; }
+
+.edition-layout .tiraz p.tiraz-author {
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+
 .edition-layout .tiraz p.tiraz-title {
   margin-top: 0;
   margin-bottom: .4rem;
   font-size: 1.55rem;
 }
+
 .edition-layout .tiraz p.subtitle { font-size: 1.15rem; }
+
 .edition-layout .tiraz hr {
   border: 0;
   border-top: 1px solid var(--line, #d8d0c4);
   margin: 1.5rem 0;
 }
+
 .edition-layout .tiraz-cc img { margin: 0; }
 
 /* Sdílení, pokud je podporováno prohlížečem. */
+
 .edition-layout .traktat-share {
   display: flex;
   justify-content: flex-end;
   margin: .5rem 0 .25rem;
 }
+
 .edition-layout .traktat-share[hidden] { display: none !important; }
+
 .edition-layout .traktat-share__button {
   appearance: none;
   display: inline-flex;
@@ -826,26 +717,33 @@ html {
   cursor: pointer;
   line-height: 1;
 }
+
 .edition-layout .traktat-share__button:hover {
   color: var(--text, #30372f);
   background: transparent;
   box-shadow: none;
 }
+
 .edition-layout .traktat-share__button:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
-.edition-layout .traktat-share__button svg { display: block; width: 18px; height: 18px; }
+
+.edition-layout .traktat-share__button svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
 
 /* Titulní stránka: dominantní obálka a dvě úrovně ovládání. */
-.edition-layout.page--edition-home .hero-figure,
-.edition-layout.page--edition-home .edition-actions {
-  box-sizing: border-box;
+
+.edition-layout.page--edition-home .hero-figure, .edition-layout.page--edition-home .edition-actions {
   width: min(1024px, calc(100% - 2rem));
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .edition-layout.page--edition-home .hero-figure {
   margin-top: 1.75rem;
   margin-bottom: 0;
@@ -857,10 +755,9 @@ html {
   line-height: 0;
   text-align: center;
 }
+
 .edition-layout.page--edition-home .hero-figure img {
-  display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
   min-height: 0;
   object-fit: contain;
@@ -870,6 +767,7 @@ html {
   border-radius: 1.6rem;
   box-shadow: none;
 }
+
 .edition-layout.page--edition-home .edition-actions {
   margin-top: 1.35rem;
   margin-bottom: 2.8rem;
@@ -878,11 +776,12 @@ html {
   background: transparent;
   box-shadow: none;
 }
+
 .edition-layout.page--edition-home .edition-actions .button {
-  max-width: 100%;
   text-align: center;
   text-decoration: none;
 }
+
 .edition-layout.page--edition-home .edition-actions__reading {
   display: flex;
   justify-content: center;
@@ -890,33 +789,35 @@ html {
   flex-wrap: wrap;
   gap: .8rem;
 }
-.edition-layout.page--edition-home .edition-actions__reading .button {
-  min-width: 11rem;
-}
+
+.edition-layout.page--edition-home .edition-actions__reading .button { min-width: 11rem; }
+
 .edition-layout.page--edition-home .button-zacit {
   background: var(--edition-start-color);
   border-color: var(--edition-start-color);
   color: #fff;
   font-weight: 600;
 }
-.edition-layout.page--edition-home .button-zacit:hover,
-.edition-layout.page--edition-home .button-zacit:focus-visible {
+
+.edition-layout.page--edition-home .button-zacit:hover, .edition-layout.page--edition-home .button-zacit:focus-visible {
   background: #fff;
   border-color: var(--edition-start-color);
   color: var(--edition-start-color);
 }
+
 .edition-layout.page--edition-home .edition-actions__reading .button-traktat {
   background: #fff;
   border: 1px solid var(--edition-action-color);
   color: var(--edition-action-color);
   font-weight: 600;
 }
-.edition-layout.page--edition-home .edition-actions__reading .button-traktat:hover,
-.edition-layout.page--edition-home .edition-actions__reading .button-traktat:focus-visible {
+
+.edition-layout.page--edition-home .edition-actions__reading .button-traktat:hover, .edition-layout.page--edition-home .edition-actions__reading .button-traktat:focus-visible {
   background: var(--edition-action-soft);
   border-color: var(--edition-action-color);
   color: var(--edition-action-hover);
 }
+
 .edition-layout.page--edition-home .edition-actions__downloads {
   display: flex;
   flex-wrap: wrap;
@@ -924,6 +825,7 @@ html {
   gap: .7rem 1.8rem;
   margin-top: 1rem;
 }
+
 .edition-layout.page--edition-home .edition-download {
   color: var(--edition-action-color);
   text-decoration: underline;
@@ -931,41 +833,32 @@ html {
   font-weight: 500;
   padding: .3rem .2rem;
 }
+
 .edition-layout.page--edition-home .edition-download:hover { color: var(--edition-action-hover); }
+
 .edition-layout.page--edition-home .edition-download:focus-visible {
   outline: 2px solid var(--edition-action-color);
   outline-offset: 3px;
 }
 
-/* Vnitřní stránky bez bočního panelu. */
-body.page--no-sidebar .content-wrap {
-  display: block;
-  box-sizing: border-box;
+
+
+.edition-layout.page--no-sidebar .content-wrap {
   width: min(860px, calc(100% - 2rem));
-  max-width: 860px;
   margin: 1.5rem auto 3rem;
   padding: 0;
 }
-body.page--no-sidebar .content-wrap > .article-shell {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: none;
-  min-width: 0;
-  margin: 0;
-}
-body.page--no-sidebar .chapter-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-body.page--no-sidebar .chapter-nav__home { white-space: normal; }
-body.page--no-sidebar .edition-back {
+
+.edition-layout.page--no-sidebar .chapter-nav { align-items: center; }
+
+.edition-layout.page--no-sidebar .chapter-nav__home { white-space: normal; }
+
+.edition-layout.page--no-sidebar .edition-back {
   margin: 1.1rem 0 0;
   text-align: center;
 }
-body.page--no-sidebar .edition-back a {
+
+.edition-layout.page--no-sidebar .edition-back a {
   display: inline-block;
   padding: .45rem .65rem;
   color: var(--edition-action-color);
@@ -973,80 +866,42 @@ body.page--no-sidebar .edition-back a {
   text-underline-offset: .2em;
   border-radius: .35rem;
 }
-body.page--no-sidebar .edition-back a:hover {
+
+.edition-layout.page--no-sidebar .edition-back a:hover {
   color: var(--edition-action-hover);
   background: var(--edition-action-soft);
 }
-body.page--no-sidebar .edition-back a:focus-visible {
+
+.edition-layout.page--no-sidebar .edition-back a:focus-visible {
   outline: 2px solid var(--edition-action-color);
   outline-offset: 3px;
 }
-body.page--no-sidebar .article-shell > .article-grid {
+
+.edition-layout.page--no-sidebar .article-shell > .article-grid {
   display: block;
   width: 100%;
   min-width: 0;
 }
-body.page--no-sidebar .article-shell > .article-grid > .prose {
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  max-width: none;
-}
 
-@media (max-width: 768px) {
-  .edition-layout .top-nav { min-width: 0; }
-  .edition-layout .top-nav a { white-space: nowrap; }
-}
-@media (max-width: 600px) {
-  .edition-layout .prose h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
-}
+.edition-layout.page--no-sidebar .article-shell > .article-grid > .prose { max-width: none; }
+
 @media (max-width: 560px) {
   .edition-layout.page--edition-home .edition-actions__reading .button { flex: 1 1 100%; }
-  body.page--no-sidebar .chapter-nav { align-items: stretch; }
+  .edition-layout.page--no-sidebar .chapter-nav { align-items: stretch; }
 }
+
 @media print {
-  .edition-layout .skip-link,
-  .edition-layout .traktat-share { display: none !important; }
+  .edition-layout .skip-link, .edition-layout .traktat-share { display: none !important; }
   .edition-layout .bible-block .bib__back {
     break-before: avoid;
     page-break-before: avoid;
   }
 }
 
+/* Přístupnost: respektování uživatelského nastavení omezeného pohybu. */
 
-/* ================================================================
-   OPRAVA JEDNOSLOUPCOVÉHO ROZVRŽENÍ (listopad 2026)
-   Původní .content-wrap používal dvousloupcový grid 250px + 1fr.
-   V edicích bez boční navigace musí mít hlavní článek celý sloupec.
-   Funguje i na dříve upravených HTML bez třídy .edition-layout.
-   ================================================================ */
-body.page--no-sidebar main.content-wrap {
-  display: block;
-  grid-template-columns: none;
-  width: min(860px, calc(100% - 2rem));
-  max-width: 860px;
-  margin: 1.5rem auto 3rem;
-  padding: 0;
-}
-body.page--no-sidebar main.content-wrap > article.article-shell {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: none;
-  min-width: 0;
-  margin: 0;
-  grid-column: 1 / -1;
-}
-/* Záchranné pravidlo pro starší HTML, kde chybí page--no-sidebar,
-   ale je zde již odstraněna boční navigace. Prohlížeče bez :has
-   použijí výše uvedenou variantu s třídou page--no-sidebar. */
-@supports selector(:has(*)) {
-  body.edition-blazni main.content-wrap:has(> article.article-shell:only-child) {
-    display: block;
-    grid-template-columns: none;
-    width: min(860px, calc(100% - 2rem));
-    max-width: 860px;
-    margin: 1.5rem auto 3rem;
-    padding: 0;
-  }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button, .reader-feedback-fixed { transition: none; }
+  .button:hover, .reader-feedback-fixed:hover, .reader-feedback-fixed:focus { transform: none; }
 }
