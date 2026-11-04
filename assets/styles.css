@@ -905,3 +905,41 @@ img {
   .button, .reader-feedback-fixed { transition: none; }
   .button:hover, .reader-feedback-fixed:hover, .reader-feedback-fixed:focus { transform: none; }
 }
+
+/* Obecně použitelné prvky pro nové digitální edice.
+   Bez vazby na název konkrétního traktátu. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Úvodní ilustrace, kterou na širších obrazovkách obtéká text. */
+.edition-layout .prose .illustrated-opening { display: flow-root; }
+.edition-layout .prose .illustrated-opening > .illustration--opening {
+  float: right;
+  width: 225px;
+  max-width: 40%;
+  margin: .3rem 0 1rem 1.5rem;
+}
+.edition-layout .prose .illustrated-opening > .illustration--opening img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 700px) {
+  .edition-layout .prose .illustrated-opening > .illustration--opening {
+    float: none;
+    width: 225px;
+    max-width: 100%;
+    margin: 0 auto 1.25rem;
+  }
+}
