@@ -126,7 +126,8 @@
     </script>
 
     <link rel="stylesheet" href="../assets/styles.css?v=20261104-1" />
-  </head>
+    <script src="../assets/share-traktat.js?v=20261104-1" defer></script>
+</head>
 
   <body class="edition-layout edition-blazni page--no-sidebar">
     <a class="skip-link" href="#obsah-stranky">Přejít k obsahu</a>
@@ -953,50 +954,6 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-        const container = document.getElementById("traktat-share");
-
-        const button = document.getElementById("share-traktat");
-
-        if (!container || !button || typeof navigator.share !== "function")
-          return;
-
-        const shareData = {
-          title: document
-            .querySelector(".article-header h1")
-            .textContent.trim(),
-
-          text: "Petr Chelčický v jazyce 21. století",
-
-          url: document.querySelector('link[rel="canonical"]').href,
-        };
-
-        // Ikona se zobrazí, jen když prohlížeč podporuje systémové sdílení.
-
-        if (
-          typeof navigator.canShare === "function" &&
-          !navigator.canShare(shareData)
-        )
-          return;
-
-        container.hidden = false;
-
-        button.addEventListener("click", async () => {
-          button.disabled = true;
-
-          try {
-            await navigator.share(shareData);
-          } catch (error) {
-            // Zavření systémové nabídky čtenáře nijak neruší.
-
-            if (error.name !== "AbortError")
-              console.warn("Sdílení se nepodařilo otevřít.", error);
-          } finally {
-            button.disabled = false;
-          }
-        });
-      })();
-    </script>
+    
   </body>
 </html>
