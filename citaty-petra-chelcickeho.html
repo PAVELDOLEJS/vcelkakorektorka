@@ -931,21 +931,22 @@
           const sourceLink = block.querySelector(".citace-zdroj a");
 
           const sourceText = sourceLink
-            ? sourceLink.textContent.replace(/\s+/g, " ").trim()
+            ? sourceLink.textContent.replace(/[ \t\r\n\f]+/g, " ").trim()
             : (block.querySelector(".citace-zdroj")?.textContent || "")
 
                 .replace(/^Zdroj:\s*/i, "")
 
-                .replace(/\s+/g, " ")
+                .replace(/[ \t\r\n\f]+/g, " ")
 
                 .trim();
 
           const sourceHref = sourceLink ? sourceLink.href : "";
 
+          // Sjednotit jen běžné mezery a zalomení řádků, nikoli nezlomitelné mezery (&nbsp;).
           block.querySelectorAll("blockquote").forEach((blockquote) => {
             const paragraphs = Array.from(blockquote.querySelectorAll("p"))
 
-              .map((p) => p.textContent.replace(/\s+/g, " ").trim())
+              .map((p) => p.textContent.replace(/[ \t\r\n\f]+/g, " ").trim())
 
               .filter(Boolean);
 
