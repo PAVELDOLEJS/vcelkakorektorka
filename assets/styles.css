@@ -621,7 +621,13 @@ img {
 
 .edition-layout .bible-block p.bib__ref {
   margin: .5rem 0;
-  font-style: italic;
+  font-style: normal;
+}
+
+/* Stojaté biblické odkazy i tam, kde jsou v HTML uzavřeny v <i> či <em>. */
+.edition-layout .bible-block p.bib__ref i,
+.edition-layout .bible-block p.bib__ref em {
+  font-style: normal;
 }
 
 .edition-layout .bible-block p.bib__ref strong { font-style: normal; }
