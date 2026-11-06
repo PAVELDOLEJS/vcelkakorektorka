@@ -373,6 +373,8 @@
               <a href="https://vcelkakorektorka.cz/o-nejvyssim-biskupu/">
                 O nejvyšším biskupu, Pánu Kristu
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-nejvyssim-biskupu/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -421,6 +423,8 @@
               <a href="https://vcelkakorektorka.cz/o-milovani-boha/">
                 Řeč o milování Boha
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-milovani-boha/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -455,6 +459,8 @@
               <a href="https://vcelkakorektorka.cz/o-blaznech-pro-krista/">
                 My blázni pro Krista
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-blaznech-pro-krista/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -493,6 +499,8 @@
               <a href="https://vcelkakorektorka.cz/vyklad-na-rec-pavla/">
                 Výklad na řeč svatého Pavla
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/vyklad-na-rec-pavla/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -510,6 +518,8 @@
               <a href="https://vcelkakorektorka.cz/sit-viry-1/">
                 Síť víry – první kapitola
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/sit-viry-1/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -585,6 +595,8 @@
               <a href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/">
                 O boji duchovním – první kapitola
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-boji-duchovnim-1/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -613,6 +625,8 @@
               <a href="https://vcelkakorektorka.cz/o-ocistci-1/">
                 O očistci pravém a jistém a nejistém – první kapitola
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-ocistci-1/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -648,6 +662,8 @@
               <a href="https://vcelkakorektorka.cz/vyklad-pasiji-1/">
                 Výklad pašijí podle svatého Jana – první kapitola
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/vyklad-pasiji-1/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -686,6 +702,8 @@
               <a href="https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/">
                 Řeč o rozlišování duchů na ochranu před klamem – první kapitola
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
 
@@ -726,6 +744,8 @@
               <a href="https://vcelkakorektorka.cz/znameni-antikrista/">
                 Toto jsou znamení antikrista
               </a>
+              <br>
+              <a class="citace-cely-traktat" href="https://vcelkakorektorka.cz/znameni-antikrista/traktat.html">Číst celý traktát →</a>
             </p>
           </div>
         </div>
@@ -986,6 +1006,14 @@
             a.textContent = item.source;
 
             source.appendChild(a);
+
+            const readLink = document.createElement("a");
+            readLink.className = "citace-cely-traktat";
+            readLink.href = new URL("traktat.html", item.href).href;
+            readLink.textContent = "Číst celý traktát →";
+
+            source.appendChild(document.createElement("br"));
+            source.appendChild(readLink);
           } else {
             const span = document.createElement("span");
 
