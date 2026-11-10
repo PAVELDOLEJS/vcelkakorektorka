@@ -3055,7 +3055,8 @@ footer img { height: 40px; width: auto; }
       line-height: inherit;
       text-align: left;
       text-justify: auto;
-      hyphens: auto;
+      -webkit-hyphens: none;
+      hyphens: none;
       overflow-wrap: break-word;
     }
     .page-blog-article .article-body h2 {
