@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Včelka korektorka</title>
     <link rel="canonical" href="https://vcelkakorektorka.cz/blog.html" />
+    <script>
+      // Zachování starších přímých odkazů na článek sdílených před změnou blogu.
+      if (
+        window.location.hash === "#na-ci-strane-stoji-buh" ||
+        window.location.hash === "#proti-komu-vlastne-bojujeme"
+      ) {
+        window.location.replace("blog/na-ci-strane-stoji-buh.html");
+      }
+    </script>
     <meta
       name="description"
       content="Články a úvahy o Petru Chelčickém, víře a starých textech. Novinky digitálních edic, souvislosti a odkazy na celé traktáty."
