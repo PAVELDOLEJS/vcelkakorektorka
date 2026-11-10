@@ -3166,3 +3166,75 @@ footer img { height: 40px; width: auto; }
   .page-blog .blog-overview__intro { margin-bottom: 1.7rem; }
   .page-blog .blog-overview__card { padding: 1.35rem; }
 }
+
+/* Úvodní stránka: nenápadná pozvánka k nejnovějšímu článku.
+   Selektory jsou omezené na .page-home; ostatní stránky se nemění. */
+.page-home .home-blog-invite {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto 40px;
+  padding: 24px 22px 28px;
+  border-top: 1px solid #dedbd2;
+  text-align: center;
+}
+.page-home .home-blog-invite__kicker {
+  margin: 0 0 0.6rem;
+  color: #77602d;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page-home .home-blog-invite h2 {
+  margin: 0 auto 0.4rem;
+  color: #292d2a;
+  font-size: clamp(1.65rem, 3.3vw, 2.3rem);
+  line-height: 1.25;
+  overflow: visible;
+}
+.page-home .home-blog-invite__subtitle {
+  max-width: 720px;
+  margin: 0 auto 1.1rem;
+  color: #5a615c;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.page-home .home-blog-invite__intro {
+  max-width: 680px;
+  margin: 0 auto 1.3rem;
+  color: #424944;
+  line-height: 1.68;
+  text-align: center;
+  overflow-wrap: normal;
+}
+.page-home .home-blog-invite__links {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+.page-home .home-blog-invite__links a {
+  color: #5f470e;
+  font-size: 0.98rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+.page-home .home-blog-invite__links a:hover,
+.page-home .home-blog-invite__links a:focus-visible {
+  color: #3e3222;
+  text-decoration-thickness: 2px;
+}
+.page-home .home-blog-invite__primary { white-space: nowrap; }
+@media (max-width: 600px) {
+  .page-home .home-blog-invite { margin-bottom: 24px; padding: 24px 8px 26px; }
+  .page-home .home-blog-invite__subtitle { font-size: 1rem; }
+  .page-home .home-blog-invite__intro { line-height: 1.6; }
+  .page-home .home-blog-invite__links { gap: 0.75rem 1.3rem; }
+}
