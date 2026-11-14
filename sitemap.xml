@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://vcelkakorektorka.cz/blog.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -437,6 +437,12 @@
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://vcelkakorektorka.cz/blog/kdyz-se-svedomi-myli.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://vcelkakorektorka.cz/blog/na-ci-strane-stoji-buh.html</loc>
