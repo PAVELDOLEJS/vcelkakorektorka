@@ -42,12 +42,41 @@
   "mainEntity": {
     "@type": "ItemList",
     "name": "Přehled digitálních edic",
-    "numberOfItems": 11,
+    "numberOfItems": 12,
     "itemListOrder": "https://schema.org/ItemListUnordered",
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
+        "url": "https://vcelkakorektorka.cz/o-marnotratnem-synu-1/",
+        "name": "Řeč o marnotratném synu – první kapitola",
+        "item": {
+          "@type": "Book",
+          "@id": "https://vcelkakorektorka.cz/o-marnotratnem-synu-1/#book",
+          "url": "https://vcelkakorektorka.cz/o-marnotratnem-synu-1/",
+          "name": "Řeč o marnotratném synu – první kapitola",
+          "inLanguage": "cs",
+          "author": {
+            "@type": "Person",
+            "name": "Petr Chelčický"
+          },
+          "editor": {
+            "@type": "Person",
+            "name": "Pavel Dolejš"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Pavel Dolejš"
+          },
+          "image": "https://vcelkakorektorka.cz/o-marnotratnem-synu-1/assets/images/o-marnotratnem-synu-1.jpeg",
+          "description": "První kapitola traktátu o návratu k Bohu, Otcově milosrdenství, opravdovém pokání a vděčnosti za odpuštění.",
+          "isAccessibleForFree": true,
+          "bookFormat": "https://schema.org/EBook"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
         "url": "https://vcelkakorektorka.cz/o-napominani-srdcem-1/",
         "name": "O velmi potřebném a užitečném napomínání vlastním srdcem – první kapitola",
         "item": {
@@ -73,7 +102,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 2,
+        "position": 3,
         "url": "https://vcelkakorektorka.cz/znameni-antikrista/",
         "name": "Toto jsou znamení antikrista",
         "item": {
@@ -95,19 +124,19 @@
       },
       {
         "@type": "ListItem",
-        "position": 3,
+        "position": 4,
         "url": "https://vcelkakorektorka.cz/o-nejvyssim-biskupu/",
         "name": "O nejvyšším biskupu, Pánu Kristu"
       },
       {
         "@type": "ListItem",
-        "position": 4,
+        "position": 5,
         "url": "https://vcelkakorektorka.cz/o-rozlisovani-duchu-1/",
         "name": "Řeč o rozlišování duchů na ochranu před klamem – první kapitola"
       },
       {
         "@type": "ListItem",
-        "position": 5,
+        "position": 6,
         "url": "https://vcelkakorektorka.cz/vyklad-pasiji-1/",
         "name": "Výklad pašijí podle svatého Jana – první kapitola",
         "item": {
@@ -129,19 +158,19 @@
       },
       {
         "@type": "ListItem",
-        "position": 6,
+        "position": 7,
         "url": "https://vcelkakorektorka.cz/o-ocistci-1/",
         "name": "O očistci pravém a jistém a nejistém – první kapitola"
       },
       {
         "@type": "ListItem",
-        "position": 7,
+        "position": 8,
         "url": "https://vcelkakorektorka.cz/o-boji-duchovnim-1/",
         "name": "O boji duchovním – první kapitola"
       },
       {
         "@type": "ListItem",
-        "position": 8,
+        "position": 9,
         "url": "https://vcelkakorektorka.cz/sit-viry-1/",
         "name": "Síť víry – první kapitola",
         "item": {
@@ -169,19 +198,19 @@
       },
       {
         "@type": "ListItem",
-        "position": 9,
+        "position": 10,
         "url": "https://vcelkakorektorka.cz/vyklad-na-rec-pavla/",
         "name": "Výklad na řeč svatého Pavla"
       },
       {
         "@type": "ListItem",
-        "position": 10,
+        "position": 11,
         "url": "https://vcelkakorektorka.cz/o-blaznech-pro-krista/",
         "name": "My blázni pro Krista"
       },
       {
         "@type": "ListItem",
-        "position": 11,
+        "position": 12,
         "url": "https://vcelkakorektorka.cz/o-milovani-boha/",
         "name": "Řeč o milování Boha – první část",
         "item": {
@@ -203,7 +232,7 @@
       }
     ]
   },
-  "dateModified": "2026-11-13"
+  "dateModified": "2026-11-18"
 }
     </script>
 
@@ -702,6 +731,7 @@
                 <label for="filtr-pasaz">Biblická pasáž
                   <select id="filtr-pasaz" name="pasaz">
                     <option value="">Všechny pasáže</option>
+                    <option value="marnotratny">L 15,11–32 · Podobenství o marnotratném synu</option>
                     <option value="svedomi">1 J 3,20–21 · Svědomí a důvěra v Boha</option>
                     <option value="antikrist">1 J 4,5–6 · Duch pravdy a bludu</option>
                     <option value="veleknez">Žd 4,14–16; 7,24–26 · Kristus náš velekněz</option>
@@ -726,7 +756,7 @@
 
               <div class="edice-vyber__status">
                 <output id="edice-pocet" aria-live="polite" aria-atomic="true"
-                  >Zobrazeno 11 z&nbsp;11 edic</output
+                  >Zobrazeno 12 z&nbsp;12 edic</output
                 >
 
                 <button type="reset" id="edice-reset">
@@ -748,12 +778,69 @@
 
           <div class="edice-grid">
             <article
+              class="edice-karta" data-pasaze="marnotratny"
+              data-temata="vira-spasa"
+              data-rozsah="kratke"
+              data-narocnost="zacatek"
+            >
+              <p class="edice-stitek">Nová edice</p>
+
+              <h3>
+                <a href="https://vcelkakorektorka.cz/o-marnotratnem-synu-1/">
+                  Řeč o&nbsp;marnotratném synu&nbsp;– první kapitola
+                </a>
+              </h3>
+
+              <p class="edice-anotace">
+                O&nbsp;návratu člověka k&nbsp;Bohu, Otcově milosrdenství a&nbsp;radosti nad opravdovým pokáním. Chelčický připomíná, že odpuštění má vést k&nbsp;nápravě života, nikoli jen k&nbsp;opakovaným slovům lítosti.
+              </p>
+
+              <p class="edice-cteni">Krátké · Pro začátek</p>
+
+              <p class="edice-formaty">Čtení online · EPUB · PDF</p>
+
+              <p class="edice-tlacitko">
+                <a
+                  class="button-edice"
+                  href="https://vcelkakorektorka.cz/o-marnotratnem-synu-1/"
+                  aria-label="Číst digitální edici Řeč o marnotratném synu – první kapitola"
+                >
+                  Číst
+                </a>
+
+                <button
+                  class="edice-share"
+                  type="button"
+                  hidden
+                  aria-label="Sdílet edici Řeč o marnotratném synu – první kapitola"
+                  title="Sdílet edici"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <path d="M8.59 10.49 15.42 6.51M8.59 13.51 15.42 17.49"></path>
+                  </svg>
+                </button>
+              </p>
+            </article>
+
+            <article
               class="edice-karta" data-pasaze="svedomi"
               data-temata="pravda-klam vira-spasa"
               data-rozsah="stredni"
               data-narocnost="soustredene"
             >
-              <p class="edice-stitek">Nová edice</p>
+              <p class="edice-stitek">Vydáno v&nbsp;listopadu 2026</p>
 
               <h3>
                 <a href="https://vcelkakorektorka.cz/o-napominani-srdcem-1/">
